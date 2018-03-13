@@ -6,7 +6,7 @@
 
 So at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
 
-I showed it to Minh when I got home one day and he was super stoked about everything that was on here and wanted me to send him a copy (Hi Minh!). Figured I'd basically just make this public to help out anyone who might be interested.
+I showed it to Minh when I got home one day and he was super stoked about everything that was on here and wanted me to send him a copy (Hi Minh!). Figured I'd basically just make this public to help out anyone who might be interested, or at least give an interesting read about the kind of work I'm doing.
 
 # Welcome
 
