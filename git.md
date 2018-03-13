@@ -114,6 +114,10 @@ git commit -m "[Meri] Removed movement from the player prefab to research player
 ```
 Do you have to follow this outlined protocol for every project? No, but in a professional environment working on an official product, this is a huge skill which multiple specialists have explained to me 'is important in the biz.'
 
+> "This is important in the biz."
+
+-- Guy who taught me about release management.
+
 ### Merging
 
 The [.gitignore](.gitignore) file that should be packed into the Unity project folder will take care of the nasty Unity related merge problems that you ideally should never have to encounter. **Trust me, you'll really want this.** The alternative is adding thousands of temporary files to your repository which would normally be deleted.
@@ -133,7 +137,7 @@ Do the following to have a nice successful merge:
     * Either eveything will go swimmingly and after some text scrolls down the screen, your bash line (colourful - above the blinking cursor) will end with `[branchname]`
     * **OR**
     * The bash line will end with `[branchname]|MERGING` which means that you still need to make some desicions on which changes stay and which changes are dropped
-        * At that point you should ask someone experienced for help if you can, because merge conflicts are very case-by-case-complicated, and can get messy and ruin things fast (although at this point you're still contained in your local branch)
+        * At that point you should ask someone experienced for help if you can, because merge conflicts are very case-by-case-complicated, and can get messy and ruin things fast (although at this point you're still contained in your local branch).
 * Once the merge is completed, you can switch back to `develop` (using `git checkout`) and merge your feature branch back into it (which should now not have any issues)
 * Boy, I sure wish I had this guide when I started with git :)
 
