@@ -41,7 +41,7 @@ Frankly, since I wrote this for fellow coworkers in software development positio
 Okay. Now let's dive in. I'm going to point to a few of my favourite sections which you won't necessarily be stoked about or even understand, but maybe there's a spark in there. Maybe you'll understand something.
 
 1. [The Basics of Fun](development.md#the-basics-of-fun)
-2. [Scrutinize Your Commit Messages](development.md#scrutinize-your-commit-messages)
+2. [Scrutinize Your Commit Messages](git.md#scrutinize-your-commit-messages)
 3. [Unity Best Practices](development.md#best-practices)
 
 # Table of Contents
