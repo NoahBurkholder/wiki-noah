@@ -12,7 +12,7 @@ I showed it to Minh when I got home one day and he was super stoked about everyt
 
 Welcome to my Wiki repository to which you are reading. I will be updating this relatively often with new stuff I learn through practical work at my job, as well as things I've learnt from the various senior developers I talk to at game dev meetups.
 
-#### Getting Started
+### Getting Started
 
 Okay. *Don't freak out* is my first advice. The most unanimous anxiety in all of game development is crippling imposter syndrome.
 
@@ -20,7 +20,11 @@ Okay. *Don't freak out* is my first advice. The most unanimous anxiety in all of
 
 [- Wikipedia](https://en.wikipedia.org/wiki/Impostor_syndrome)
 
-The truth is even the most beginner programmer is only a few months hard work from being a game-industry-professional. When I first talked to a professional in the field, I was able to comprehend what they were talking about, even after just learning the basics of polymorphism. It's not unattainable. Everyone is struggling to push their own boundaries, and they're only struggling because nobody teaches anyone else shit.
+The truth is even the most beginner programmer is only a few months hard work from being a game-industry-professional. When I first talked to a professional in the field, I was able to comprehend what they were talking about, even after just learning the basics of polymorphism. It's not unattainable.
+
+> Everyone is struggling to push their own boundaries, and they're only struggling because nobody teaches anyone else shit.
+
+- Me, I said this.
 
 Now, by working as a game programmer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
 
@@ -28,11 +32,11 @@ I recommend taking the time to learn [good protocol surrounding Git](git.md#repo
 
 Additionally, on this Wiki there is a boatload of fantastic and less-than-obvious tips, tricks and tools relating to [Unity](development.md#-unity) and [C#](development.md#-code) which I have poured my souls (plural) into.
 
-If you're relatively new to the game development field this Wiki is for you. If you went to school with me then this Wiki is for you. It doesn't teach you the basics of programming, but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too.
+If you're relatively new to the game development field this Wiki is for you. If you went to school with me in SIAT then this Wiki is for you. It doesn't teach you the basics of programming (yet), but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too.
 
 Frankly, since I wrote this for fellow coworkers in software development positions, it skips a lot of the basics of coding, and that is something I hope to remedy in the future when I have more time. Let me know what concepts in particular - fundamental or otherwise - you'd like covered and I'll prioritize those first.
 
-#### My Favourite Topics
+### My Favourite Topics
 
 Okay. Now let's dive in. I'm going to point to a few of my favourite sections which you won't necessarily be stoked about or even understand, but maybe there's a spark in there. Maybe you'll understand something.
 
