@@ -1,6 +1,6 @@
-# :snake: Wiki Noah
+# :milky_way: Wiki Noah
 
-## Version 1.4.1 (Snake) - March 12th, 2018
+## Version 1.4.2 (Milky Way) - March 12th, 2018
 
 # Ok, what the fuck is this, Noah?
 
