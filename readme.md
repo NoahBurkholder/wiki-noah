@@ -88,4 +88,8 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 * [**Noah Burkholder**](https://www.linkedin.com/in/nburkhol)
 
 ## Acknowledgments
-I'd like to thank Google.
+I'd like to thank Google, as well as the following individuals:
+
+- [Tony Pacheco](https://www.linkedin.com/in/tony-pacheco/) - Who helped me write up the initial Wiki materials you're reading, especially around Git Methodology and Building.
+
+As well as [Meri](https://www.linkedin.com/in/meri-morganov-43818a21/), Stephanie, [Andy](https://www.linkedin.com/in/hao-tang-90947413b/), [Helen](https://www.linkedin.com/in/helen-terry/), and [Bryan](https://www.linkedin.com/in/bryanshen/).
