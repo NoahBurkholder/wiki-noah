@@ -1,6 +1,6 @@
 # :chart_with_upwards_trend: Optimization
 
-Hi! So you made a great game but when you try to play it, it makes you barf. We've all made the best game ever only to have the limitations of human technology rudely inhibit our genius. Maybe your phone heats up dangerously, or maybe people are just getting sick in the headset.  
+Hi! So you made a great game but when you try to play it, it makes you barf. We've all made the greatest idea ever only to have the limitations of human technology rudely impede our success. Maybe your phone heats up dangerously, or maybe people are just getting sick in the headset. (Who even cares? Grow a better inner ear.)
 
 Let's start off by establishing the basics of runtime optimization.
 
@@ -8,9 +8,9 @@ Let's start off by establishing the basics of runtime optimization.
 
 Runtime optimization is the act of honing the runtime performance so as many bottlenecks as possible are removed. A bottleneck is a performance restriction in your project - CPU, GPU, Memory, Hardware - which slows down the game enough that nothing will improve until the current bottleneck is relieved.
 
-In other words, optimization is like peeling an onion skin by skin. If your GPU is the most serious bottleneck, a thousand optimizations to your CPU scripts isn't going to make the tiniest dent in your performance. You're essentially peeling the second or third layer of the onion before you've peeling the first.
+In other words, optimization is like peeling an onion skin by skin. If your GPU is the most serious bottleneck, a thousand optimizations to your CPU scripts isn't going to make the tiniest dent in your performance. You're essentially peeling the second or third layer of the onion before you've peeling the first. The onion is still the same size, and still just as unpleasant to eat.
 
-You will only ever see increases in performance (framefrate) upon attacking your current bottleneck - the top onion skin.
+You will only ever see increases in performance (framerate) upon attacking your current bottleneck - the top onion skin.
 
 Since the most common bottlenecks are CPU and GPU bottlenecks, it's best to start there.
 
@@ -18,13 +18,13 @@ Since the most common bottlenecks are CPU and GPU bottlenecks, it's best to star
 
 In most cases, most of your first Unity projects will have CPU bottlenecks. GPU bottlenecks are more commonly found in complex environments with ambitious use of lighting, shading, particles, and vertices. GPU bottlenecks are also found when someone overzealously cranks various graphical options, or light ranges into insane ranges.
 
-Typically, if you've left your quality settings more-or-less the same, and your environment is relatively light compared to other games, you're hitting a CPU (script-based) bottleneck.
+Typically, if you've left your quality settings more-or-less the same, and your environment is relatively normal compared to other games, you're hitting a CPU (script-based) bottleneck.
 
 However, if you're not sure, use the Unity Profiler.
 
 #### The Unity Profiler
 
-Found at ```Window > Profiler```, this tool is so powerful it can nearly singlehandedly be your agent for discovering heavy scripts, overutilization of components, bad run-time loading, and other peculiar things.
+Found at `Window > Profiler`, this tool is so powerful it can nearly singlehandedly be your agent for discovering heavy scripts, overutilization of components, bad run-time loading, and other peculiar things.
 
 <img src="imgs/profiler.PNG">
 
@@ -38,7 +38,7 @@ Here are some things to look out for in the CPU log:
 
 #### Frame Budgets
 
-Your budget is as follows depending on your target FPS.
+Your budget is as follows depending on your target FPS. This should basically cover all your bases since nobody develops 30fps games anymore unless it's stylized or turn-based.
 
 * 120fps = 8.33ms
 * 90fps = 11.11ms
@@ -48,15 +48,15 @@ Your budget is as follows depending on your target FPS.
 
 In order to render in a binocular fashion, the game needs to render two simultaneous cameras. Additionally, your framerate is typically supposed to consistently stay above 90fps or even 120fps. 
 
-You can think of VR as using [X7 the amount of resources](https://www.pcgamesn.com/eve-valkyrie/vr-requires-a-pc-7-times-more-powerful-than-1080p-gaming-say-nvidia) as a typical 1080p 60fps game, because these factors multiply upon each other.
+You can think of VR as using [X7 the amount of resources](https://www.pcgamesn.com/eve-valkyrie/vr-requires-a-pc-7-times-more-powerful-than-1080p-gaming-say-nvidia) as a typical 1080p 60fps game, because these factors multiply and stack upon each other.
 
 Be prepared to cut back on visual fidelity in favour of performance. Performance is paramount.
 
 ## Noah's Hit-List
 
-A lot of the time the best place way to start is just knowing your options. Sometimes you don't even think of something but when you finally do it feels obvious.
+A lot of the time the best place way to start is just knowing your options. Sometimes you don't know an option exists but once you discover it you go *"Oh, yeah, that makes sense that it would help."*
 
-I'll start by just throwing out ideas one by one and you can judge which ones to prioritize first. :sweat_smile:
+I'll start by just throwing out ideas one by one and you can use your best judgement as to which ones to prioritize first. :sweat_smile:
 
 ### Script Loop Hitching (CPU)
 
@@ -69,17 +69,46 @@ Script hitching happens when your scripts push you over the [frame budget](#fram
 
 ### Physics Matrix (Helps CPU)
 * Your physics matrix keeps track of how layers interact. The less check-marks the better, for physics and other collision dynamics.
-```Edit > Project Settings > Physics > Layer Collision Matrix```
+`Edit > Project Settings > Physics > Layer Collision Matrix`
 * Having every checkbox filled in means that everything is looking out for everything, which is silly and heavy. (UI elements don't need to collide with water dummy, unless they do in your game in which case I apologize).
 * If things will never interact, we don't need to check for it
 
 ### Static Batching (Helps CPU and GPU)
 * Make un-moving environmental objects 'static' by checking the static box at the top right of the inspector. This saves both on render time and computation time.
-* If you have extra memory and a rendering bottleneck, consider baking lighting into the environment, which makes the light non-dynamic, but lightens GPU load significantly.
-* Use less materials, and use cheaper materials. Especially on mobile, this is incredibly important. Unity Standard Shader is very powerful, but very heavy. Consider legacy.
-* Instead of upping your point light's range, make it brighter. Setting the range to 100m so that the light decays at the 30m mark means the light is still calculating the light for a basically-unused 70m. Super expensive. Instead increase the brightness to compensate.
-* If you have a big environment, consider using fog + a camera clear flag of a solid color (matching the fog) then drop your camera's 'far plane' so that it is juuust beyond the fog. This means the camera stops rendering anything after say 20m in front of you, and it still looks good. Spooky or dreamy even. See Zombie Donuts for an example of this.
+
+### Cut Down On Materials (Helps GPU)
+* Use less materials, especially on mobile.
+* Use lighter shaders, and less maps. Unity Standard Shader is very powerful, but very heavy. Consider using Legacy or Mobile class shaders. These are included in Unity by default.
+* Sometimes a simpler visual aesthetic helps remove noise and business from a scene, or can enforce an aesthetic. *This can be a positive thing.*
+
+### Optimize Your Lighting (Helps CPU and GPU, Baking can hurt Memory)
+
+**Baked Lighting**
+
+* If you have extra memory and a rendering bottleneck, consider baking lighting into the environment, which makes the light non-dynamic, but lightens GPU load immensely. Note: this means you lose realtime shadows.
+* All items included in the bake *need to be marked 'static'* and sometimes (if they don't already have UVs) need to have the "Generate Lightmap UVs" option checked in their model's import settings.
+
+**Realtime Lighting**
+
+* If your light is too dim, instead of upping your light's *range*, up the *intensity*. Setting the range to 1000m  even though the light decays at the 30m mark means the light is still calculating the light for a basically-unused 970m. Super expensive. Instead increase the brightness to compensate, and take your distance down to like 40m.
+* Avoid clashing dynamic lights. If two lights occupy the same space, they'll either nullify each other, or they'll use a lot of resources. This is dependent on the "Pixel Lights" setting in your Quality Settings panel. A pixel light value of 2 means 2 lights can affect the same space, but a third light will interfere with them.
+
+### Kill Transparency (Helps GPU)
+
 * Transparent materials are terrible and make your GPU cry. It basically has to render the same space on the screen twice. Once for what's behind and once for the translucent material.
+* Because of this, some devs aim for a 'No Transparent Materials' guideline.
+
+### Smart Fog (Helps CPU and GPU and Memory)
+
+This is a very niche technique, but I've used it a couple times now, and it is a good heavy-handed but stylish solution to easing just about everything in your game. It works because of three things:
+
+1. Basically, your camera has a 'far plane' where past that point, nothing is rendered. It renders through the object directly to the skybox. If you pull this wayyy in to like 30, you can only see 30 units in front of you before things become the skybox.
+2. Your camera also has a 'Clear Flag' which can be set to a solid colour, or the skybox, or some other shit too. This is essentially just 'what your camera will render when it isn't rendering anything'.
+3. In the `Window > Lighting` panel, there is an option at the bottom for Fog! Specifically, it lets you set the colour and the density. This will be important for when we bring it all together.
+
+So - if you have a big environment, consider using a dense fog which hits max opacity by maybe 30 units away. Give this fog a colour which looks good. Also set your main camera's Clear Flag to the SAME solid color (matching the fog). Lastly, drop your camera's Far Plane so that it is juuust beyond the fog. This means the camera stops rendering anything after say 20m in front of you, and it still looks good. Spooky or dreamy even. See [Zombie Donuts](https://www.virtro.ca/zombie-donuts.html) for an example of this.
+
+![Zombie Donuts Screenshot](imgs/zombiedonuts.png "Notice how the fog blends with the solid-colour skybox.")
 
 ### Culling (Hurts CPU Slightly, Helps GPU)
 
