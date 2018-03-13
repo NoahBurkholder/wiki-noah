@@ -83,9 +83,10 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 
 
-# Author
+# Authors
 
-* [**Noah Burkholder**](https://www.linkedin.com/in/nburkhol)
+[**Noah Burkholder**](https://www.linkedin.com/in/nburkhol) - [http://noahburkholder.com](http://noahburkholder.com)  
+[Your Name Here]
 
 ## Acknowledgments
 I'd like to thank Google, as well as the following individuals:
