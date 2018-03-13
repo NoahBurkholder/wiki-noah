@@ -79,7 +79,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
     3. [Building for Android](building.md#building-for-android)
 4. [Optimization](optimization.md)
     1. [The Basics](optimization.md#the-basics)
-    2. [The Hit-List](optimization.md#noahs-hit-list)
+    2. [Noah's Hit-List](optimization.md#noahs-hit-list)
 
 
 
