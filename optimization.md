@@ -106,7 +106,7 @@ This is a very niche technique, but I've used it a couple times now, and it is a
 2. Your camera also has a 'Clear Flag' which can be set to a solid colour, or the skybox, or some other shit too. This is essentially just 'what your camera will render when it isn't rendering anything'.
 3. In the `Window > Lighting` panel, there is an option at the bottom for Fog! Specifically, it lets you set the colour and the density. This will be important for when we bring it all together.
 
-So - if you have a big environment, consider using a dense fog which hits max opacity by maybe 30 units away. Give this fog a colour which looks good. Also set your main camera's Clear Flag to the SAME solid color (matching the fog). Lastly, drop your camera's Far Plane so that it is juuust beyond the fog. This means the camera stops rendering anything after say 20m in front of you, and it still looks good. Spooky or dreamy even. See [Zombie Donuts](https://www.virtro.ca/zombie-donuts.html) for an example of this.
+So - if you have a big environment, consider using a dense fog which hits max opacity by maybe 30 units away. Give this fog a colour which looks good. Also set your main camera's Clear Flag to the SAME solid color (matching the fog). Lastly, drop your camera's Far Plane so that it is juuust beyond the fog. This means the camera stops rendering anything after say 20m in front of you, and it still looks good. Spooky or dreamy even. I used this technique when redesigning [Zombie Donuts](https://www.virtro.ca/zombie-donuts.html).
 
 ![Zombie Donuts Screenshot](imgs/zombiedonuts.png "Notice how the fog blends with the solid-colour skybox.")
 
