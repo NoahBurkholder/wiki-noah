@@ -24,7 +24,7 @@ The truth is even the most beginner programmer is only a few months hard work fr
 
 > Everyone is struggling to push their own boundaries, and they're only struggling because nobody teaches anyone else shit.
 
-[- Me, I said this.](https://noahburkholder.com)
+[- Me, I said this.](http://noahburkholder.com)
 
 Now, by working as a game programmer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
 
