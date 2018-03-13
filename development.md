@@ -56,12 +56,13 @@ public class GameManager : MonoBehaviour
 
 ### Coroutines
 
-Coroutines are your new best friend. They are the polite cousin of the Update loops bundled with Unity. :two_hearts:  
-Coroutines patiently wait durations of time, and will function asynchronously so that if they get held up, the rest of your code will continue to fly by.  
-Perfect for sequencing events in cutscenes, or doing large tasks over a dilute period of time.  
-You can make a custom loop which only updates every 20 seconds if you wanted to, or simply mimic the Update loop without hurting the buttery smoothness of your Camera transforms! :100:  
+Coroutines are your new best friend. They are the polite cousin of the Update loops bundled with Unity.
 
-As you'll discover, using 'yield return' is one of coroutines' most powerful tools for sequencing and looping. You'll be using lots of 'yield return WaitForSeconds(float)' so it's good to optimize them nicely using the following:  
+Coroutines can patiently wait durations of time, and will function asynchronously - kinda like a pseudo thread - so that if they get held up, the rest of your code will continue to fly by. They are perfect for sequencing events in cutscenes, or doing large tasks over a dilute period of time.
+
+You can make a custom loop which only updates every 20 seconds if you wanted to, or simply mimic the Update loop without hurting the buttery smoothness of your Camera transforms thanks to asynchronicity! :100:
+
+As you'll discover, using `yield return` is one of coroutines' most powerful tools for sequencing and looping. You'll be using lots of `yield return WaitForSeconds(float)` so it's good to optimize them nicely using the following resource saver:  
 
 ```c#
 // Create a reference to a single public Wait() object for each length of wait time you'll need. 
@@ -73,17 +74,29 @@ yield return GameManager.instance.myWait;
 // To have the coroutine wait one second.
 ```
 * This will cut down on memory and computation of having multiple parallel "WaitFor's", helping optimization.
-* Caching these yields works with WaitForSeconds(), WaitForFixedUpdate() (which waits for the Physics loop Fixed frame), and WaitForNextFrame() (which waits for the next normal Update() frame).
+* Caching these yields works with `WaitForSeconds(float)`, `WaitForFixedUpdate()` (which waits for the Physics loop Fixed frame), and `WaitForNextFrame()` (which waits for the next normal `Update()` frame).
 
 ### Enumerators
 
-Forget what we said about coroutines, Enums are going to be your new **bester** friends. 
-They're essentially just numbers with names, which means you can make checks more clear and easy to understand.  
-Computationally they're just integers (very light), but to your eyes they have nice word-names!  
-They should be called Enamerations... Or NameyNums! (<<< Tony came up with these, not me.)  
-Avoid checking if an object exists on a layer by converting a string to an int with LayerMask.NameToLayer("GrossString"). Don't use strings for IDing things ever again! use Enums instead!
+Forget what we said about coroutines, Enums are going to be your new **bester** friends.
 
-Here's an example of a perfect utilization - keeping track of the indices of your layers:
+They're essentially just numbers with names, which means you can make checks more clear and easy to understand. *Computationally they're just integers* (very light), but to your eyes they have nice word-names! (Wow!)
+
+This means in the future you can avoid checking if an object exists on a layer with `LayerMask.NameToLayer("GrossString")`. This fucking method compares a complex data type with no regard for our performance. Don't use strings for IDing things ever again! use Enums instead! They're just integers! But they're kinda not!
+
+Here's an example of a perfect utilization - keeping track of the indices of your layers.
+
+Let's start with a BAD piece of code. I've commented the badness so you know how bad it is.
+
+```c#
+if (gameObject.layer == 10) // What is this???!!!! Might've been clear when you wrote it, but not after 3 months.
+{
+    // Do something but terribly.
+}
+```
+Yikes. So I'm glad we're done with that code. I don't know what that 10 is supposed to be. That could be any layer, and honestly I'm too lazy to check the Layer list in Unity.
+
+Let's use our **enumerator** for this next bit. First let's define it:
 
 ```c#
 public enum Layer
@@ -96,24 +109,16 @@ public enum Layer
     Gun = 12
 }
 ```
-Used as:
+And now instead of that BAD chunk of code, we make this GOOD chunk of code.
 
 ```c#
 if (gameObject.layer == (int)Layer.Environment) // Oh, it's the Environment layer. Remember to cast to int! (Visual Studio will remind you.)
 {
-    // Do something.
+    // Do something but sexy.
 }
 ```
 
-Rather than:
-
-```c#
-if (gameObject.layer == 10) // What is this???!!!! Might've been clear when you wrote it, but not after 3 months.
-{
-    // Do something but worse.
-}
-```
-It also has the added bonus that if your layer indexes get shifted, you only have to modify the Enumerator's definitions, and not every occurance throughout the project. Yay!
+It also has the added bonus that if your layer indexes get shifted, you only have to modify the Enumerator's definitions, and not every occurance throughout the project. Yay! You can even rename a given layer to something else and the index will stay the same. *If you did this using strings you'd have to change every occurance of the string. (!)*
 
 ### Worthwhile Resources
 
@@ -137,7 +142,7 @@ The two most-used ways of finding references are as follows:
 1. Drag-and-dropping references into public variables in the inspector before runtime.
 2. Getting references in runtime through code using `GetComponent<Component>`, `GameObject.Find("Object")` and other such methods.
 
-Basically, directly dragging references into the inspector saves on computation in run-time, making loads faster, but it also risks us losing our references from a metadata issue - Git related or otherwise. It's essentially entrusting prefabs that they will not forget all its reference IDs, and entrusting each .meta file in the project not to change, or at least to 'ping' Unity's database to let them know they're changing their number. Unity is usually pretty good about this, and a changed .meta file will go "Hey I got a new phone my number is 6e2559ca1e833764ebdbdfebcc9ee23c."
+Basically, directly dragging references into the inspector saves on computation in run-time, making loads faster, but it also risks us losing our references from a metadata issue - Git related or otherwise. It's essentially entrusting prefabs that they will not forget all its reference IDs, and entrusting each .meta file in the project not to change, or at least to 'ping' Unity's database to let them know they're changing their number. Unity is usually pretty good about this, and a changed .meta file will typically go *"Hey I got a new phone my number is 6e2559ca1e833764ebdbdfebcc9ee23c."*
 
 The alternative to pre-referenced references is using `GetComponent<Component>()` or `GameObject.Find()`, but the downside is that this can accumulate into major performance issues in loadtime and runtime. Depending on the number of scripts and objects being located, it can be an invisible overhead, or a game-shattering hangup/stutter.
 
@@ -191,20 +196,20 @@ public class MyPopulator {
 
 ### Know the Costs of Unity Methods
 Examples:
-* GameObject.Find() - This thing basically scans your whole game world until it finds something. Lots of unnecessary and clunky computation which bogs down your game.
-* GetComponent() - It's really hard not to use this, and sometimes it's the best option. You might consider making a public reference and dragging it into the script via the Inspector panel. This will make it load the component reference it needs BEFORE runtime, without needing to 'search'.
+* `GameObject.Find()` - This thing basically scans your whole game world until it finds something. Lots of unnecessary and clunky computation which bogs down your game.
+* `GetComponent()` - It's really hard not to use this, and sometimes it's the best option. You might consider making a public reference and dragging it into the script via the Inspector panel. This will make it load the component reference it needs BEFORE runtime, without needing to 'search'.
 * RayCasting - Raycasting is indeed wonderful especially for AR swipe and tap input, but in large volumes or frequencies, it will be one of the heaviest operations in your game. Use sparingly, have a [short length, and mask your collision layers.](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html)
-* Instantiate() - very expensive, so load them at startup, and keep them inactive or hidden until they need to be used. Recycle them, and only spawn the max that will ever conceivably be on-screen.
+* `Instantiate()` - very expensive, so load them at startup, and keep them inactive or hidden until they need to be used. Recycle them, and only spawn the max that will ever conceivably be on-screen.
 
 ### Take Update Loops Seriously
-* Keep Update() free of anything not related to Input or Camera movement
-* Updating visual elements within FixedUpdate() or similar loops (custom fixed-frame coroutines) will introduce noticable judder. This is because the Fixed Framerate uses a lower refresh rate. This is modifiable so it's equal to the target visual framerate, but since Update varies depending on performance, there is no guarantee FixedUpdate and Update will sync up.
-* Input events which are done outside of Update() will often not register or will have noticable lag, which is :thumbsdown:
+* Keep `Update()` free of anything not related to Input or Camera movement
+* Updating visual elements within `FixedUpdate()` or similar loops (custom fixed-frame coroutines) will introduce noticable judder. This is because the Fixed Framerate uses a lower refresh rate. This is modifiable so it's equal to the target visual framerate, but since Update varies depending on performance, there is no guarantee FixedUpdate and Update will sync up.
+* Input events which are done outside of `Update()` will often not register or will have noticable lag, which is :thumbsdown:
 * Offload as many functions as possible into less-frequently-updated asynchronous loops. For instance, checking for new hardware on the system can be done every 2 seconds instead of every frame 
 
 ## :space_invader: Game Design
 
-As a developer in a small company like Virtro, you'll often have to make calls about design decisions when Steven is away for lunch. The basics of game design are more-or-less as follows:
+As a developer in a small team, you'll often have to make calls about design decisions when your designer is away for lunch, or even just because you're expected to know the answer. The basics of game design are more-or-less as follows:
 
 ### The Basics of Fun
 
@@ -231,18 +236,25 @@ As a developer in a small company like Virtro, you'll often have to make calls a
     * Force the player using psychology to teach themselves how to play the game. It's hard but when it's done right it's phenomenal.
 
 ### XR-Specific
+
+XR, which is a blanket term for VR, AR, MR (Mixed Reality) and other such designations, have some interesting design concerns associated with them, mostly around input and interaction. For those User Experience (UX) people out there, this might be interesting for you.
+
+Here's a list of useful guidelines:
+
 1. Make interactions kinetic! (Give them physicality and weight.)
-    * Have the player directly influence items in the game world or on the phone screen. 
-    * Don't rely on buttons and floating UI.
+    1. Have the player directly influence items in the game world or on the phone screen. 
+    2. Don't rely on buttons and floating UI.
 2. Avoid unmotivated movement, perspective shifts of any sort, and even movement in general if you can.
+    1. Doing something like changing the Field of View in VR is such a no-no that most VR SDKs and APIs totally lock it.
 3. Make intuitive or charming environmental interactions instead of buttons. 
-    * Ex. Toggle the music by having the player shoot a jukebox.
+    1. Ex. Toggle the music by having the player shoot a jukebox.
 
 If you must do movement, try some of the following options:
 
 1. Fade/blink to an indicated location.
-2. **Slow** movement using conventional control schemes. Must be a decent controller.
+2. **Slow** movement using conventional control schemes. Must be a decent controller with accurate directional and analog input.
 3. Constant and linear movement. (See Run Dorothy Run)
 4. Deliberate physical movement.
-    * Using motion controllers to swim or push off objects in space. 
-    * Needs to be tuned to feel physically true-to-life, make sure there are no physics glitches that will make you instantly barf. :mask:
+    1. Using motion controllers to swim or push off objects in space. 
+    2. Needs to be tuned to feel physically true-to-life, make sure there are no physics glitches that will make you instantly barf. :mask:
+    3. One game that does this REALLY well is [Lone Echo](https://youtu.be/zxPuZYMIzuQ?t=3457) which gets around this problem by having the player in zero-grav environments for the entirety of the game. You also see your body if you look down. Super cool.
