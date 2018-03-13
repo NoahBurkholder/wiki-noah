@@ -11,9 +11,7 @@ Git is a version control utility. It serves to give you and your team a huge adv
 
 It is perhaps the single most influential piece of software to the software development industry at large.
 
-We use Git's service alongside the [Gitlab](https://gitlab.com) interface, which you are probably (hopefully) viewing this documentation through at this very moment. Gitlab just serves to host the repository privately, display the repository history in a nice visual way, and help focus your development time on features and issues.
-
-Now, we don't actually use a client for our local Git operations. We simply use the stock Git Bash commandline interface. It's reminiscent of PowerShell or the Command Prompt, but with some nice Git-specific formatting and features.
+One uses Git alongside a service like [GitHub (Free, Public)](https://github.com) or [GitLab (Free, Private)](https://gitlab.com) interface, which you are probably (hopefully) viewing this documentation through at this very moment. Both of them have some pretty nice web features, and GitHub even has its own client. However, I'm not going to use any clients in this wiki because it oversimplifies some of the operations to the point where people struggle to find understanding. We're simply going to use the stock Git Bash commandline interface. It's reminiscent of PowerShell or the Command Prompt, but with some nice Git-specific formatting and features.
 
 ## :baby: Git Basics
 
@@ -23,9 +21,9 @@ A Git 'repository' basically keeps record of your project in every state it has 
 
 #### What is a commit?
 
-A commit is made by a developer and is a deliberate 'saving' of project data. However, instead of remembering the whole file or folder, it merely remembers the **changes** since the **last** commit.
+A commit is made by a developer and is a deliberate 'saving' of project data. However, instead of remembering the whole file or folder, it merely remembers the *changes* since the *last* commit.
 
-This means that if you start from the beginning of the project history (a blank project, aka. the first commit), and add commits one by one, the project will eventually resemble the fully up-to-date version. It also lets you move to any intermediate commit and see the project as it was part-way through development. The implications of this system are huge and insanely powerful.
+This means that if you start from the beginning of the project history (typically an empty project - the first commit), and add commits one by one, the project will eventually resemble the fully up-to-date version. It also lets you move to any intermediate commit and see the project as it was part-way through development. The implications of this system are huge and insanely powerful.
 
 Each commit is given a commit ID, which is a hashed value like `5d3e1d37588915bd58e3b7bcbd09eb47830323c7`, but is often seen forshortened to the first 8 digits, eg. `5d3e1d37`. It uniquely identifies the current state of the project at the time of the commit. 
 
@@ -41,7 +39,7 @@ Structurally, your repository should look like this, although the .git folder is
 
 Together, these two folders enable you to switch to or 'checkout' any previous state of the project, and then manipulate it on an active instance of your project.
 
-A repository can have many 'branches' which are isolated copies of the project which branched off the main branch at a certain point. For instance, a branch always has a `master` branch, which contains the stable, tested changes combined into a master build. We implore you to quickly look at how [Virtro handles branching](#repository-protocol), as there is a system.
+A repository can have many 'branches' which are isolated streams of the project development which branched off the main branch at a certain point. For instance, a branch always has a `master` branch, which contains the stable, tested changes combined into a master build. I implore you to quickly look at how [my company handled branching](#repository-protocol), as there is a decent system to it which your director will LOVE if you use.
 
 #### Committing + Pushing
 
@@ -59,7 +57,7 @@ The second step is to commit the staged changes.
 * Read [how to make adequate commit messages](#scrutinize-your-commit-messages) below
 * All greenlit files (marked green) will be part of this commit. Red files will be ommitted.
 
-And finally since everything which has happened has only happened locally, we want to reflect our changes in the cloud repository.
+And finally since everything which has happened has only happened locally, we want to reflect our changes in the cloud repository, hosted on GitHub or GitLab or equivalent services.
 
 * Type `git push` and hit Enter to reflect these changes online.
 * After it pushes, other developers will be able to access the branch you just pushed to receive your changes.
@@ -81,9 +79,11 @@ Ex. `git checkout -b [new-branch]`. This cleans the source branch and moves all 
 
 ### Scrutinize Your Commit Messages
 
-For funding reasons we need to keep track of and justify our changes through the lens of research and development. We try to obtain research grants, which means, yes:
+There are a few reasons to be absolutely graceful with your commit messages, including but not limited to:
 
-**Our commit messages are indeed scrutinized by a second party.**
+1. Justifying R&D so you can obtain funding/grants.
+2. Repeatability of builds. Knowing which commit to return to to make a carbon-copy of a certain build is invaluable.
+3. Resolving project merge catasrophes by identifying EXACTLY which commit is causing an error.
 
 Here is the example of a **very bad** commit message:
 ```PowerShell
@@ -101,9 +101,9 @@ So, let's try this again. Your commit message should be as close to the followin
 ```PowerShell
 git commit -m "[Name] What > Where > Why - [Build number if build was submitted]"
 ```
-Why do we use our name in the message? Git forces you to login anyways, so why isn't that enough? Well we switch computers constantly and it becomes too tedious and confusing to identify and change the logged in user, and their SSH keys. Adding the text to the commit message just simplifies things greatly.
+Why do we use our name in the message? GitHub and GitLab force you to login anyways, so why isn't that enough? Well we switch computers constantly and it becomes too tedious and confusing to identify and change the logged in user, and their [SSH keys](#ssh-keys). Adding the text to the commit message just simplifies things greatly.
 
-Additionally, if this was a build that was submitted to a QA process, or was put live to the public, we want to make mention of the version number, and where the build was sent. In the future, it is vital that other programmers can locate and revert to your particular commit in order to carbon-copy a release build.
+Additionally, if this was a build that was submitted to a [QA process](qa-processes) or was put live to the public, we want to make mention of the version number, and where the build was sent. In the future, it is vital that other programmers can locate and revert to your particular commit in order to carbon-copy a release build.
 
 Examples:
 
@@ -112,16 +112,16 @@ git commit -m "[Noah] Added a button to the options menu to delete save-data so 
 git commit -m "[Tony] Integrated the LocalizationManager module with a new database so there are more supported langauges in the game. - Build v1.3.7 for Oculus submission."
 git commit -m "[Meri] Removed movement from the player prefab to research player behaviour in a static environment. Build v0.2.7 for Playstation user testing."
 ```
+Do you have to follow this outlined protocol for every project? No, but in a professional environment working on an official product, this is a huge skill which multiple specialists have explained to me 'is important in the biz.'
 
 ### Merging
 
-The .gitignore file that should be packed into the project by default will take care of the nasty Unity related merge problems that you ideally should never have to encounter. **Trust us, you really want this.** 
+The [.gitignore](.gitignore) file that should be packed into the Unity project folder will take care of the nasty Unity related merge problems that you ideally should never have to encounter. **Trust me, you'll really want this.** The alternative is adding thousands of temporary files to your repository which would normally be deleted.
 
-(When you setup your repo open up the .gitignore and verify that it starts with `### Unity ###`, if it doesn't, replace the .gitignore file in the repo with the one from Ico).
+(When you setup your repo open up the .gitignore and verify that it starts with `### Unity ###`, if it doesn't, replace the .gitignore file in your repository with the one in mine.)
 
 However this doesn't make merge 100% clean, as [every file in your unity project is given a .meta file to track its references and other good stuff](#referencing-gameobjects-and-components) within the project.  
-Typically you DO want to commit meta data (.meta files) along side any changes you make to the project files, so that no data or references are lost between machines.  
-If you don't you may notice Inspector panel references disappearing.
+Typically you DO want to commit meta data (.meta files) along side any changes you make to the project files, so that no data or references are lost between machines. This is because the .meta files contain all the [reference IDs](development.md#reference-ids) important to linking Unity components together. Unity will automatically regenerate totally new IDs if it can't find one for a particular file. If you don't commit your .meta files, you may notice Inspector panel references disappearing.
 
 Do the following to have a nice successful merge:
 
@@ -146,32 +146,32 @@ This ensures that `master` only ever contains good working versions of the proje
 
 ### Repository Protocol
 
-We try to use a standardized setup in our projects - most notably two special branches:
+I try to use a standardized setup in our projects - characterized by its two special branches:
 
 #### Master branch
-* The repository will by default have a master branch where **NO WORK SHOULD EVER BE DONE EVER**
-* The master branch will only be pushed to with version of the project which are ready for release, these pushes will come from the 'develop' branch
+* The repository will by default have a master branch where *no work should ever be done.* I'm a bad boy so in the wiki-noah repo I just edit directly on master, but you won't want to do this in a field environment.
+* The master branch will only be pushed to with version of the project which are ready for release, these pushes will come from the 'develop' branch.
 
 #### Develop branch
-* You will need to create this develop branch before you start working on the project
-* Once you have the repo cloned on you machine, open gitbash in the project folder which has the .git folder (not inside the .git folder itself)
-* Type `git checkout -b develop` and hit enter to create the develop branch off of master
-* Type `git push -u origin master` and hit enter which allows your local work to be pushed back to the online repo
+* You will need to create this develop branch before you start working on the project.
+* Once you have the repo cloned on you machine, open Git Bash in the project folder which has the .git folder. `Right Click > Git Bash Here`. Don't do this INSIDE your .git folder because it won't recognize this as a repository. 
+* Type `git checkout -b develop` and hit enter to create the develop branch off of master.
+* Type `git push -u origin master` and hit enter which allows your local work to be pushed back to the online repo.
 
 
 ### Feature/Issue Branching Methodology
 
-We try to use Feature Branching or Issue Branching, which are terms used to describe opening branches for each individual feature or issue. Those branches are then merged to the `development branch`, where any conflicts and compatibilities are reconciled.
+I try to use Feature Branching or Issue Branching, which are terms used to describe opening branches for each individual feature or issue. Those branches are then merged to the `development branch`, where any conflicts and compatibilities are reconciled.
 Issue branches should be branched off of the `develop` branch using the following procedure:
 
-* From the boards page of gitlab `gitlab.com/virtro/[projectName]/boards` right-click on the issue title that requires a new branch and open in a new tab
-* Click the drop down arrow from beside the 'Create Merge Request' button
-* Instead of 'Create Merge Request Branch', select 'Create Branch'
-* In the 'Branch Name' field give a forshortened description of the issue (1 to 3 words), with words separated by dashes, all lower case (eg. 177-new-leaderboard). The number is the associated issue ticket number which found on Gitlab.
-* In the 'Source' field, type `develop`
-* You can now use `git fetch` to discover the new branch and then `git checkout [branchName]` the new branch to work on it
-
-Once an issue is solved or a feature completed, the branch should be merged back into `master`. ([See Merging](#merging)).
+* On your Git host of choice - GitHub or GitLab - there should be an "Issues" section attached to your repo.
+* Access the Issues tab and create a new issue. Once completed it should have a number associated with it.
+* You can now create your new branch. GitLab even lets you do this directly from GitLab and your Issue ticket.
+* Give your branch a name corrosponding to the issue or feature you're implementing. Ex. `this-wiki-sucks` formatted as in the example.
+* If you want to get super fancy and professional, add the issue number to the front, i.e. `1-this-wiki-sucks`. Again, GitLab does this by default from the web interface.
+* Begin work on the branch as per normal.
+* When the work is finished, merge back into the `development` branch.
+* Finally, if the development branch is clean, stable, and ready for a submission, merge with `master`.
 
 ### Resolving Conflicts Manually
 
@@ -198,7 +198,9 @@ dialogue = "I like to eat bananas ravenously.";
 
 Once you have selected which parts of the code you want to keep from BOTH branches, and you have reconciled any differences they may have had, you can go back to git bash and type `git add <filepath>` and hit Enter to mark this file resolved.
 
-* When you have vetted every file which threw a conflict, and marked them all green, tested the game successfully with no errors, and are confident it's in a good place, make a quick commit detailing your conflict resolution, and push.
+When you have vetted every file which threw a conflict, and marked them all green, tested the game successfully with no errors, and are confident it's in a good place, make a quick commit detailing your conflict resolution, and push.
+
+Boom. Doing this right is a monumental task, and can often save hours of re-development.
 
 
 
