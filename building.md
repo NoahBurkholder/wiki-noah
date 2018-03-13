@@ -4,13 +4,16 @@
 
 ### Version Number Rules
 
-We use the format ```A:B:C``` where A is the 'Major Release' number, B is the "Minor Release' number and C is the 'Build' number  
-A will start at 0, and will be incremented by 1 every time you have a build which is ready to be sent off to the store  
-B will start at 0, and will be incremented by 1 every time you reach a milestone in the development process (ie a big new feature is fully implemeneted, or a patch for an existing release is uploaded to the store)  
-C will start at 1, and will be incremented by 1 every time you build (after #2 rolls over, this will start at 0)
-NOTE : the build number can never exceed 99 (you'll see why below) so if it ever gets that high, roll over the Minor Release number
+You'll typically want to use the format ```A:B:C``` where A is the 'Major Release' number, B is the "Minor Release' number and C is the 'Build' number.
 
-So some example Versions are : 
+* A will start at 0, and will be incremented by 1 every time you have a build which is ready to be sent off to the store.
+* B will start at 0, and will be incremented by 1 every time you reach a milestone in the development process (ie a big new feature is fully implemeneted, or a patch for an existing release is uploaded to the store).
+* C will start at 1, and will be incremented by 1 every time you build (after #2 rolls over, this will start at 0)
+
+Note: The build number can never exceed 99 (you'll see why below) so if it ever gets that high, just roll over the Minor Release number.
+
+So some example versions are:
+
 ```
 0.0.1 - First ever build
 0.1.0 - First build which contains all the core gameplay
@@ -22,8 +25,10 @@ So some example Versions are :
 
 ### Bundle Version Code Rules
 
-All Bundle Version Codes are just integers for computers to be able to check quickly which is higher, and so which should be installed (higher bundle code = newer build file)  
+All Bundle Version Codes are just integers for computers to be able to check quickly which is higher, and so which should be installed (higher bundle code = newer build file).
+
 We get our Bundle Version Code number by manipulating the Version Number following the rule below:
+
 ```
 (Major Release * 10,000) + (Minor Release * 100) + Build Number
 ```
@@ -52,13 +57,14 @@ Hopefully your Tetris clone is back down to 2Mb. (Or it would be if an empty Uni
 
 ## Building for Android
 
-Your inital development builds can be done without any extra steps, but once you want to release the game you'll need a keystore and key  
-We have a keystore called 'VirtroEntertainment.keystore' on Ico, and it's ***INSANELY IMPORTANT*** that we don't lose it because it's the only thing that lets us update games that are in the play store!  
+Your inital development builds can be done without any extra steps, but once you want to release the game you'll need a keystore and key. [To attain these follow this guide.](http://www.technoreply.com/creating-an-android-keystore-on-unity/)
 
-* When you build for release go to 'Publishing Settings' in the player settings panel  
-* Check 'Use existing keystore' and then click 'browse for keystore'
-* When you find and select it, type *the* password for it
-* Under the 'Key' heading select 'Create new key' from the 'Alias' dropdown and create a new key within that dialog
+Then once you have your keystore set up, do the following:
+
+1. When you build for release go to 'Publishing Settings' in the Player Settings panel  
+2. Check 'Use existing keystore' and then click 'browse for keystore'.
+3. When you find and select it, type *the password* for it.
+4. Under the 'Key' heading select 'Create new key' from the 'Alias' dropdown and create a new key within that dialog.
 
 ### Android Builds Require OSIG Files
 
@@ -72,17 +78,14 @@ Once you've made your OSIG files, the location for these files must be the `Asse
 
 ### Identification and Package Names
 
-Under the 'Other Settings' section fo the player settings panel you can find the 'Package Name' field.  
-This should be: ```ca.virto.nameOfGame```
+Under the 'Other Settings' section fo the player settings panel you can find the 'Package Name' field. This should look roughly like: `ca.company.nameofgame` or `com.company.nameofgame` depending on if you want to be Canadian. Changing this will functionally change the current app ID, so you'll be installing a second app on the phone instead of merely updating it.
 
 ### Version Numbers and Bundle Versions Codes
 
 Under the 'Other Settings' section of the player settings panel, you can find the 'Version' and 'Bundle Version Code' fields.  
 These help keep track of which builds are most recent, and so no two builds should ever have the same ones.  
-ie. every time you're about to build, increment them!  
+ie. every time you're about to build, increment them!
 
-The Versions numbers are the human readable numbers which track versions for *us*.  
-The bundle version codes however are for machines.  
-They tell whether the build file their trying to install should overwrite a version of the game they already have installed,  
+The Versions numbers are the human readable numbers which track versions for *us*. The bundle version codes however are for machines. They tell whether the build file their trying to install should overwrite a version of the game they already have installed,  
 or if this is an older version of the game which they should ignore.
 
