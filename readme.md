@@ -24,9 +24,9 @@ The truth is even the most beginner programmer is only a few months hard work fr
 
 > Everyone is struggling to push their own boundaries, and they're only struggling because nobody teaches anyone else shit.
 
-[- Me, I said this.](http://noahburkholder.com)
+[- Me, I said this.](#getting-started)
 
-Now, by working as a game programmer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
+Now, by working as a game developer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
 
 I recommend taking the time to learn [good protocol surrounding Git](git.md#repository-protocol), as well as refresh yourself on [the basics](git.md#-git-basics). This is especially important since I'm going to talk about Git using the commandline interface. There is no guess-work involved, and there aren't any confirmation boxes saying *"ARE YOU SURE?"*. This is mostly because it's how I learnt Git, but it comes with the added benefit of feeling like a hacker-wiz, and you also gain a better understanding of the underlying operations simply because each command is deliberate by nature of the command prompt.
 
@@ -97,4 +97,4 @@ I'd like to thank Google, as well as the following individuals:
 
 - [Tony Pacheco](https://www.linkedin.com/in/tony-pacheco/) - Who helped me write up the initial Wiki materials you're reading, especially around Git Methodology and Building.
 
-As well as [Meri](https://www.linkedin.com/in/meri-morganov-43818a21/), Stephanie, [Andy](https://www.linkedin.com/in/hao-tang-90947413b/), [Helen](https://www.linkedin.com/in/helen-terry/), and [Bryan](https://www.linkedin.com/in/bryanshen/).
+As well as [Meri](https://www.linkedin.com/in/meri-morganov-43818a21/), Stephanie, [Andy](https://www.linkedin.com/in/hao-tang-90947413b/), [Helen](https://www.linkedin.com/in/helen-terry/), and [Bryan](https://www.linkedin.com/in/bryanshen/) for being my first partners in crime.
