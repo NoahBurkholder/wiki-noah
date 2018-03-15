@@ -144,3 +144,17 @@ There are many ways to do this but here is a basic and effective implementation.
 * Create a ObjectType [enumerator](development.md#enumerators) with options for each type of poolable object.
 * Give the class two methods, `public GameObject Grab(ObjectType type)` and `public void Recycle(ObjectType type, GameObject objectToRecycle)`, which take and give objects to the pool.
 * Call `PoolManager.Grab(ObjectType.Coin)` or `PoolManager.Recycle(ObjectType.Banana, bananaGameObject)`.
+
+### Level of Detail (LOD) (Slight CPU Hit, Greatly Helps GPU)
+
+If your game world is spatially large, and especially if you have complex objects, you should consider investing time in developing LOD levels for your textures and your models.
+
+To do this, you attach an LOD Group object to your GameObject in question, and provide models each with number postfixes as so:
+
+`ModelName_LOD0`, 
+`ModelName_LOD1`, 
+`ModelName_LOD2`
+
+A detail level of 0 is your most high-quality model, and each one in addition is a lower quality. You can provide independent biases towards particular LOD levels in the Quality Settings window.
+
+For textures you need to use a method called 'mipmapping' which is essentially a texture with downscaled variants. This can be introduced to your LOD in addition to model-swapping in order to free up texture memory.
