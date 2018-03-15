@@ -46,9 +46,9 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 # Table of Contents
 
-## Git
+## :file_folder: Git
 
-1. [Git Basics](git.md#-git-basics)
+1. [:baby: Git Basics](git.md#-git-basics)
     1. [How does it work?](git.md#how-does-it-work)
     2. [What is a commit?](git.md#what-is-a-commit)
     3. [Okay, so what does the repository look like on my computer?](git.md#okay-so-what-does-the-repository-look-like-on-my-computer)
@@ -57,7 +57,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
     6. [Checkout](git.md#checkout)
     7. [Scrutinize Your Commit Messages](git.md#scrutinize-your-commit-messages)
     8. [Merging](git.md#merging)
-2. [Advanced Git](git.md#-advanced-git)
+2. [:japanese_ogre: Advanced Git](git.md#-advanced-git)
     1. [Repository Protocol](git.md#respository-protocol)
     2. [Feature/Issue Branching Methodology](git.md#featureissue-branching-methodology)
     3. [Resolving Conflicts Manually](git.md#resolving-conflicts-manually)
@@ -65,34 +65,34 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 ## Development
 
-1. [Code](development.md#-code)
+1. [:coffee: Code](development.md#-code)
     1. [Singleton Managers](development.md#singleton-managers)
     2. [Coroutines](development.md#coroutines)
     3. [Enumerators](development.md#enumerators)
-2. [Unity](development.md#-unity)
+2. [:game_die: Unity](development.md#-unity)
     1. [Unity Timesavers](development.md#unity-timesavers)
     2. [Reference IDs](development.md#reference-ids)
     3. [Know the Costs of Unity Methods](development.md#know-the-costs-of-unity-methods)
     4. [Take Update Loops Seriously](development.md#take-update-loops-seriously)
-3. [Game Design](development.md#game-design)
+3. [:space_invader: Game Design](development.md#game-design)
     1. [The Basics of Fun](development.md#the-basics-of-fun)
     2. [XR-Specific](development.md#xr-specific)
-4. [Building](building.md)
+4. [:factory: Building](building.md)
     1. [The Basics](building.md#the-basics)
     2. [The Output](building.md#the-output)
     3. [Building for Android](building.md#building-for-android)
-5. [Optimization](optimization.md)
+5. [:chart_with_upwards_trend: Optimization](optimization.md)
     1. [The Basics](optimization.md#the-basics)
     2. [Noah's Hit-List](optimization.md#noahs-hit-list)
 
 
 
-# Authors
+# :wave: Authors
 
 [**Noah Burkholder**](https://www.linkedin.com/in/nburkhol) - [http://noahburkholder.com](http://noahburkholder.com)  
 [Your Name Here]
 
-## Acknowledgments
+## :pray: Acknowledgments
 I'd like to thank Google, as well as the following individuals:
 
 - [Tony Pacheco](https://www.linkedin.com/in/tony-pacheco/) - Who helped me write up the initial Wiki materials you're reading, especially around Git Methodology and Building.
