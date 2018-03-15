@@ -63,7 +63,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
     3. [Resolving Conflicts Manually](git.md#resolving-conflicts-manually)
 
 
-## Development
+## :wrench: Development
 
 1. [:coffee: Code](development.md#-code)
     1. [Singleton Managers](development.md#singleton-managers)
