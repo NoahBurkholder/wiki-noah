@@ -1,14 +1,14 @@
-# :milky_way: Wiki Noah
+# :tangerine: Wiki Noah
 
-## Version 1.4.2 (Milky Way) - March 13th, 2018
+## Version 1.4.3 (Tangerine) - March 14th, 2018
 
-# Ok, what the fuck is this, Noah?
+# :question: Ok, what the fuck is this, Noah?
 
 So at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
 
 I showed it to Minh when I got home one day and he was super stoked about everything that was on here and wanted me to send him a copy (Hi Minh!). Figured I'd basically just make this public to help out anyone who might be interested, or at least give an interesting read about the kind of work I'm doing.
 
-# Welcome
+# :wave: Welcome
 
 Welcome to my Wiki repository to which you are reading. I will be updating this relatively often with new stuff I learn through practical work at my job, as well as things I've learnt from the various senior developers I talk to at game dev meetups.
 
@@ -44,7 +44,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 2. [Scrutinize Your Commit Messages](git.md#scrutinize-your-commit-messages)
 3. [Unity Best Practices](development.md#best-practices)
 
-# Table of Contents
+# :bookmark_tabs: Table of Contents
 
 ## :file_folder: Git
 
@@ -87,7 +87,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 
 
-# :wave: Authors
+# :black_nib: Authors
 
 [**Noah Burkholder**](https://www.linkedin.com/in/nburkhol) - [http://noahburkholder.com](http://noahburkholder.com)  
 [Your Name Here]
