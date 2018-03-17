@@ -1,6 +1,6 @@
-# :tangerine: Wiki Noah
+# :sparkling_heart: Wiki Noah
 
-## Version 1.4.3 (Tangerine) - March 14th, 2018
+## Version 1.4.4 (Sparkling Heart) - March 14th, 2018
 
 # :question: Ok, what the fuck is this, Noah?
 
