@@ -130,7 +130,7 @@ One example of this would be disabling animations which are playing in the far d
 
 You'll want to be most careful with custum culling. Sometimes you're just not able to create a satisfactory tradeoff, and the time investment won't be worth it. I recommend really gathering some evidence from the profiler which confirms a particular thing (animation or otherwise) is taking up a significant proportion of the frame. From there, develop as light-weight a solution as possible.
 
-### Object Pooling
+### Object Pooling (Hurts Memory Slightly, Greatly Helps CPU)
 
 Two of the most common Unity methods are incredibly expensive, namely Instantiate(GameObject) and Destroy(GameObject). Instantiation is terrible in general because it seems to hitch scripts no matter what, even if in an asynchronous loop. I haven't been able to get past this, and it seems to be in black-box territory.
 
