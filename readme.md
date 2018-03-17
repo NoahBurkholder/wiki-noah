@@ -4,7 +4,7 @@
 
 # :question: Ok, what the fuck is this, Noah?
 
-<details><summary> In short, this is a <b>Practical Resource For New Game Developers</b>. It is also a <b>Case Study for Students Entering Game Dev</b>, a <b>Reminder to Myself That What I Do Is SUPER COOL</b>, and hopefully a <b>Place to Share Passions and Expertise</b>. (Click to expand.)</summary>
+<details><summary> In short, this is a <b>Practical Resource For New Game Developers</b>. It is also a <b>Case Study for Students Entering Game Dev</b>, a <b>Reminder to Myself That What I Do Is SUPER COOL</b>, and hopefully a <b>Place to Share Passions and Expertise</b>. (Click to expand.)</summary><br>
 
 Basically, at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
 
@@ -17,7 +17,9 @@ Welcome to my Wiki repository to which you are reading. I will be updating this 
 
 ### Icebreaking, or How I Learned to Stop Worrying and Love the Game
 
-<details><summary>Okay. <i>Don't freak out is my first advice.</i> (Click to expand.)</summary> The most unanimous feeling in all of game development is crippling imposter syndrome. 
+<details><summary>Okay. <i>Don't freak out is my first advice.</i> (Click to expand.)</summary><br>
+
+The most unanimous feeling in all of game development is crippling imposter syndrome. 
     
 I have literally never heard someone in Game Development say they don't feel feelings of inadequacy. It's almost just assumed *of and by everyone.* So much so, that developers will often talk to you about how they're fighting their feelings of inadequacy *before talking to you about their game.* It's kinda just a good icebreaker, honestly. Guaranteed common ground, and one of the many reasons game developers [have eachother's backs.](industry.md#community)
 
@@ -32,21 +34,46 @@ The truth is even the most beginner programmer is only a few months hard work fr
 [- Me, I said this.](#getting-started)
 </details><br>
 
-<details><summary>Now, by working as a game developer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. (Click to expand.)</summary> **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
+<details><summary>Now, by working as a game developer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. (Click to expand.)</summary><br> 
+    
+**For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
 
 I recommend taking the time to learn [good protocol surrounding Git](git.md#repository-protocol), as well as refresh yourself on [the basics](git.md#-git-basics). This is especially important since I'm going to talk about Git using the commandline interface. There is no guess-work involved, and there aren't any confirmation boxes saying *"ARE YOU SURE?"*. This is mostly because it's how I learnt Git, but it comes with the added benefit of feeling like a hacker-wiz, and you also gain a better understanding of the underlying operations simply because each command is deliberate by nature of the command prompt.
 
 Additionally, on this Wiki there is a boatload of fantastic and less-than-obvious tips, tricks and tools relating to [Unity](development.md#-unity) and [C#](development.md#-code) which I have poured my souls (plural) into.
 </details><br>
 
-<details><summary>If you're relatively new to the game development field this Wiki is for you. If you went to school with me in SIAT then this Wiki is for you. (Click to expand.)</summary> It doesn't teach you the basics of programming (yet), but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too.
+<details><summary>If you're relatively new to the game development field this Wiki is for you. If you went to school with me in SIAT then this Wiki is for you. (Click to expand.)</summary><br>
+
+It doesn't teach you the basics of programming (yet), but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too.
 
 Frankly, since I wrote this for fellow coworkers in software development positions, it skips a lot of the basics of coding, and that is something I hope to remedy in the future when I have more time. Let me know what concepts in particular - fundamental or otherwise - you'd like covered and I'll prioritize those first.
 </details><br>
 
-<details><summary>I have no plans of neglecting this wiki in the future, and I want this resource to grow based on <b>your</b> experiences and expertise too. If you have anything you'd like to add to this documentation, I'll add you as an author! (Click to expand.)</summary>
+<details><summary>I have no plans of neglecting this wiki in the future, and I want this resource to grow based on <b>your</b> experiences and expertise too. If you have anything you'd like to add to this documentation, I'll add you as an author! (Click to expand.)</summary><br>
+    
+In general I'll only accept contributions if:
 
-</details>
+1. I've met you in real life.
+2. You work in a creative field.
+3. You're not an asshole.
+
+But I think I can find a place for just about any topics, especially if they pertain to all creatives, and especially if the content is game-applicable. That said I don't want to limit this resource exclusively to games when so much of it is transferrable to other mediums.
+
+If you're interested in contributing there are a few ways to do that, and I'm open to all of them:
+
+1. Literally teach me something.
+    1. I'll write my interpretation down for you!
+    2. You'll get acknowledgement and thanks on the wiki!
+2. If you're not comfortable using [Git](git.md) yet, just send me plain text!
+    1. Super easy.
+    2. I'll add you as an author!
+3. Make a pull request!
+    1. You get full control of the markdown (.md) files!
+    2. Your name will be etched into the commit history and Contributors section!
+    3. You're an author now too!
+
+</details><br>
 
 ### My Favourite Topics
 
