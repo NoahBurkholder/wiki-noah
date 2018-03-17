@@ -83,8 +83,6 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 # :bookmark_tabs: Table of Contents
 
-In order of execution.
-
 ## :truck: Logistics
 
 ### [:moneybag: The Industry](industry.md) (5% Complete)
