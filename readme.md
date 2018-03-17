@@ -88,8 +88,20 @@ In order of execution.
 
 ### :dragon: Shaders
 1. [:ant: CG](shaders.md)
-    1. [Coming Soon](shaders.md)
-
+    1. [What is this? A Language For Ants?](shaders.md#ants)
+    2. [CG Structure](shaders.md#cg-structure)
+        1. [Deferred vs. Forward Rendering](shaders.md#deferred-vs-forward)
+        2. [Papa's Proper Use of Properties](shaders.md#properties)
+        3. [Subshader? I Barely Knew Her!](shaders.md#subshaders)
+        4. [Falling Back](shaders.md#falling-back)
+    3. [Shading](shaders.md#shading)
+        1. [NdotL](shaders.md#ndotl)
+        2. [Light Processing](shaders.md#light-processing)
+        3. [LUTs](shaders.md#luts)
+        4. [Viewing Angles](shaders.md#viewing-angles)
+        2. god there's gonna be a lot in here eventually
+    4. [Case Studies](shaders.md#case-studies)
+        1. [Cel Shading](shaders.md#cel-shading)
 
 ### :game_die: Unity
 1. [:game_die: Unity](unity.md#-unity)
