@@ -17,7 +17,7 @@ Welcome to my Wiki repository to which you are reading. I will be updating this 
 
 ### Icebreaking, or How I Learned to Stop Worrying and Love the Game
 
-<details><summary>Okay. <i>Don't freak out* is my first advice.</i> (Click to expand.)</summary> The most unanimous feeling in all of game development is crippling imposter syndrome. 
+<details><summary>Okay. <i>Don't freak out is my first advice.</i> (Click to expand.)</summary> The most unanimous feeling in all of game development is crippling imposter syndrome. 
     
 I have literally never heard someone in Game Development say they don't feel feelings of inadequacy. It's almost just assumed *of and by everyone.* So much so, that developers will often talk to you about how they're fighting their feelings of inadequacy *before talking to you about their game.* It's kinda just a good icebreaker, honestly. Guaranteed common ground, and one of the many reasons game developers [have eachother's backs.](industry.md#community)
 
