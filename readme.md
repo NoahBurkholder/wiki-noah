@@ -71,11 +71,11 @@ If you're interested in contributing there are a few ways to do that, and I'm op
     3. You're an author now too!
     
 Thanks in advance, and I hope you'll join me in this little project.
-</details><br>
+</details>
 
 ### My Favourite Topics
 
-Okay. Now let's dive in. I'm going to point to a few of my favourite sections which you won't necessarily be stoked about or even understand, but maybe there's a spark in there. Maybe you'll understand something.
+Okay. Now let's dive in. I'm going to point to a few of my favourite sections which you won't necessarily be stoked about or even understand, but maybe there's a spark in there. There's a good chance it'll expand your understanding, even if most of it is putting the cart before the horse.
 
 1. [The Basics of Fun](development.md#the-basics-of-fun)
 2. [Scrutinize Your Commit Messages](git.md#scrutinize-your-commit-messages)
