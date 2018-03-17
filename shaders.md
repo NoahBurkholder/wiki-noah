@@ -1,6 +1,6 @@
 # 🐉 Shaders
 
-Shaders are perhaps my favourite thing to code, and also among the least approachable things to code. Their effects are seen far and wide in games, and a good shader can be a thing of beauty.
+Shaders are perhaps my favourite thing to code, and also among the least approachable things to code. I know such a tiny amount of shader code and yet it's still one of my favourite things. Their effects are seen far and wide in games, and a good shader can be a thing of beauty.
 
 ![Stanford Dragon 1](imgs/stanforddragon1.png) ![Stanford Dragon 2](imgs/stanforddragon2.jpg) ![Stanford Dragon 3](imgs/stanforddragon3.PNG)
 
