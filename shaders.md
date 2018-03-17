@@ -2,11 +2,13 @@
 
 Shaders are perhaps my favourite thing to code, and also among the least approachable things to code. Their effects are seen far and wide in games, and a good shader can be a thing of beauty.
 
+![Stanford Dragon 1](imgs/stanforddragon.png) ![Stanford Dragon 2](imgs/stanforddragon2.jpg) ![Stanford Dragon 3](imgs/stanforddragon3.png)
+
 Shaders are used to give materiality to objects, style to a project, post-processing, and any multitude of visual effects.
 
 ## 🐜 CG
 
-(Coming Soon) Using CG to write shader code compatible with Unity.
+(Coming Soon) What is NVidia's CG language and why is it worth learning?
 
 ## What is this? A Language For Ants?
 
