@@ -6,9 +6,11 @@ You don't need to know much math. You don't need to know crazy algorithms. You d
 
 The aim of this page isn't to teach the basics. This is relatively advanced techniques for making highly efficient code. **If you can use these, you can already compete with the majority of game developer professionals I know.**
 
-## C#
+## :notes: C#
 
 This is what every game programmer I know unquestionably uses. Even if they have other favourite languages, this is the standard.
+
+Writing in C# in Unity is a lot like writing music with musical scores. It is a technical expression of typically pretty creative expressions. It is a toolset which looks and operates objectively, but is used (at least in our context) to solve subjective things.
 
 It's basically Java but a little less confusingly arbitrary and noisy. It also is developed by Microsoft so it has amazing integration with Windows. Very easy to interface with the OS.
 
