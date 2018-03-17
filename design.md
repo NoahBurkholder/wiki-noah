@@ -1,211 +1,20 @@
-# :wrench: Development
+# :triangular_ruler: Design
 
 Time to make a game!
 
 Here's some tips for doing that.
 
-## :coffee: Code
+## :seedling: Game Ethics
 
-### Singleton Managers
-Any script called [Blank]Manager - ex. GameManager, PlayerManager, LevelManager, AudioManager - should probably use this convenient and safe setup. It allows you to access an instance from anywhere in the project by ensuring that a static reference to a singleton exists at all times.
+As with any creative medium, I feel it's important to be cognisant of the ethics of the product we develop. Unlike many other mediums, games have the addition of interaction, which opens a floodgate of concerns, especially relating to accessibility, and player psychology. However, I thought it would be good to talk a little bit about my experiences with AI, and some thinking I've done on the subject.
 
-A singleton pattern is a code pattern designed to ensure only one instance and always one instance of the script are available. These scripts are designed from the ground up to self-police.
+### Violence as a Tool, Violence as a Crutch
 
-```c#
-public class GameManager : MonoBehaviour
-{
-    private static GameManager _instance;
+### Representation, Identity, and Puppeteering
 
-    public static GameManager instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = (GameManager)FindObjectOfType(typeof(GameManager));
+### Exploitation, Whales, and You
 
-                if (_instance == null)
-                {
-                    Debug.LogError("An instance of " + typeof(GameManager) +
-                        " is needed in the scene, but there is none.");
-                }
-            }
-
-            return _instance;
-        }
-    }
-
-    public void Awake()
-    {
-
-        // Check if instance already exists
-        if (_instance == null)
-        {
-            // If not, set instance to this
-            _instance = this;
-        }
-        // If instance already exists and it's not this:
-        else if (_instance != this)
-        {
-            // Then destroy this. This enforces our singleton pattern.
-            Destroy(gameObject);
-        }
-    }
-}
-```
-
-### Coroutines
-
-Coroutines are your new best friend. They are the polite cousin of the Update loops bundled with Unity.
-
-Coroutines can patiently wait durations of time, and will function asynchronously - kinda like a pseudo thread - so that if they get held up, the rest of your code will continue to fly by. They are perfect for sequencing events in cutscenes, or doing large tasks over a dilute period of time.
-
-You can make a custom loop which only updates every 20 seconds if you wanted to, or simply mimic the Update loop without hurting the buttery smoothness of your Camera transforms thanks to asynchronicity! :100:
-
-As you'll discover, using `yield return` is one of coroutines' most powerful tools for sequencing and looping. You'll be using lots of `yield return WaitForSeconds(float)` so it's good to optimize them nicely using the following resource saver:  
-
-```c#
-// Create a reference to a single public Wait() object for each length of wait time you'll need. 
-// Store this refernce in the GameManager script. Accessible through GameManager.instance.myWait.
-public WaitForSeconds myWait = new WaitForSeconds(1f);
-
-// Coroutines throughout your project you can call
-yield return GameManager.instance.myWait;
-// To have the coroutine wait one second.
-```
-* This will cut down on memory and computation of having multiple parallel "WaitFor's", helping optimization.
-* Caching these yields works with `WaitForSeconds(float)`, `WaitForFixedUpdate()` (which waits for the Physics loop Fixed frame), and `WaitForNextFrame()` (which waits for the next normal `Update()` frame).
-
-### Enumerators
-
-Forget what we said about coroutines, Enums are going to be your new **bester** friends.
-
-They're essentially just numbers with names, which means you can make checks more clear and easy to understand. *Computationally they're just integers* (very light), but to your eyes they have nice word-names! (Wow!)
-
-This means in the future you can avoid checking if an object exists on a layer with `LayerMask.NameToLayer("GrossString")`. This fucking method compares a complex data type with no regard for our performance. Don't use strings for IDing things ever again! use Enums instead! They're just integers! But they're kinda not!
-
-Here's an example of a perfect utilization - keeping track of the indices of your layers.
-
-Let's start with a BAD piece of code. I've commented the badness so you know how bad it is.
-
-```c#
-if (gameObject.layer == 10) // What is this???!!!! Might've been clear when you wrote it, but not after 3 months.
-{
-    // Do something but terribly.
-}
-```
-Yikes. So I'm glad we're done with that code. I don't know what that 10 is supposed to be. That could be any layer, and honestly I'm too lazy to check the Layer list in Unity.
-
-Let's use our **enumerator** for this next bit. First let's define it:
-
-```c#
-public enum Layer
-{
-    Default = 0,
-    UI = 5,
-    Projectile = 8,
-    Enemies = 9,
-    Environment = 10,
-    Gun = 12
-}
-```
-And now instead of that BAD chunk of code, we make this GOOD chunk of code.
-
-```c#
-if (gameObject.layer == (int)Layer.Environment) // Oh, it's the Environment layer. Remember to cast to int! (Visual Studio will remind you.)
-{
-    // Do something but sexy.
-}
-```
-
-It also has the added bonus that if your layer indexes get shifted, you only have to modify the Enumerator's definitions, and not every occurance throughout the project. Yay! You can even rename a given layer to something else and the index will stay the same. *If you did this using strings you'd have to change every occurance of the string. (!)*
-
-### Worthwhile Resources
-
-* [Polymorphism](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/polymorphism)  
-* [Delegates](https://unity3d.com/learn/tutorials/topics/scripting/delegates)  
-* [Asynchronus tasks + Coroutines](https://docs.unity3d.com/Manual/Coroutines.html)
-
-## :game_die: Unity
-
-### Unity Timesavers
-* Use Shift + Spacebar to quickly toggle fullscreening of any Unity window/panel.
-* If you want to keep one GameObject or Asset active in the inspector while being able to select other objects in the hierarchy, press the tiny dark grey padlock icon at the extreme top-right of the Inspector panel.
-
-
-### Reference IDs
-
-There are a couple ways to keep track of objects and scripts. They both piggyback on one of Unity's **most powerful** features - reference IDs. These are basically hashed codes (a bunch of gibberish) like `bd966ac2849d6f3488fa20b0ae654ce5` which Unity has a look-up database keeping track of where they are in the hierarchy. In essence Unity has a big spreadsheet with every known reference ID, and where they are at all times. Each file within the Assets folder has an associated .meta file.
-
-The two most-used ways of finding references are as follows:
-
-1. Drag-and-dropping references into public variables in the inspector before runtime.
-2. Getting references in runtime through code using `GetComponent<Component>`, `GameObject.Find("Object")` and other such methods.
-
-Basically, directly dragging references into the inspector saves on computation in run-time, making loads faster, but it also risks us losing our references from a metadata issue - Git related or otherwise. It's essentially entrusting prefabs that they will not forget all its reference IDs, and entrusting each .meta file in the project not to change, or at least to 'ping' Unity's database to let them know they're changing their number. Unity is usually pretty good about this, and a changed .meta file will typically go *"Hey I got a new phone my number is 6e2559ca1e833764ebdbdfebcc9ee23c."*
-
-The alternative to pre-referenced references is using `GetComponent<Component>()` or `GameObject.Find()`, but the downside is that this can accumulate into major performance issues in loadtime and runtime. Depending on the number of scripts and objects being located, it can be an invisible overhead, or a game-shattering hangup/stutter.
-
-**My solution** is to use a little Editor-side scripting to get the best of both worlds. It goes as follows:
-
-1. Make a public reference in your class (MyClass), using the drag-and-drop in the inspector. We will rely on Unity's reference ID system for the high performance it provides.
-2. Make a new script and class (MyPopulator) with the tag `[ExecuteInEditMode]` before the class block.
-2. In MyPopulator, we will put `#if UNITY_EDITOR`to start a block of editor-specific code.
-3. Put `if (myClass.myReference == null) { /* Find reference of MyClass using Find() or GetComponent() */ }` within the `UNITY_EDITOR` block.
-4. Then any time you notice your dragged references have lost their connection, disable and re-enable your MyPopulator script and it should repopulate the references using various `GetComponent<Component>()` and `GameObject.Find("Object")` calls.
-5. Because nothing in the `UNITY_EDITOR` block will compile in builds, you don't have to worry about expensive Find methods slowing down your build.
-
-Example code snippet (untested):
-
-MyClass.cs
-```c#
-public class MyClass {
-
-    // Pre-assigned in inspector.
-    public GameObject playerObject;
-    public Player playerScript;
-    
-    private void Start() {
-        
-        // Hopefully these aren't null!
-        playerObject.transform.position = banana.transform.position;
-        playerScript.EatBanana(ravenously);
-    }
-
-}
-```
-
-MyPopulator.cs
-```c#
-[ExecuteInEditMode]
-public class MyPopulator {
-
-    
-    private void OnEnable() // Disabling and re-enabling this script in the inspector will call this.
-    {
-#if UNITY_EDITOR
-        MyClass instance = GetComponent<MyClass>(); // In this case I assume these two scripts are on the same GameObject.
-        if (instance.playerObject == null) instance.playerObject = GameObject.FindGameObjectWithTag("Player");
-        if (instance.playerScript == null) instance.playerScript = instance.playerObject.GetComponent<Player>();
-#endif
-    
-    }
-}
-```
-
-
-### Know the Costs of Unity Methods
-Examples:
-* `GameObject.Find()` - This thing basically scans your whole game world until it finds something. Lots of unnecessary and clunky computation which bogs down your game.
-* `GetComponent()` - It's really hard not to use this, and sometimes it's the best option. You might consider making a public reference and dragging it into the script via the Inspector panel. This will make it load the component reference it needs BEFORE runtime, without needing to 'search'.
-* RayCasting - Raycasting is indeed wonderful especially for AR swipe and tap input, but in large volumes or frequencies, it will be one of the heaviest operations in your game. Use sparingly, have a [short length, and mask your collision layers.](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html)
-* `Instantiate()` - very expensive, so load them at startup, and keep them inactive or hidden until they need to be used. Recycle them, and only spawn the max that will ever conceivably be on-screen.
-
-### Take Update Loops Seriously
-* Keep `Update()` free of anything not related to Input or Camera movement
-* Updating visual elements within `FixedUpdate()` or similar loops (custom fixed-frame coroutines) will introduce noticable judder. This is because the Fixed Framerate uses a lower refresh rate. This is modifiable so it's equal to the target visual framerate, but since Update varies depending on performance, there is no guarantee FixedUpdate and Update will sync up.
-* Input events which are done outside of `Update()` will often not register or will have noticable lag, which is :thumbsdown:
-* Offload as many functions as possible into less-frequently-updated asynchronous loops. For instance, checking for new hardware on the system can be done every 2 seconds instead of every frame 
+### Artificial Intelligence
 
 ## :space_invader: Game Design
 
@@ -258,3 +67,9 @@ If you must do movement, try some of the following options:
     1. Using motion controllers to swim or push off objects in space. 
     2. Needs to be tuned to feel physically true-to-life, make sure there are no physics glitches that will make you instantly barf. :mask:
     3. One game that does this REALLY well is [Lone Echo](https://youtu.be/zxPuZYMIzuQ?t=3457) which gets around this problem by having the player in zero-grav environments for the entirety of the game. You also see your body if you look down. Super cool.
+
+## :camera: Case Studies
+
+### Shadow of The Colossus
+
+### Dark Souls
