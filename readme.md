@@ -115,17 +115,17 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 ### [:triangular_ruler: Design](design.md) (30% Complete)
 
-1. [:seedling: Game Ethics](design.md#-game-ethics)
+1. [:seedling: Game Ethics](design.md#seedling-game-ethics)
     1. [Violence as a Tool, Violence as a Crutch](design.md#violence-as-a-tool-violence-as-a-crutch)
     2. [Representation, Identity, and Puppeteering](design.md#representation-identity-and-puppeteering)
     3. [Exploitation, Whales, and Dice](design.md#exploitation-whales-and-dice)
     4. [Drawing Artificial Lines](design.md#drawing-artificial-lines)
 
-2. [:space_invader: Game Design](unity.md#-game-design)
-    1. [The Basics of Fun](unity.md#the-basics-of-fun)
-    2. [XR-Specific](unity.md#xr-specific)
+2. [:space_invader: Game Design](design.md#space_invader-game-design)
+    1. [The Basics of Fun](design.md#the-basics-of-fun)
+    2. [XR-Specific](design.md#xr-specific)
 
-3. [:camera: Case Studies](design.md#-case-studies)
+3. [:camera: Case Studies](design.md#camera-case-studies)
     1. [Shadow of The Colossus](design.md#shadow-of-the-colossus)
     2. [Dark Souls](design.md#dark-souls)
 
@@ -149,7 +149,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
     2. [Noah's Hit-List](optimization.md#noahs-hit-list)
 
 ### :coffee: [Code](code.md) (50% Complete)
-1. [:musical_score: C#](code.md#-give-me-link)
+1. [:musical_score: C#](code.md#notes-c)
     1. [Singleton Managers](code.md#singleton-managers)
     2. [Coroutines](code.md#coroutines)
     3. [Enumerators](code.md#enumerators)
