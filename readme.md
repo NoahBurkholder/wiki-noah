@@ -52,7 +52,7 @@ Frankly, since I wrote this for fellow coworkers in software development positio
 In general I'll only accept contributions if:
 
 1. I've met you in real life.
-2. You work in a creative field.
+2. You do creative stuff.
 3. You're not an asshole.
 
 But I think I can find a place for just about any topics, especially if they pertain to all creatives, and especially if the content is game-applicable. That said I don't want to limit this resource exclusively to games when so much of it is transferrable to other mediums.
