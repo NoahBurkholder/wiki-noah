@@ -16,7 +16,7 @@ Welcome to my Wiki repository to which you are reading. I will be updating this 
 
 ### Getting Started
 
-Okay. *Don't freak out* is my first advice. The most unanimous anxiety in all of game development is crippling imposter syndrome.
+Okay. *Don't freak out* is my first advice. The most unanimous feeling in all of game development is crippling imposter syndrome.
 
 > "Impostor syndrome (also known as impostor phenomenon, fraud syndrome or the impostor experience) is a concept describing individuals who are marked by an inability to internalize their accomplishments and a persistent fear of being exposed as a 'fraud'."
 
