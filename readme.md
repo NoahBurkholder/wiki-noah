@@ -106,8 +106,8 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
     6. [Checkout](git.md#checkout)
     7. [Scrutinize Your Commit Messages](git.md#scrutinize-your-commit-messages)
     8. [Merging](git.md#merging)
-2. [:japanese_ogre: Advanced Git](git.md#-advanced-git)
-    1. [Repository Protocol](git.md#respository-protocol)
+2. [:japanese_ogre: Advanced Git](git.md#japanese_ogre-advanced-git)
+    1. [Repository Protocol](git.md#repository-protocol)
     2. [Feature/Issue Branching Methodology](git.md#featureissue-branching-methodology)
     3. [Resolving Conflicts Manually](git.md#resolving-conflicts-manually)
 
