@@ -179,7 +179,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 [Your Name Here]
 
 ## :pray: Acknowledgments
-I'd like to thank Google, as well as the following individuals:
+I'd like to thank Google, as well as the following people:
 
 - [Tony Pacheco](https://www.linkedin.com/in/tony-pacheco/) - Who helped me write up the initial Wiki materials you're reading, especially around Git Methodology and Building. He's really good at sword fighting.
 
@@ -188,3 +188,5 @@ I'd like to thank Google, as well as the following individuals:
 - [Logan Buchanan](https://www.linkedin.com/in/logan-buchanan-90b8b3126/) - Who encouraged me to the point I'm comfortable sharing this Wiki. He basically got me through school, whether he knows it or not.
 
 As well as [Meri](https://www.linkedin.com/in/meri-morganov-43818a21/), Stephanie, [Andy](https://www.linkedin.com/in/hao-tang-90947413b/), [Helen](https://www.linkedin.com/in/helen-terry/), and [Bryan](https://www.linkedin.com/in/bryanshen/) for being my first partners in crime.
+
+Additionally I want to thank [IndiePod](http://www.indiepod.org/) in Vancouver for being an endless source of knowledge, inspiration, community, and talent. I wouldn't consider this Wiki valuable if I hadn't learned a lot of it from you all.
