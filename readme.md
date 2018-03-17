@@ -1,6 +1,6 @@
-# :sparkling_heart: Wiki Noah
+# :cyclone: Wiki Noah
 
-## Version 1.4.4 (Sparkling Heart) - March 14th, 2018
+## Version 1.5.1 (Cyclone) - March 17th, 2018
 
 # :question: Ok, what the fuck is this, Noah?
 
@@ -79,7 +79,6 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 1. [The Basics of Fun](design.md#the-basics-of-fun)
 2. [Scrutinize Your Commit Messages](git.md#scrutinize-your-commit-messages)
-3. [Unity Best Practices](unity.md#best-practices)
 
 # :bookmark_tabs: Table of Contents
 
@@ -87,17 +86,17 @@ In order of execution.
 
 ## :truck: Logistics
 
-### :moneybag: [The Industry](industry.md)
+### :moneybag: [The Industry](industry.md) (5% Complete)
 
-1. [:thumbsup: The Pros](industry.md#-the-pros)
+1. [:thumbsup: The Pros](industry.md#thumbsup-the-pros)
     1. [Community](industry.md#community)
     2. [Dreambuilding](industry.md#dreambuilding)
     3. [Transferability](industry.md#transferability)
-2. [:thumbsdown: The Cons](industry.md#-the-cons)
-    1. [Hollywood Has It Easier](industry.md#its-impossible)
+2. [:thumbsdown: The Cons](industry.md#thumbsdown-the-cons)
+    1. [Hollywood Has It Easier](industry.md#hollywood-has-it-easier)
     2. [Job Security Who?](industry.md#job-security-who)
 
-### :file_folder: [Git](git.md)
+### :file_folder: [Git](git.md) (80% Complete)
 
 1. [:baby: Git Basics](git.md#-git-basics)
     1. [How does it work?](git.md#how-does-it-work)
@@ -115,13 +114,43 @@ In order of execution.
 
 ## :wrench: Development
 
-### :coffee: [Code](code.md)
+### :triangular_ruler: Design (30% Complete)
+
+1. [:seedling: Game Ethics](design.md#-game-ethics)
+    1. [Violence as a Tool, Violence as a Crutch](design.md#violence-as-a-tool-violence-as-a-crutch)
+    2. [Representation, Identity, and Puppeteering](design.md#representation-identity-and-puppeteering)
+    3. [Exploitation, Whales, and Dice](design.md#exploitation-whales-and-dice)
+    4. [Drawing Artificial Lines](design.md#drawing-artificial-lines)
+
+2. [:space_invader: Game Design](unity.md#-game-design)
+    1. [The Basics of Fun](unity.md#the-basics-of-fun)
+    2. [XR-Specific](unity.md#xr-specific)
+
+3. [:camera: Case Studies](design.md#-case-studies)
+    1. [Shadow of The Colossus](design.md#shadow-of-the-colossus)
+    2. [Dark Souls](design.md#dark-souls)
+
+### :game_die: Unity (75% Complete)
+1. [:game_die: Unity](unity.md)
+    1. [Unity Timesavers](unity.md#unity-timesavers)
+    2. [Reference IDs](unity.md#reference-ids)
+    3. [Know the Costs of Unity Methods](unity.md#know-the-costs-of-unity-methods)
+    4. [Take Update Loops Seriously](unity.md#take-update-loops-seriously)
+3. [:factory: Building](building.md)
+    1. [The Basics](building.md#the-basics)
+    2. [The Output](building.md#the-output)
+    3. [Building for Android](building.md#building-for-android)
+4. [:chart_with_upwards_trend: Optimization](optimization.md)
+    1. [The Basics](optimization.md#the-basics)
+    2. [Noah's Hit-List](optimization.md#noahs-hit-list)
+
+### :coffee: [Code](code.md) (50% Complete)
 1. [:musical_score: C#](code.md#-give-me-link)
     1. [Singleton Managers](code.md#singleton-managers)
     2. [Coroutines](code.md#coroutines)
     3. [Enumerators](code.md#enumerators)
 
-### :dragon: Shaders
+### :dragon: Shaders (3% Complete)
 1. [:ant: CG](shaders.md)
     1. [What is this? A Language For Ants?](shaders.md#ants)
     2. [CG Structure](shaders.md#cg-structure)
@@ -138,37 +167,6 @@ In order of execution.
         6. god there's gonna be a lot in here eventually
     4. [Case Studies](shaders.md#case-studies)
         1. [Cel Shading](shaders.md#cel-shading)
-
-### :game_die: Unity
-1. [:game_die: Unity](unity.md#-unity)
-    1. [Unity Timesavers](unity.md#unity-timesavers)
-    2. [Reference IDs](unity.md#reference-ids)
-    3. [Know the Costs of Unity Methods](unity.md#know-the-costs-of-unity-methods)
-    4. [Take Update Loops Seriously](unity.md#take-update-loops-seriously)
-3. [:factory: Building](building.md)
-    1. [The Basics](building.md#the-basics)
-    2. [The Output](building.md#the-output)
-    3. [Building for Android](building.md#building-for-android)
-4. [:chart_with_upwards_trend: Optimization](optimization.md)
-    1. [The Basics](optimization.md#the-basics)
-    2. [Noah's Hit-List](optimization.md#noahs-hit-list)
-
-### :triangular_ruler: Design
-
-1. [:seedling: Game Ethics](design.md#-game-ethics)
-    1. [Violence as a Tool, Violence as a Crutch](design.md#violence-as-a-tool-violence-as-a-crutch)
-    2. [Representation, Identity, and Puppeteering](design.md#representation-identity-and-puppeteering)
-    3. [Exploitation, Whales, and Dice](design.md#exploitation-whales-and-dice)
-    4. [Drawing Artificial Lines](design.md#drawing-artificial-lines)
-
-2. [:space_invader: Game Design](unity.md#-game-design)
-    1. [The Basics of Fun](unity.md#the-basics-of-fun)
-    2. [XR-Specific](unity.md#xr-specific)
-
-3. [:camera: Case Studies](design.md#-case-studies)
-    1. [Shadow of The Colossus](design.md#shadow-of-the-colossus)
-    2. [Dark Souls](design.md#dark-souls)
-
 
 
 # :black_nib: Authors
