@@ -4,21 +4,24 @@
 
 # :question: Ok, what the fuck is this, Noah?
 
-In short, this is a **Practical Resource For New Game Developers**. It is also a **Case Study for Students Entering Game Dev**, a **Reminder to Myself That What I Do Is SUPER COOL**, and hopefully a **Place to Share Passions and Expertise**.
+<details><summary> In short, this is a <b>Practical Resource For New Game Developers</b>. It is also a <b>Case Study for Students Entering Game Dev</b>, a <b>Reminder to Myself That What I Do Is SUPER COOL</b>, and hopefully a <b>Place to Share Passions and Expertise</b>. (Click to expand.)</summary>
 
 Basically, at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
 
 I showed it to Minh when I got home one day and he was super stoked about everything that was on here and wanted me to send him a copy (Hi Minh!). Figured I'd basically just make this public to help out anyone who might be interested, or at least give an interesting read about the kind of work I'm doing.
+</details><br>
 
 # :wave: Welcome
 
 Welcome to my Wiki repository to which you are reading. I will be updating this relatively often with new stuff I learn through practical work at my job, as well as things I've learnt from the various senior developers I talk to at game dev meetups.
 
-### Getting Started
+### Icebreaking, or How I Learned to Stop Worrying and Love the Game
 
-Okay. *Don't freak out* is my first advice. The most unanimous feeling in all of game development is crippling imposter syndrome.
+<details><summary>Okay. <i>Don't freak out* is my first advice.</i> (Click to expand.)</summary> The most unanimous feeling in all of game development is crippling imposter syndrome. 
+    
+I have literally never heard someone in Game Development say they don't feel feelings of inadequacy. It's almost just assumed *of and by everyone.* So much so, that developers will often talk to you about how they're fighting their feelings of inadequacy *before talking to you about their game.* It's kinda just a good icebreaker, honestly. Guaranteed common ground, and one of the many reasons game developers [have eachother's backs.](industry.md#community)
 
-> "Impostor syndrome (also known as impostor phenomenon, fraud syndrome or the impostor experience) is a concept describing individuals who are marked by an inability to internalize their accomplishments and a persistent fear of being exposed as a 'fraud'."
+> "Impostor syndrome is a concept describing individuals who are marked by an inability to internalize their accomplishments and a persistent fear of being exposed as a 'fraud'."
 
 [- Wikipedia](https://en.wikipedia.org/wiki/Impostor_syndrome)
 
@@ -27,16 +30,23 @@ The truth is even the most beginner programmer is only a few months hard work fr
 > Everyone is struggling to push their own boundaries, and they're only struggling because nobody teaches anyone else shit.
 
 [- Me, I said this.](#getting-started)
+</details><br>
 
-Now, by working as a game developer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
+<details><summary>Now, by working as a game developer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. (Click to expand.)</summary> **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
 
 I recommend taking the time to learn [good protocol surrounding Git](git.md#repository-protocol), as well as refresh yourself on [the basics](git.md#-git-basics). This is especially important since I'm going to talk about Git using the commandline interface. There is no guess-work involved, and there aren't any confirmation boxes saying *"ARE YOU SURE?"*. This is mostly because it's how I learnt Git, but it comes with the added benefit of feeling like a hacker-wiz, and you also gain a better understanding of the underlying operations simply because each command is deliberate by nature of the command prompt.
 
 Additionally, on this Wiki there is a boatload of fantastic and less-than-obvious tips, tricks and tools relating to [Unity](development.md#-unity) and [C#](development.md#-code) which I have poured my souls (plural) into.
+</details><br>
 
-If you're relatively new to the game development field this Wiki is for you. If you went to school with me in SIAT then this Wiki is for you. It doesn't teach you the basics of programming (yet), but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too.
+<details><summary>If you're relatively new to the game development field this Wiki is for you. If you went to school with me in SIAT then this Wiki is for you. (Click to expand.)</summary> It doesn't teach you the basics of programming (yet), but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too.
 
 Frankly, since I wrote this for fellow coworkers in software development positions, it skips a lot of the basics of coding, and that is something I hope to remedy in the future when I have more time. Let me know what concepts in particular - fundamental or otherwise - you'd like covered and I'll prioritize those first.
+</details><br>
+
+<details><summary>I have no plans of neglecting this wiki in the future, and I want this resource to grow based on <b>your</b> experiences and expertise too. If you have anything you'd like to add to this documentation, I'll add you as an author! (Click to expand.)</summary>
+
+</details>
 
 ### My Favourite Topics
 
