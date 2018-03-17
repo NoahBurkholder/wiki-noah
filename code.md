@@ -89,13 +89,13 @@ private IEnumerator oddlySpecificWaitRoutine() {
     Debug.Log("This happens instantly...)
 
     yield return new WaitForseconds(1f);
-    Debug.Log("This happens at 1 second...)
+    Debug.Log("This happens at 1 second...")
     
     yield return new WaitForseconds(0.5f);
-    Debug.Log("This happens at 1.5 seconds...)
+    Debug.Log("This happens at 1.5 seconds...")
     
     yield return new WaitForEndOfFrame();
-    Debug.Log("This happens at 1.5 seconds + 1 frame...)
+    Debug.Log("This happens at 1.5 seconds + 1 frame...")
     
     yield break; // Exits the coroutine explicitly.
 }
