@@ -1,6 +1,6 @@
 # :file_folder: Git
 
-Git is a version control utility. It serves to give you and your team a huge advantage when it comes to:
+Git is a Version Control utility. It gives you control over versions of your projects. It serves to give you and your team a huge advantage when it comes to:
 
 1. Working simultaneously on the same project.
 2. Working simultaneously on the same file. (With a couple stipulations.)
