@@ -1,39 +1,63 @@
-# Screenshots
+# 🐉 Shaders
 
-* Import ScreenshotScripts.unitypackage (Ico / Util C# Scripts) into your project
+## 🐜 CG
 
-## Basic Screenshots
+## What is this? A Language For Ants?
 
-* Set the dimensions of your game window to the dimensions required by the store you are uploading to
+(Coming Soon) Concerning parallel processing vs. serial processing, and why shaders use GPUs.
 
-```
-Google Play Store    : 3840 x 2160
-Google Daydream Apps : 3840 x 2160
-Appple App Store     :
-Oculus (Rift/Gear)   :
-Steam Store (Vive)   : 
-Sony Playstation VR  :
-```
-* Open the screenshot tool under the 'Tools' menu
-* Stage shots by pausing the game and manually moving things around the scene
-* When you have a good frame, press the Take Screenshot button!
+## Shader Structure
 
-## 360 Screenshots
+(Coming Soon) What does a typical shader file look like?
 
-* These only work in Unity version ***2018.1.0b7*** and later
-* Attach the Capture360Sphere script to the main camera in your scene
-* In the inspector on the script set the filename to whatever you want (**DON'T** include an extension)
-* Create a custom Render Texture with dimension = cube, 4096x4096 and drag it into the script in the inspector (cubemap)
-* Create a render texture with dimension = 2d, 4096x4096 and drag it into the script in the inspector (equirect)
-* Wherever you handle player input in your game, add a check for some keypress, and have that check call the method
+### Deferred vs. Forward Rendering
 
-```c#
-//For example: 
-if (Input.GetButtonDown("s"))
-{
-    Capture360Sphere.CaptureSphere();
-}
-```
-* Play your game in the editor, and when ever you're ready you can press your key to capture a 360 photo!
-** NOTE : it seems to always crash whem you try to take a second one, so be careful!
+(Coming Soon) What are the pros and cons of these two pipes?
 
+### Papa's Proper Use of Properties
+
+(Coming Soon) How to define and use properties.
+
+### Subshader? I Barely Knew Her!
+
+(Coming Soon) What a subshader is, why you might have a few in your shader, and what they output.
+
+### Vertex Shaders, Fragment Shaders
+
+(Coming Soon) What a subshader is, why you might have a few in your shader, and what they output.
+
+### Falling Back
+
+(Coming Soon) How to make your shader fall back on other shaders if it isn't supported.
+
+## Shading
+
+(Coming Soon) A big section outlining lots of tools in your toolset.
+
+### NdotL
+
+(Coming Soon) Giving a basic light value based on the dot value of normals and light direction.
+
+### Light Processing
+
+(Coming Soon) Using more from your lights!
+
+### LUTs
+
+(Coming Soon) Look-Up Textures and what they do, plus some best use-cases for them.
+
+### Matrix Multiplication
+
+(Coming Soon) Talking to the camera, and how to get access to perspective in your shader code.
+
+### Viewing Angles
+
+(Coming Soon) Getting the angle of view of the camera, and how that might affect specularity.
+
+## Case Studies
+
+(Coming Soon) Sometimes the best way to learn is to just jump in!
+
+### Cel Shading
+
+(Coming Soon) Cel Shading, often called 'Toon Shading' and how to execute it.
