@@ -2,7 +2,7 @@
 
 Shaders are perhaps my favourite thing to code, and also among the least approachable things to code. Their effects are seen far and wide in games, and a good shader can be a thing of beauty.
 
-![Stanford Dragon 1](imgs/stanforddragon.png) ![Stanford Dragon 2](imgs/stanforddragon2.jpg) ![Stanford Dragon 3](imgs/stanforddragon3.png)
+![Stanford Dragon 1](imgs/stanforddragon.PNG) ![Stanford Dragon 2](imgs/stanforddragon2.jpg) ![Stanford Dragon 3](imgs/stanforddragon3.PNG)
 
 Shaders are used to give materiality to objects, style to a project, post-processing, and any multitude of visual effects.
 
