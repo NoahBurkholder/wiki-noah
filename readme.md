@@ -98,8 +98,9 @@ In order of execution.
         1. [NdotL](shaders.md#ndotl)
         2. [Light Processing](shaders.md#light-processing)
         3. [LUTs](shaders.md#luts)
-        4. [Viewing Angles](shaders.md#viewing-angles)
-        2. god there's gonna be a lot in here eventually
+        4. [Matrix Multiplication](shaders.md#matrix-multiplication)
+        5. [Viewing Angles](shaders.md#viewing-angles)
+        6. god there's gonna be a lot in here eventually
     4. [Case Studies](shaders.md#case-studies)
         1. [Cel Shading](shaders.md#cel-shading)
 
