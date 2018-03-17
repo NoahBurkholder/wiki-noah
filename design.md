@@ -20,7 +20,7 @@ As with any creative medium, I feel it's important to be cognisant of the ethics
 
 (Coming Soon) Concerning predatory monetization, player behaviour, and gambling.
 
-### Artificial Lines
+### Drawing Artificial Lines
 
 (Coming Soon) Concerning artificial intelligence, humility, and my thoughts on how to approach development in burgeoning fields of intelligence emulation.
 
