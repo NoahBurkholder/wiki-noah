@@ -86,7 +86,7 @@ private void Start() {
 
 private IEnumerator oddlySpecificWaitRoutine() {
 
-    Debug.Log("This happens instantly...)
+    Debug.Log("This happens instantly...")
 
     yield return new WaitForseconds(1f);
     Debug.Log("This happens at 1 second...")
