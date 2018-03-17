@@ -157,7 +157,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 ### [:dragon: Shaders](shaders.md) (3% Complete)
 1. [:ant: CG](shaders.md#ant-cg)
     1. [What is this? A Language For Ants?](shaders.md#what-is-this-a-language-for-ants)
-    2. [CG Structure](shaders.md#cg-structure)
+    2. [Shader Structure](shaders.md#shader-structure)
         1. [Deferred vs. Forward Rendering](shaders.md#deferred-vs-forward-rendering)
         2. [Papa's Proper Use of Properties](shaders.md#papas-proper-use-of-properties)
         3. [Subshader? I Barely Knew Her!](shaders.md#subshader-i-barely-knew-her)
