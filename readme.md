@@ -105,7 +105,7 @@ In order of execution.
     1. [The Basics](optimization.md#the-basics)
     2. [Noah's Hit-List](optimization.md#noahs-hit-list)
 
-### :seedling: Design
+### :triangular_ruler: Design
 
 1. [:seedling: Game Ethics](design.md#-game-ethics)
     1. [Violence](design.md#violence)
@@ -113,10 +113,13 @@ In order of execution.
     3. [Exploitation](design.md#exploitation)
     4. [Artificial Intelligence](design.md#artificial-intelligence)
 
-
-1. [:space_invader: Game Design](unity.md#game-design)
+2. [:space_invader: Game Design](unity.md#-game-design)
     1. [The Basics of Fun](unity.md#the-basics-of-fun)
     2. [XR-Specific](unity.md#xr-specific)
+
+3. [:camera: Case Studies](design.md#-case-studies
+    1. Shadow of The Colossus
+    2. Dark Souls
 
 
 
