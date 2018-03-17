@@ -1,6 +1,6 @@
-# :tangerine: Wiki Noah
+# :sparkling_heart: Wiki Noah
 
-## Version 1.4.3 (Tangerine) - March 14th, 2018
+## Version 1.4.4 (Sparkling Heart) - March 14th, 2018
 
 # :question: Ok, what the fuck is this, Noah?
 
@@ -48,7 +48,21 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 # :bookmark_tabs: Table of Contents
 
-## :file_folder: Git
+In order of execution.
+
+## :truck: Logistics
+
+### :moneybag: [The Industry](industry.md)
+
+1. [:thumbsup: The Pros](industry.md#-the-pros)
+    1. [Community](industry.md#community)
+    2. [Dreambuilding](industry.md#dreambuilding)
+    3. [Transferability](industry.md#transferability)
+2. [:thumbsdown: The Cons](industry.md#-the-cons)
+    1. [Hollywood Has It Easier](industry.md#its-impossible)
+    2. [Job Security Who?](industry.md#job-security-who)
+
+### :file_folder: [Git](git.md)
 
 1. [:baby: Git Basics](git.md#-git-basics)
     1. [How does it work?](git.md#how-does-it-work)
@@ -64,28 +78,48 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
     2. [Feature/Issue Branching Methodology](git.md#featureissue-branching-methodology)
     3. [Resolving Conflicts Manually](git.md#resolving-conflicts-manually)
 
-
 ## :wrench: Development
 
-1. [:coffee: Code](development.md#-code)
-    1. [Singleton Managers](development.md#singleton-managers)
-    2. [Coroutines](development.md#coroutines)
-    3. [Enumerators](development.md#enumerators)
-2. [:game_die: Unity](development.md#-unity)
-    1. [Unity Timesavers](development.md#unity-timesavers)
-    2. [Reference IDs](development.md#reference-ids)
-    3. [Know the Costs of Unity Methods](development.md#know-the-costs-of-unity-methods)
-    4. [Take Update Loops Seriously](development.md#take-update-loops-seriously)
-3. [:space_invader: Game Design](development.md#game-design)
-    1. [The Basics of Fun](development.md#the-basics-of-fun)
-    2. [XR-Specific](development.md#xr-specific)
-4. [:factory: Building](building.md)
+### :coffee: [Code](code.md)
+1. [:musical_score: C#](code.md#-give-me-link)
+    1. [Singleton Managers](code.md#singleton-managers)
+    2. [Coroutines](code.md#coroutines)
+    3. [Enumerators](code.md#enumerators)
+
+### :dragon: Shaders
+1. [:ant: CG](shaders.md)
+    1. [Coming Soon](shaders.md)
+
+
+### :game_die: Unity
+1. [:game_die: Unity](unity.md#-unity)
+    1. [Unity Timesavers](unity.md#unity-timesavers)
+    2. [Reference IDs](unity.md#reference-ids)
+    3. [Know the Costs of Unity Methods](unity.md#know-the-costs-of-unity-methods)
+    4. [Take Update Loops Seriously](unity.md#take-update-loops-seriously)
+3. [:factory: Building](building.md)
     1. [The Basics](building.md#the-basics)
     2. [The Output](building.md#the-output)
     3. [Building for Android](building.md#building-for-android)
-5. [:chart_with_upwards_trend: Optimization](optimization.md)
+4. [:chart_with_upwards_trend: Optimization](optimization.md)
     1. [The Basics](optimization.md#the-basics)
     2. [Noah's Hit-List](optimization.md#noahs-hit-list)
+
+### :triangular_ruler: Design
+
+1. [:seedling: Game Ethics](design.md#-game-ethics)
+    1. [Violence](design.md#violence)
+    2. [Representation](design.md#representation)
+    3. [Exploitation](design.md#exploitation)
+    4. [Artificial Intelligence](design.md#artificial-intelligence)
+
+2. [:space_invader: Game Design](unity.md#-game-design)
+    1. [The Basics of Fun](unity.md#the-basics-of-fun)
+    2. [XR-Specific](unity.md#xr-specific)
+
+3. [:camera: Case Studies](design.md#-case-studies
+    1. Shadow of The Colossus
+    2. Dark Souls
 
 
 
