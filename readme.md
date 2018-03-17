@@ -4,7 +4,7 @@
 
 # :question: Ok, what the fuck is this, Noah?
 
-In short, this is a **Practical Resource For New Game Developers**. It is also a **Case Study for Students Entering Game Dev**, a **Reminder For Myself That What I Do Is SUPER COOL**, and hopefully a **Place to Share Passions and Expertise**.
+In short, this is a **Practical Resource For New Game Developers**. It is also a **Case Study for Students Entering Game Dev**, a **Reminder to Myself That What I Do Is SUPER COOL**, and hopefully a **Place to Share Passions and Expertise**.
 
 Basically, at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
 
