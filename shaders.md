@@ -1,4 +1,4 @@
-# 🐉 Shaders
+# :dragon: Shaders
 
 Shaders are perhaps my favourite thing to code, and also among the least approachable things to code. I know such a tiny amount of shader code and yet it's still one of my favourite things. Their effects are seen far and wide in games, and a good shader can be a thing of beauty.
 
@@ -6,7 +6,7 @@ Shaders are perhaps my favourite thing to code, and also among the least approac
 
 Shaders are used to give materiality to objects, style to a project, post-processing, and any multitude of visual effects.
 
-## 🐜 CG
+## :ant: CG
 
 (Coming Soon) What is NVidia's CG language and why is it worth learning?
 
