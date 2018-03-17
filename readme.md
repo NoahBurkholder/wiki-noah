@@ -4,7 +4,9 @@
 
 # :question: Ok, what the fuck is this, Noah?
 
-So at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
+In short, this is a **Practical Resource For New Game Developers**. It is also a **Case Study for Students Entering Game Dev**, a **Reminder For Myself That What I Do Is SUPER COOL**, and hopefully a **Place to Share Passions and Expertise**.
+
+Basically, at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
 
 I showed it to Minh when I got home one day and he was super stoked about everything that was on here and wanted me to send him a copy (Hi Minh!). Figured I'd basically just make this public to help out anyone who might be interested, or at least give an interesting read about the kind of work I'm doing.
 
@@ -95,6 +97,10 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 ## :pray: Acknowledgments
 I'd like to thank Google, as well as the following individuals:
 
-- [Tony Pacheco](https://www.linkedin.com/in/tony-pacheco/) - Who helped me write up the initial Wiki materials you're reading, especially around Git Methodology and Building.
+- [Tony Pacheco](https://www.linkedin.com/in/tony-pacheco/) - Who helped me write up the initial Wiki materials you're reading, especially around Git Methodology and Building. He's really good at sword fighting.
+
+- [Minh Buinhat](https://www.linkedin.com/in/nhatminh-bui-a2407573/) - Who reminded me that maybe some people can relate to my passions and would benefit from anything I can teach. Discovered he could ask me about Unity and I would give him 3 hour long tutorials.
+
+- [Logan Buchanan](https://www.linkedin.com/in/logan-buchanan-90b8b3126/) - Who encouraged me to the point I'm comfortable sharing this Wiki. He basically got me through school, whether he knows it or not.
 
 As well as [Meri](https://www.linkedin.com/in/meri-morganov-43818a21/), Stephanie, [Andy](https://www.linkedin.com/in/hao-tang-90947413b/), [Helen](https://www.linkedin.com/in/helen-terry/), and [Bryan](https://www.linkedin.com/in/bryanshen/) for being my first partners in crime.
