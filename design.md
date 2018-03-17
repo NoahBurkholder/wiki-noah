@@ -10,11 +10,19 @@ As with any creative medium, I feel it's important to be cognisant of the ethics
 
 ### Violence as a Tool, Violence as a Crutch
 
+(Coming Soon) Concerning the bloated dead myths around 'videogame violence', but also violence as narrative, violence for aesthetics, and violence as a cultural fixation within the industry.
+
 ### Representation, Identity, and Puppeteering
 
-### Exploitation, Whales, and You
+(Coming Soon) Concerning developing with sensitivity, a look at cultural appropriation, and the complications of consent when the player's agency is translated to a character.
 
-### Artificial Intelligence
+### Exploitation, Whales, and Dice
+
+(Coming Soon) Concerning predatory monetization, player behaviour, and gambling.
+
+### Artificial Lines
+
+(Coming Soon) Concerning artificial intelligence, humility, and my thoughts on how to approach development in burgeoning fields of intelligence emulation.
 
 ## :space_invader: Game Design
 
@@ -70,6 +78,12 @@ If you must do movement, try some of the following options:
 
 ## :camera: Case Studies
 
+The best way to make good games is to play both good and bad games. Play a lot of them. Talk to friends about them. Analyze them.
+
 ### Shadow of The Colossus
 
+(Coming Soon) Using feature subtraction, emptiness, scale, and grace, to evoke intense aesthetics.
+
 ### Dark Souls
+
+(Coming Soon) Using adversity to enforce triumph. Forcing players to confront thoughtful play. Being okay with players missing a secret.
