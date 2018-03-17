@@ -33,7 +33,6 @@ The truth is even the most beginner programmer is only a few months hard work fr
 
 [- Me, I said this.](#getting-started)
 </details><br>
-
 <details><summary>Now, by working as a game developer, you're also a game designer. You will need to make on-the-fly calls about what is best for the player's experience. (Click to expand.)</summary><br> 
     
 **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
@@ -42,14 +41,12 @@ I recommend taking the time to learn [good protocol surrounding Git](git.md#repo
 
 Additionally, on this Wiki there is a boatload of fantastic and less-than-obvious tips, tricks and tools relating to [Unity](development.md#-unity) and [C#](development.md#-code) which I have poured my souls (plural) into.
 </details><br>
-
 <details><summary>If you're relatively new to the game development field this Wiki is for you. If you went to school with me in SIAT then this Wiki is for you. (Click to expand.)</summary><br>
 
 It doesn't teach you the basics of programming (yet), but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too.
 
 Frankly, since I wrote this for fellow coworkers in software development positions, it skips a lot of the basics of coding, and that is something I hope to remedy in the future when I have more time. Let me know what concepts in particular - fundamental or otherwise - you'd like covered and I'll prioritize those first.
 </details><br>
-
 <details><summary>I have no plans of neglecting this wiki in the future, and I want this resource to grow based on <b>your</b> experiences and expertise too. If you have anything you'd like to add to this documentation, I'll add you as an author! (Click to expand.)</summary><br>
     
 In general I'll only accept contributions if:
@@ -67,12 +64,13 @@ If you're interested in contributing there are a few ways to do that, and I'm op
     2. You'll get acknowledgement and thanks on the wiki!
 2. If you're not comfortable using [Git](git.md) yet, just send me plain text!
     1. Super easy.
-    2. I'll add you as an author!
+    2. I'll worry about adding you as an author, and any images and formatting!
 3. Make a pull request!
     1. You get full control of the markdown (.md) files!
     2. Your name will be etched into the commit history and Contributors section!
     3. You're an author now too!
-
+    
+Thanks in advance, and I hope you'll join me in this little project.
 </details><br>
 
 ### My Favourite Topics
