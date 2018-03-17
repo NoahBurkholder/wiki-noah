@@ -2,7 +2,9 @@
 
 And here we have it - one of the biggest driving forces behind the industry and especially the indiestry.
 
-The indistry, or indies-try - so-called because unlike many big companies, we try - is the most exciting place to be in games, and also the most dangerous.
+The indiestry, or indies-try - so-called because *unlike many big companies, we try* - is the most exciting place to be in games, and also the most dangerous.
+
+So let's jump in and talk about why Unity is pretty revolutionary.
 
 ## :octopus: What Makes Unity Great
 
