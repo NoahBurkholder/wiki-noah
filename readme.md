@@ -77,7 +77,7 @@ Thanks in advance, and I hope you'll join me in this little project.
 
 Okay. Now let's dive in. I'm going to point to a few of my favourite sections which you won't necessarily be stoked about or even understand, but maybe there's a spark in there. There's a good chance it'll expand your understanding, even if most of it is putting the cart before the horse.
 
-1. [:spaceinvader: The Basics of Fun](design.md#the-basics-of-fun)
+1. [:space_invader: The Basics of Fun](design.md#the-basics-of-fun)
 2. [:octopus: What Makes Unity Great](unity.md#octopus-what-makes-unity-great)
 3. [:baby: Git Basics](git.md#baby-git-basics)
 
@@ -132,13 +132,13 @@ In order of execution.
     2. [Dark Souls](design.md#dark-souls)
 
 ### [:game_die: Unity](unity.md) (75% Complete)
-1. [:octopus: What Makes Unity Great](unity.md#what-makes-unity-special)
+1. [:octopus: What Makes Unity Great](unity.md#octopus-what-makes-unity-great)
     1. [Live Updates](unity.md#live-updates)
     2. [Inspector Gadget](unity.md#inspector-gadget)
     3. [The Profiler](unity.md#the-profiler)
     4. [Reference IDs](unity.md#reference-ids)
     5. [Multiplatform as Hell](unity.md#multiplatform-as-hell)
-2. [:violin: Best Practices](unity.md#best-practices)
+2. [:violin: Best Practices](unity.md#violin-best-practices)
     1. [Know the Costs of Unity Methods](unity.md#know-the-costs-of-unity-methods)
     2. [Take Update Loops Seriously](unity.md#take-update-loops-seriously)
     3. [Unity Timesavers](unity.md#unity-timesavers)
