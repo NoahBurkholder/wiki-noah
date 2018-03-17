@@ -14,7 +14,7 @@ As with any creative medium, I feel it's important to be cognisant of the ethics
 
 ### Representation, Identity, and Puppeteering
 
-(Coming Soon) Concerning developing with sensitivity, a look at cultural appropriation, and the complications of consent when the player's agency is translated to a character.
+(Coming Soon) Concerning developing with sensitivity, a look at cultural appropriation, and the complications of representational consent of having a game avatar when the player is arbitrary.
 
 ### Exploitation, Whales, and Dice
 
