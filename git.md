@@ -41,7 +41,7 @@ Together, these two folders enable you to switch to or 'checkout' any previous s
 
 A repository can have many 'branches' which are isolated streams of the project development which branched off the main branch at a certain point. For instance, a branch always has a `master` branch, which contains the stable, tested changes combined into a master build. I implore you to quickly look at how [my company handled branching](#repository-protocol), as there is a decent system to it which your director will LOVE if you use.
 
-#### Committing + Pushing
+#### Committing and Pushing
 
 Committing happens in two steps, and pushing is a third step which puts your commits on the online version of the repository. (The cloud.)
 
