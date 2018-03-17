@@ -77,8 +77,9 @@ Thanks in advance, and I hope you'll join me in this little project.
 
 Okay. Now let's dive in. I'm going to point to a few of my favourite sections which you won't necessarily be stoked about or even understand, but maybe there's a spark in there. There's a good chance it'll expand your understanding, even if most of it is putting the cart before the horse.
 
-1. [The Basics of Fun](design.md#the-basics-of-fun)
-2. [Scrutinize Your Commit Messages](git.md#scrutinize-your-commit-messages)
+1. [:spaceinvader: The Basics of Fun](design.md#the-basics-of-fun)
+2. [:octopus: What Makes Unity Great](unity.md#octopus-what-makes-unity-great)
+3. [:baby: Git Basics](git.md#baby-git-basics)
 
 # :bookmark_tabs: Table of Contents
 
