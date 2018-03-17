@@ -86,7 +86,7 @@ In order of execution.
 
 ## :truck: Logistics
 
-### :moneybag: [The Industry](industry.md) (5% Complete)
+### [:moneybag: The Industry](industry.md) (5% Complete)
 
 1. [:thumbsup: The Pros](industry.md#thumbsup-the-pros)
     1. [Community](industry.md#community)
@@ -96,7 +96,7 @@ In order of execution.
     1. [Hollywood Has It Easier](industry.md#hollywood-has-it-easier)
     2. [Job Security Who?](industry.md#job-security-who)
 
-### :file_folder: [Git](git.md) (80% Complete)
+### [:file_folder: Git](git.md) (80% Complete)
 
 1. [:baby: Git Basics](git.md#-git-basics)
     1. [How does it work?](git.md#how-does-it-work)
@@ -114,7 +114,7 @@ In order of execution.
 
 ## :wrench: Development
 
-### :triangular_ruler: Design (30% Complete)
+### [:triangular_ruler: Design](design.md) (30% Complete)
 
 1. [:seedling: Game Ethics](design.md#-game-ethics)
     1. [Violence as a Tool, Violence as a Crutch](design.md#violence-as-a-tool-violence-as-a-crutch)
@@ -130,12 +130,17 @@ In order of execution.
     1. [Shadow of The Colossus](design.md#shadow-of-the-colossus)
     2. [Dark Souls](design.md#dark-souls)
 
-### :game_die: Unity (75% Complete)
-1. [:game_die: Unity](unity.md)
-    1. [Unity Timesavers](unity.md#unity-timesavers)
-    2. [Reference IDs](unity.md#reference-ids)
-    3. [Know the Costs of Unity Methods](unity.md#know-the-costs-of-unity-methods)
-    4. [Take Update Loops Seriously](unity.md#take-update-loops-seriously)
+### [:game_die: Unity](unity.md) (75% Complete)
+1. [:octopus: What Makes Unity Great](unity.md#what-makes-unity-special)
+    1. [Live Updates](unity.md#live-updates)
+    2. [Inspector Gadget](unity.md#inspector-gadget)
+    3. [The Profiler](unity.md#the-profiler)
+    4. [Reference IDs](unity.md#reference-ids)
+    5. [Multiplatform as Hell](unity.md#multiplatform-as-hell)
+2. [:violin: Best Practices](unity.md#best-practices)
+    1. [Know the Costs of Unity Methods](unity.md#know-the-costs-of-unity-methods)
+    2. [Take Update Loops Seriously](unity.md#take-update-loops-seriously)
+    3. [Unity Timesavers](unity.md#unity-timesavers)
 3. [:factory: Building](building.md)
     1. [The Basics](building.md#the-basics)
     2. [The Output](building.md#the-output)
