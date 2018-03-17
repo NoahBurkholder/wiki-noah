@@ -159,8 +159,8 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
     1. [What is this? A Language For Ants?](shaders.md#what-is-this-a-language-for-ants)
     2. [CG Structure](shaders.md#cg-structure)
         1. [Deferred vs. Forward Rendering](shaders.md#deferred-vs-forward-rendering)
-        2. [Papa's Proper Use of Properties](shaders.md#properties)
-        3. [Subshader? I Barely Knew Her!](shaders.md#subshaders)
+        2. [Papa's Proper Use of Properties](shaders.md#papas-proper-use-of-properties)
+        3. [Subshader? I Barely Knew Her!](shaders.md#subshader-i-barely-knew-her)
         4. [Falling Back](shaders.md#falling-back)
     3. [Shading](shaders.md#shading)
         1. [NdotL](shaders.md#ndotl)
@@ -168,7 +168,6 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
         3. [LUTs](shaders.md#luts)
         4. [Matrix Multiplication](shaders.md#matrix-multiplication)
         5. [Viewing Angles](shaders.md#viewing-angles)
-        6. god there's gonna be a lot in here eventually
     4. [Case Studies](shaders.md#case-studies)
         1. [Cel Shading](shaders.md#cel-shading)
 
