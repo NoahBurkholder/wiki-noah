@@ -108,18 +108,18 @@ In order of execution.
 ### :triangular_ruler: Design
 
 1. [:seedling: Game Ethics](design.md#-game-ethics)
-    1. [Violence](design.md#violence)
-    2. [Representation](design.md#representation)
-    3. [Exploitation](design.md#exploitation)
-    4. [Artificial Intelligence](design.md#artificial-intelligence)
+    1. [Violence as a Tool, Violence as a Crutch](design.md#violence-as-a-tool-violence-as-a-crutch)
+    2. [Representation, Identity, and Puppeteering](design.md#representation-identity-and-puppeteering)
+    3. [Exploitation, Whales, and Dice](design.md#exploitation-whales-and-dice)
+    4. [Drawing Artificial Lines](design.md#drawing-artificial-lines)
 
 2. [:space_invader: Game Design](unity.md#-game-design)
     1. [The Basics of Fun](unity.md#the-basics-of-fun)
     2. [XR-Specific](unity.md#xr-specific)
 
-3. [:camera: Case Studies](design.md#-case-studies
-    1. Shadow of The Colossus
-    2. Dark Souls
+3. [:camera: Case Studies](design.md#-case-studies)
+    1. [Shadow of The Colossus](design.md#shadow-of-the-colossus)
+    2. [Dark Souls](design.md#dark-souls)
 
 
 
