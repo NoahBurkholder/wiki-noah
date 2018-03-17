@@ -1,6 +1,12 @@
 # 🐉 Shaders
 
+Shaders are perhaps my favourite thing to code, and also among the least approachable things to code. Their effects are seen far and wide in games, and a good shader can be a thing of beauty.
+
+Shaders are used to give materiality to objects, style to a project, post-processing, and any multitude of visual effects.
+
 ## 🐜 CG
+
+(Coming Soon) Using CG to write shader code compatible with Unity.
 
 ## What is this? A Language For Ants?
 
