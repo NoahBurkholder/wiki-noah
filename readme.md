@@ -97,11 +97,11 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 ### [:file_folder: Git](git.md) (80% Complete)
 
-1. [:baby: Git Basics](git.md#-git-basics)
+1. [:baby: Git Basics](git.md#baby-git-basics)
     1. [How does it work?](git.md#how-does-it-work)
     2. [What is a commit?](git.md#what-is-a-commit)
     3. [Okay, so what does the repository look like on my computer?](git.md#okay-so-what-does-the-repository-look-like-on-my-computer)
-    4. [Committing + Pushing](git.md#committing-pushing)
+    4. [Committing + Pushing](git.md#committing-and-pushing)
     5. [Pulling](git.md#pulling)
     6. [Checkout](git.md#checkout)
     7. [Scrutinize Your Commit Messages](git.md#scrutinize-your-commit-messages)
