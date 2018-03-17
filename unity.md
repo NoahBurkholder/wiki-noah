@@ -1,137 +1,63 @@
-# :wrench: Development
+# :game_die: Unity
 
-Time to make a game!
+And here we have it - one of the biggest driving forces behind the industry and especially the indiestry.
 
-Here's some tips for doing that.
+The indistry, as I'm coining it, - or indies-try, so-called because unlike many big companies, we try - is the most exciting place to be in games, and also the most dangerous.
 
-## :coffee: Code
+## :octopus: What Makes Unity Great
 
-### Singleton Managers
-Any script called [Blank]Manager - ex. GameManager, PlayerManager, LevelManager, AudioManager - should probably use this convenient and safe setup. It allows you to access an instance from anywhere in the project by ensuring that a static reference to a singleton exists at all times.
+Unity is an Octopus. It is fast, fits into any project, has a surprising amount of power, and a surprising amount of legs. It's also approachable as hell, just like an Octopus, which is definitely approachable.
 
-A singleton pattern is a code pattern designed to ensure only one instance and always one instance of the script are available. These scripts are designed from the ground up to self-police.
+I'd boil it down into 3 parts, each with many justifications:
 
-```c#
-public class GameManager : MonoBehaviour
-{
-    private static GameManager _instance;
+1. Flexibility
+    1. Full support for 2D and 3D systems/visuals.
+    2. Deep support for animation systems.
+    3. Good and approachable support for audio and mixing.
+    4. Active community which can solve anything you throw at them.
+    5. Incredible native physics engine framework.
+    6. In-engine support for NVidia's shader language [CG](shaders.md)
+    7. Great native support for file types of all sorts.
+    8. Modularity and customizability of the Editor.
+2. Accessibility
+    1. It's easy to learn.
+    2. Well documented.
+    3. It's surprisingly fun?
+    4. It has a nice collaboration feature for small teams!
+    5. It's decently priced if you ever want to upgrade it.
+3. An Infernal and Increasing Storm of Power on The Horizon
+    1. It has steadily been attaining a frankly scary amount of power for how much flexibility it has.
+    2. Watching the Unity Engine development is like watching the fires of Mordor kindle.
+    3. Presently it can render nearly [movie-ready computer graphics in real time](https://www.youtube.com/watch?v=5cvi4TVkUdU) on a good computer.
+    4. Its balance of relative logical and graphical efficiency means it can compete with engines like Unreal.
 
-    public static GameManager instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = (GameManager)FindObjectOfType(typeof(GameManager));
+### Live Updates
 
-                if (_instance == null)
-                {
-                    Debug.LogError("An instance of " + typeof(GameManager) +
-                        " is needed in the scene, but there is none.");
-                }
-            }
+Let me start by saying **only make changes out of Play Mode**, with *few exceptions.* All changes will be lost upon un-hitting the play button. You can experiment with values, on the fly, but you don't want try to make permanent changes in Play Mode.
 
-            return _instance;
-        }
-    }
+I just saved you a couple hours. Most common mistake in the book.
 
-    public void Awake()
-    {
+I actually recommend going into `Edit > Preferences` and giving the editor a colour overlay when you're in play more, to give you a visual reminder.
 
-        // Check if instance already exists
-        if (_instance == null)
-        {
-            // If not, set instance to this
-            _instance = this;
-        }
-        // If instance already exists and it's not this:
-        else if (_instance != this)
-        {
-            // Then destroy this. This enforces our singleton pattern.
-            Destroy(gameObject);
-        }
-    }
-}
-```
+But this leads right into one of the most powerful parts of Unity, its ability to test your game directly within the editor. Perfect for blazingly fast iterative testing, and you actually have room to experiment during the gameplay. 
 
-### Coroutines
+You have two views of your game world:
 
-Coroutines are your new best friend. They are the polite cousin of the Update loops bundled with Unity.
+**The Game View**
 
-Coroutines can patiently wait durations of time, and will function asynchronously - kinda like a pseudo thread - so that if they get held up, the rest of your code will continue to fly by. They are perfect for sequencing events in cutscenes, or doing large tasks over a dilute period of time.
+This one just acts as a porthole into what the player is going to see. You can even play the game from this window. If you have multiple cameras in the scene, the one in Game View will be the camera tagged "Main Camera".
 
-You can make a custom loop which only updates every 20 seconds if you wanted to, or simply mimic the Update loop without hurting the buttery smoothness of your Camera transforms thanks to asynchronicity! :100:
+**The Scene View**
 
-As you'll discover, using `yield return` is one of coroutines' most powerful tools for sequencing and looping. You'll be using lots of `yield return WaitForSeconds(float)` so it's good to optimize them nicely using the following resource saver:  
+This camera is a perspective-flexible developer camera which can be used both in Play and Editor mode. It can see debug lines you may be casting, invisible to the player. It shows developer icons for game objects and components, and has a bunch of rendering modes which help you visualize wireframes, UVs, lightmaps, overdraws, and other weird technical stuff.
 
-```c#
-// Create a reference to a single public Wait() object for each length of wait time you'll need. 
-// Store this refernce in the GameManager script. Accessible through GameManager.instance.myWait.
-public WaitForSeconds myWait = new WaitForSeconds(1f);
+### Inspector Gadget
 
-// Coroutines throughout your project you can call
-yield return GameManager.instance.myWait;
-// To have the coroutine wait one second.
-```
-* This will cut down on memory and computation of having multiple parallel "WaitFor's", helping optimization.
-* Caching these yields works with `WaitForSeconds(float)`, `WaitForFixedUpdate()` (which waits for the Physics loop Fixed frame), and `WaitForNextFrame()` (which waits for the next normal `Update()` frame).
+(Coming Soon) Everything you need to know about the Inspector.
 
-### Enumerators
+### The Profiler
 
-Forget what we said about coroutines, Enums are going to be your new **bester** friends.
-
-They're essentially just numbers with names, which means you can make checks more clear and easy to understand. *Computationally they're just integers* (very light), but to your eyes they have nice word-names! (Wow!)
-
-This means in the future you can avoid checking if an object exists on a layer with `LayerMask.NameToLayer("GrossString")`. This fucking method compares a complex data type with no regard for our performance. Don't use strings for IDing things ever again! use Enums instead! They're just integers! But they're kinda not!
-
-Here's an example of a perfect utilization - keeping track of the indices of your layers.
-
-Let's start with a BAD piece of code. I've commented the badness so you know how bad it is.
-
-```c#
-if (gameObject.layer == 10) // What is this???!!!! Might've been clear when you wrote it, but not after 3 months.
-{
-    // Do something but terribly.
-}
-```
-Yikes. So I'm glad we're done with that code. I don't know what that 10 is supposed to be. That could be any layer, and honestly I'm too lazy to check the Layer list in Unity.
-
-Let's use our **enumerator** for this next bit. First let's define it:
-
-```c#
-public enum Layer
-{
-    Default = 0,
-    UI = 5,
-    Projectile = 8,
-    Enemies = 9,
-    Environment = 10,
-    Gun = 12
-}
-```
-And now instead of that BAD chunk of code, we make this GOOD chunk of code.
-
-```c#
-if (gameObject.layer == (int)Layer.Environment) // Oh, it's the Environment layer. Remember to cast to int! (Visual Studio will remind you.)
-{
-    // Do something but sexy.
-}
-```
-
-It also has the added bonus that if your layer indexes get shifted, you only have to modify the Enumerator's definitions, and not every occurance throughout the project. Yay! You can even rename a given layer to something else and the index will stay the same. *If you did this using strings you'd have to change every occurance of the string. (!)*
-
-### Worthwhile Resources
-
-* [Polymorphism](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/polymorphism)  
-* [Delegates](https://unity3d.com/learn/tutorials/topics/scripting/delegates)  
-* [Asynchronus tasks + Coroutines](https://docs.unity3d.com/Manual/Coroutines.html)
-
-## :game_die: Unity
-
-### Unity Timesavers
-* Use Shift + Spacebar to quickly toggle fullscreening of any Unity window/panel.
-* If you want to keep one GameObject or Asset active in the inspector while being able to select other objects in the hierarchy, press the tiny dark grey padlock icon at the extreme top-right of the Inspector panel.
-
+(Coming Soon) A light introduction to a powerful advanced tool. Consider this an entry to optimization.
 
 ### Reference IDs
 
@@ -192,7 +118,13 @@ public class MyPopulator {
     }
 }
 ```
+### Multiplatform as Hell
 
+(Coming Soon) Unity can make things for most big devices and OS's.
+
+## :violin: Best Practices
+
+Here's just some pro tips relating to the specifics Unity provides. Things to save time, or things to watch out for.
 
 ### Know the Costs of Unity Methods
 Examples:
@@ -207,54 +139,6 @@ Examples:
 * Input events which are done outside of `Update()` will often not register or will have noticable lag, which is :thumbsdown:
 * Offload as many functions as possible into less-frequently-updated asynchronous loops. For instance, checking for new hardware on the system can be done every 2 seconds instead of every frame 
 
-## :space_invader: Game Design
-
-As a developer in a small team, you'll often have to make calls about design decisions when your designer is away for lunch, or even just because you're expected to know the answer. The basics of game design are more-or-less as follows:
-
-### The Basics of Fun
-
-1. Games are greater than the sum of their parts. 
-    * If something isn't feeling good, add sound, animation principles, visual polish, agency, responsiveness, cinematography, tone, etc...
-    * Good game developers can use the full spectrum of the medium to add flare and satisfaction to a part of a game.
-    * GREAT game developers can make something look and feel good using only a couple of the aforementioned components.
-2. Player input needs to be responsive.
-    * It needs have have punch and it needs to feel good. 
-    * If you need to slow the responsiveness of something down, use [animation principles](https://en.wikipedia.org/wiki/12_basic_principles_of_animation) to give it physicality. 
-    * Dark Souls does this really well. Attacks don't happen instantly, but have anticipation, windup, followthrough, and there is a noticable secondary impact motion on the enemies which helps communicate your power.
-3. Design toward an experience. Design by subtraction.
-    * Everything in your game should bring it closer to a particular experiential aesthetic. Decide on that aesthetic early, and tailor EVERYTHING towards it.
-    * Often the best way to make something better is to take something out of it. We make assumptions constantly about what 'should' be in a game. In the example of Zombie Donuts we let the player move around the environment, and due to the limitations of the Gear VR players didn't like the control scheme and felt sick because of it. Players had more fun by standing still.
-    * If you want a great example of design by subtraction take a look at one of my favourite game designers of all time - Fumito Ueda's [Shadow of the Colossus](http://www.thesaint-online.com/2017/03/fumito-ueda-design-by-subtraction/) and [Ico.](https://www.youtube.com/watch?v=AmSBIyT0ih0)
-4. Fuck tutorials.
-    * If you can make a game entirely without tutorials, do it. 
-    * In addition to forcing you to make a terrible bastardization of your gameplay loop, players hate them. 
-    * Players hate reading, feeling patronized, and having the discovery of mechanics spoiled for them.
-5. Teach the player without them noticing.
-    * Use light or colour :rainbow: to guide the eye to important gameplay elements. 
-    * Use sound to cue the player to look in a direction. Use framing to focus the player on important elements. 
-    * Use visual weight (notice how the rainbow emoji draws your eye because it has a bolder visual presence than the rest of the text) to draw attention. 
-    * Force the player using psychology to teach themselves how to play the game. It's hard but when it's done right it's phenomenal.
-
-### XR-Specific
-
-XR, which is a blanket term for VR, AR, MR (Mixed Reality) and other such designations, have some interesting design concerns associated with them, mostly around input and interaction. For those User Experience (UX) people out there, this might be interesting for you.
-
-Here's a list of useful guidelines:
-
-1. Make interactions kinetic! (Give them physicality and weight.)
-    1. Have the player directly influence items in the game world or on the phone screen. 
-    2. Don't rely on buttons and floating UI.
-2. Avoid unmotivated movement, perspective shifts of any sort, and even movement in general if you can.
-    1. Doing something like changing the Field of View in VR is such a no-no that most VR SDKs and APIs totally lock it.
-3. Make intuitive or charming environmental interactions instead of buttons. 
-    1. Ex. Toggle the music by having the player shoot a jukebox.
-
-If you must do movement, try some of the following options:
-
-1. Fade/blink to an indicated location.
-2. **Slow** movement using conventional control schemes. Must be a decent controller with accurate directional and analog input.
-3. Constant and linear movement. (See Run Dorothy Run)
-4. Deliberate physical movement.
-    1. Using motion controllers to swim or push off objects in space. 
-    2. Needs to be tuned to feel physically true-to-life, make sure there are no physics glitches that will make you instantly barf. :mask:
-    3. One game that does this REALLY well is [Lone Echo](https://youtu.be/zxPuZYMIzuQ?t=3457) which gets around this problem by having the player in zero-grav environments for the entirety of the game. You also see your body if you look down. Super cool.
+### Unity Timesavers
+* Use Shift + Spacebar to quickly toggle fullscreening of any Unity window/panel.
+* If you want to keep one GameObject or Asset active in the inspector while being able to select other objects in the hierarchy, press the tiny dark grey padlock icon at the extreme top-right of the Inspector panel.
