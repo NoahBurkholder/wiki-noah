@@ -26,7 +26,7 @@ When people think of violence they usually think of head exploding gore, and the
 
 2. The game is violent, but the player is expected to make a *deliberate choice* on whether to partake.
    1. Some of the best dialogues on game violence we started by a game itself critiquing our fixation on violence.
-   2. Sometimes the choice to be non-violent isn't obvious, because players follow tropes blindly.
+   2. Sometimes the choice to be non-violent isn't obvious, because players follow tropes blindly. This creates an "oh my god" moment when it dawns on them they had a choice.
    3. The game mechanically punishes you or rewards you for your choice.
    4. The consequence carry weight because you *had the choice.*
    5. **As a designer, you must take into account representational consent with games where the player is given a choice to invoke violence against a depiction of a person. ([See next section.](#representation-identity-and-puppeteering))**
