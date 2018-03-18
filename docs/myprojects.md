@@ -1,8 +1,10 @@
-# My Projects
+# :blush: My Projects
 
-## Us Forgetful Few
+## :anchor: Us Forgetful Few
 
-### Designing Soundtrack-First
+### The Pitch
+*Design and manage a ship to survive a great lovecraftian storm which has washed away all memory of the old world.*
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/362838398&color=%232c4d52&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+### The Gameplay
 
+I've pitched this game idea to a lot of people
