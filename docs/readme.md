@@ -1,6 +1,6 @@
-# :cyclone: Wiki Noah
+# Wiki Noah
 
-## Version 1.5.1 (Cyclone) - March 17th, 2018
+## :cyclone: Version 1.5.1 (Cyclone) - March 17th, 2018
 
 # :question: Noah What Have You Done?
 
