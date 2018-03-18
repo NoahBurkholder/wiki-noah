@@ -12,7 +12,7 @@ As with any creative medium, I feel it's important to be cognisant of the ethics
 
 (Coming Soon) Concerning the bloated dead myths around 'videogame violence', but also violence as narrative, violence for aesthetics, and violence as a cultural fixation within the industry.
 
-When people think of violence they usually think of head exploding gore, and the normalization of arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This is just so we have a reason not to burn the whole house down before we get into conversation.
+When people think of violence they usually think of head exploding gore, and the normalization of arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This is just so we have a reason not to burn the whole house down before we get into conversation. I have marked stipulations and important context in **bolded text.**
 
 1. The game uses violence to *punish, sicken, or scare* the player.
    1. This is often used to train the player about the mechanics.
@@ -26,39 +26,55 @@ When people think of violence they usually think of head exploding gore, and the
 
 2. The game is violent, but the player is expected to make a *deliberate choice* on whether to partake.
    1. Some of the best dialogues on game violence we started by a game itself critiquing our fixation on violence.
-   2. Sometimes the choice to be non-violent isn't obvious, and the
+   2. Sometimes the choice to be non-violent isn't obvious, because players follow tropes blindly.
+   3. The game mechanically punishes you or rewards you for your choice.
+   4. The consequence carry weight because you *had the choice.*
+   5. **As a designer, you must take into account representational consent with games where the player is given a choice to invoke violence against a depiction of a person. ([See next section.](#representation-identity-and-puppeteering))**
+   
 * [This War of Mine](http://store.steampowered.com/app/282070/This_War_of_Mine/)
 * [Spec Ops: The Line](http://store.steampowered.com/app/50300/Spec_Ops_The_Line/)
 * [Undertale](http://store.steampowered.com/app/391540/Undertale/)
 
-3. The game's portrayal of violence is *frictional*.
+3. The game's portrayal of violence is *realistic or frictional.*
    1. Weapons kill quick.
    2. Fights are dirty, and asymmetrical.
    3. Weapons don't feel like toys, but feel like tools.
    4. Allusion to or *direct simulation* of bystanders, civilians, and collateral damage.
-   5. The violence enforces an aesthetic of authenticity.
-* [Arma 3](http://store.steampowered.com/app/107410/Arma_3/)
+   5. The violence enforces an aesthetic of authenticity, even education.
+   6. **These games often begin as actual training simulators.**
+   7. **These games are often unintentionally great 'Anti-War War Games'.**
+* [DCS World](http://store.steampowered.com/app/223750/DCS_World/)
+* [Arma 3](http://store.steampowered.com/app/107410/Arma_3/) which is a commercial version of [VBS3](https://en.wikipedia.org/wiki/VBS3)
 * [Kingdom Come: Deliverance](http://store.steampowered.com/app/379430/Kingdom_Come_Deliverance/)
 * [Rainbow Six 3](http://store.steampowered.com/app/19830/Tom_Clancys_Rainbow_Six_3_Gold/)
 
-4. The game's violence enforces an aesthetic of desperation and perserverance.
+4. The game's violence enforces an aesthetic of *desperation and perserverance.*
    1. Physical or psychological in nature.
-   2. Often the struggle is non-literal.
-   3. Often the violence isn't the fun part, but rather the act of surviving against all odds.
+   2. Often the struggle is non-literal - metaphorical.
+   3. Often the violence isn't the fun part - surviving is.
 * [Hellblade: Senua's Sacrifice](http://store.steampowered.com/app/414340/Hellblade_Senuas_Sacrifice/)
 * [Dark Souls](http://store.steampowered.com/app/211420/DARK_SOULS_Prepare_To_Die_Edition/)
 * [Far Cry 2](http://store.steampowered.com/app/19900/Far_Cry_2_Fortunes_Edition/)
 * [Darkest Dungeon](http://store.steampowered.com/app/262060/Darkest_Dungeon/)
 
-5. Violence is the joke, it's the message.
+5. Violence is the joke, *it's the message.*
    1. Satirical and overblown in nature.
    2. Commentary or critique on the Western fixation on violence.
-   3. Often isn't set in the same universe as us.
+   3. Often isn't set in the same universe as us, or is in an exaggeration of it.
+   4. **This is the most often (in my opinion) wrongly-criticized form of violence in media, because the satire requires extensive knowledge of the thing it is satirizing. Media outlets often don't come from an angle of videogame literacy.**
 
+* [Doom](http://store.steampowered.com/app/379720/DOOM/)
 * [Viscera Cleanup Detail](http://store.steampowered.com/app/246900/Viscera_Cleanup_Detail/)
 * [Borderlands](http://store.steampowered.com/app/8980/Borderlands/)
 * [Hotline Miami](http://store.steampowered.com/app/219150/Hotline_Miami/)
 * [Gang Beasts](http://store.steampowered.com/app/285900/Gang_Beasts/)
+* [Grand Theft Auto V](http://store.steampowered.com/app/271590/Grand_Theft_Auto_V/)
+
+6. Violence is the chosen channel for designed 'game feel'.
+   1. Exaggerated player agency is the goal.
+   2. Violence is the means.
+   3. Players aren't chasing violence, but are rather are chasing agency.
+   4. **Game Feel should not be leveraged against a group of people. The game must not depict violence against actual groups of people, or it gets into propaganda territory.**
 
 ...
 
