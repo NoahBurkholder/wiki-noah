@@ -17,18 +17,19 @@ When people think of violence they usually think of head exploding gore, and the
 1. The game uses violence to *punish, sicken, or scare* the player.
    1. This is often used to train the player about the mechanics.
    2. It's seen most commonly in genres like platformers, horror games, and stealth games.
-[Limbo](http://store.steampowered.com/app/48000/LIMBO/)
-[Alien: Isolation](http://store.steampowered.com/app/214490/Alien_Isolation/)
-[Outlast](http://store.steampowered.com/app/238320/Outlast/)
-[Thief: Deadly Shadows](http://store.steampowered.com/app/6980/Thief_Deadly_Shadows/)
+   
+* [Limbo](http://store.steampowered.com/app/48000/LIMBO/)
+* [Alien: Isolation](http://store.steampowered.com/app/214490/Alien_Isolation/)
+* [Outlast](http://store.steampowered.com/app/238320/Outlast/)
+* [Thief: Deadly Shadows](http://store.steampowered.com/app/6980/Thief_Deadly_Shadows/)
 
 
 2. The game is violent, but the player is expected to make a *deliberate choice* on whether to partake.
    1. Some of the best dialogues on game violence we started by a game itself critiquing our fixation on violence.
    2. Sometimes the choice to be non-violent isn't obvious, and the
-[This War of Mine](http://store.steampowered.com/app/282070/This_War_of_Mine/)
-[Spec Ops: The Line](http://store.steampowered.com/app/50300/Spec_Ops_The_Line/)
-[Undertale](http://store.steampowered.com/app/391540/Undertale/)
+* [This War of Mine](http://store.steampowered.com/app/282070/This_War_of_Mine/)
+* [Spec Ops: The Line](http://store.steampowered.com/app/50300/Spec_Ops_The_Line/)
+* [Undertale](http://store.steampowered.com/app/391540/Undertale/)
 
 3. The game's portrayal of violence is *frictional*.
    1. Weapons kill quick.
@@ -36,28 +37,28 @@ When people think of violence they usually think of head exploding gore, and the
    3. Weapons don't feel like toys, but feel like tools.
    4. Allusion to or *direct simulation* of bystanders, civilians, and collateral damage.
    5. The violence enforces an aesthetic of authenticity.
-[Arma 3](http://store.steampowered.com/app/107410/Arma_3/)
-[Kingdom Come: Deliverance](http://store.steampowered.com/app/379430/Kingdom_Come_Deliverance/)
-[Rainbow Six 3](http://store.steampowered.com/app/19830/Tom_Clancys_Rainbow_Six_3_Gold/)
+* [Arma 3](http://store.steampowered.com/app/107410/Arma_3/)
+* [Kingdom Come: Deliverance](http://store.steampowered.com/app/379430/Kingdom_Come_Deliverance/)
+* [Rainbow Six 3](http://store.steampowered.com/app/19830/Tom_Clancys_Rainbow_Six_3_Gold/)
 
 4. The game's violence enforces an aesthetic of desperation and perserverance.
    1. Physical or psychological in nature.
    2. Often the struggle is non-literal.
    3. Often the violence isn't the fun part, but rather the act of surviving against all odds.
-[Hellblade: Senua's Sacrifice](http://store.steampowered.com/app/414340/Hellblade_Senuas_Sacrifice/)
-[Dark Souls](http://store.steampowered.com/app/211420/DARK_SOULS_Prepare_To_Die_Edition/)
-[Far Cry 2](http://store.steampowered.com/app/19900/Far_Cry_2_Fortunes_Edition/)
-[Darkest Dungeon](http://store.steampowered.com/app/262060/Darkest_Dungeon/)
+* [Hellblade: Senua's Sacrifice](http://store.steampowered.com/app/414340/Hellblade_Senuas_Sacrifice/)
+* [Dark Souls](http://store.steampowered.com/app/211420/DARK_SOULS_Prepare_To_Die_Edition/)
+* [Far Cry 2](http://store.steampowered.com/app/19900/Far_Cry_2_Fortunes_Edition/)
+* [Darkest Dungeon](http://store.steampowered.com/app/262060/Darkest_Dungeon/)
 
 5. Violence is the joke, it's the message.
    1. Satirical and overblown in nature.
    2. Commentary or critique on the Western fixation on violence.
    3. Often isn't set in the same universe as us.
 
-[Viscera Cleanup Detail](http://store.steampowered.com/app/246900/Viscera_Cleanup_Detail/)
-[Borderlands](http://store.steampowered.com/app/8980/Borderlands/)
-[Hotline Miami](http://store.steampowered.com/app/219150/Hotline_Miami/)
-[Gang Beasts](http://store.steampowered.com/app/285900/Gang_Beasts/)
+* [Viscera Cleanup Detail](http://store.steampowered.com/app/246900/Viscera_Cleanup_Detail/)
+* [Borderlands](http://store.steampowered.com/app/8980/Borderlands/)
+* [Hotline Miami](http://store.steampowered.com/app/219150/Hotline_Miami/)
+* [Gang Beasts](http://store.steampowered.com/app/285900/Gang_Beasts/)
 
 ...
 
