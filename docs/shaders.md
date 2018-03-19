@@ -1,3 +1,5 @@
+#### [< Back to Index](readme.md)
+
 # :dragon: Shaders
 
 Shaders are perhaps my favourite thing to code, and also among the least approachable things to code. I know such a tiny amount of shader code and yet it's still one of my favourite things. Their effects are seen far and wide in games, and a good shader can be a thing of beauty.
@@ -38,6 +40,8 @@ Shaders are used to give materiality to objects, style to a project, post-proces
 
 (Coming Soon) How to make your shader fall back on other shaders if it isn't supported.
 
+#### [< Back to Index](readme.md)
+
 ## Shading
 
 (Coming Soon) A big section outlining lots of tools in your toolset.
@@ -62,6 +66,8 @@ Shaders are used to give materiality to objects, style to a project, post-proces
 
 (Coming Soon) Getting the angle of view of the camera, and how that might affect specularity.
 
+#### [< Back to Index](readme.md)
+
 ## Case Studies
 
 (Coming Soon) Sometimes the best way to learn is to just jump in!
@@ -69,3 +75,5 @@ Shaders are used to give materiality to objects, style to a project, post-proces
 ### Cel Shading
 
 (Coming Soon) Cel Shading, often called 'Toon Shading' and how to execute it.
+
+#### [< Back to Index](readme.md)
