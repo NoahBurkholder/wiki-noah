@@ -17,7 +17,7 @@ I have marked stipulations and important context in **bolded text**, because thi
 #### The game enacts one-sided violence to *punish, sicken, or scare* the player.
    1. This is ultimately used to train the player about the mechanics, and raise their level of skill within the world.
    2. It's seen most commonly in genres like platformers, horror games, and stealth games.
-   3. **The player needs to know what kind of game they are buying. Don't just drop this shit on them.**
+   3. **The player needs to know what kind of game they are buying. Don't just drop this shit on them. Some people are very sensitive to this type of content.**
    
 Examples:
 * [Limbo](http://store.steampowered.com/app/48000/LIMBO/)
@@ -72,6 +72,7 @@ Examples:
    3. Often isn't set in the same universe as us, or is in an exaggeration of it.
    4. **This is the most often (in my opinion) wrongly-criticized form of violence in media, because the satire requires extensive knowledge of the thing it is satirizing. Media outlets often don't come from an angle of videogame literacy.**
    5. **Don't ever target a disenfranchised group.**
+   6. **Don't hear 'exaggeration version of our universe' and think 'stereotypes'.**
 
 Examples:
 * [Doom](http://store.steampowered.com/app/379720/DOOM/)
