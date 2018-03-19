@@ -4,11 +4,11 @@
 
 # :question: Noah, What Have You Done?
 
-<details><summary> In short, this is a <i>Practical Resource For New Game Developers</i>. It is also a <i>Case Study for Students Entering Game Dev</i>, a <i>Reminder to Myself That What I Do Is SUPER COOL</i>, and hopefully a <i>Place to Share Passions and Expertise</i>. (Click to expand.)</summary><br>
+<details><summary> In short, Noah is writing a <i>Practical Resource For New Game Developers</i>. It is also a <i>Case Study for Students Entering Game Dev</i>, a <i>Reminder to Myself That What I Do Is SUPER COOL</i>, and hopefully a <i>Place to Share Passions and Expertise</i>. (Click to expand.)</summary><br>
 
 Basically, at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
 
-I showed it to Minh when I got home one day and he was super stoked about everything that was on here and wanted me to send him a copy (Hi Minh!). Figured I'd basically just make this public to help out anyone who might be interested, or at least give an interesting read about the kind of work I'm doing.
+One day I got home and Minh (Hi Minh!) asked me a Game Dev question relating to [coroutines](code.md#coroutines). I realized I had written about it earlier that day. Figured I'd basically just write a public version with all the work-specific stuff taken out.
 </details><br>
 
 # :wave: Welcome
