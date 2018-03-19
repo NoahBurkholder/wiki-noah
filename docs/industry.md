@@ -1,3 +1,5 @@
+#### [< Back to Index](readme.md)
+
 # :moneybag: The Industry
 
 The medium of games is incredibly inspiring to creative individuals, but is still in the throes of stigmatization, and for absolutely wrong reasons. The games industry has problems, but they're not the ones in the public lens.
@@ -29,3 +31,5 @@ And here are some reservations I have about the industry, which although aren't 
 ### Job Security Who?
 
 (Coming Soon) Concerning a side-effect of the difficulty of making games, lots of studios underestimate the costs of developing them, but also underestimate the power of the game developer community.
+
+#### [< Back to Index](readme.md)
