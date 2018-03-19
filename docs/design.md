@@ -1,3 +1,5 @@
+#### [< Back to Index](readme.md)
+
 # :triangular_ruler: Design
 
 Time to make a game!
@@ -150,6 +152,8 @@ Okay, the next sections should be less sassy.
 
 (Coming Soon) Concerning artificial intelligence, humility, and my thoughts on how to approach development in burgeoning fields of intelligence emulation.
 
+#### [< Back to Index](readme.md)
+
 ## :space_invader: Game Design
 
 As a developer in a small team, you'll often have to make calls about design decisions when your designer is away for lunch, or even just because you're expected to know the answer. The basics of game design are more-or-less as follows:
@@ -202,6 +206,8 @@ If you must do movement, try some of the following options:
     2. Needs to be tuned to feel physically true-to-life, make sure there are no physics glitches that will make you instantly barf. :mask:
     3. One game that does this REALLY well is [Lone Echo](https://youtu.be/zxPuZYMIzuQ?t=3457) which gets around this problem by having the player in zero-grav environments for the entirety of the game. You also see your body if you look down. Super cool.
 
+#### [< Back to Index](readme.md)
+
 ## :camera: Case Studies
 
 The best way to make good games is to play both good and bad games. Play a lot of them. Talk to friends about them. Analyze them.
@@ -213,3 +219,5 @@ The best way to make good games is to play both good and bad games. Play a lot o
 ### Dark Souls
 
 (Coming Soon) Using adversity to enforce triumph. Forcing players to confront thoughtful play. Being okay with players missing a secret.
+
+#### [< Back to Index](readme.md)
