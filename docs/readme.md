@@ -10,6 +10,7 @@ Basically, at work I've been writing a bunch of documentation for Git, Unity, C#
 
 I showed it to Minh when I got home one day and he was super stoked about everything that was on here and wanted me to send him a copy (Hi Minh!). Figured I'd basically just make this public to help out anyone who might be interested, or at least give an interesting read about the kind of work I'm doing.
 </details><br>
+
 # :wave: Welcome
 
 Welcome to my Wiki repository to which you are reading. I will be updating this relatively often with new stuff I learn through practical work at my job, as well as things I've learnt from the various senior developers I talk to at game dev meetups.
