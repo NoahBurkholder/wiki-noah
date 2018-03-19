@@ -94,9 +94,9 @@ Examples:
 
 All of this said, most games aren't violent. You can, and probably should design games without violence until you are confident and responsible enough to do it properly. You should be capable of well-designed 'Doom-calibre' Game Feel before you justify your violence with "it feels good" and you should be culturally aware and sensitive enough to not make a tone-deaf fool of yourself as your avatar mows down disenfranchised people.
 
-There **can** be good violence in games.
+Game violence **can** have intent and **can** be justifiable...
 
-But if you can't make any game good **without** adding violence - violence isn't going to save your shitty games.
+...but if you can't make any game good **without** adding violence - violence isn't going to save your shitty games.
 
 So maybe start by making game which isn't violent.
 
