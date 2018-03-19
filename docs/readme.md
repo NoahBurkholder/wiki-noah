@@ -1,8 +1,8 @@
 # Wiki Noah
 
-## :cyclone: Version 1.5.1 (Cyclone) - March 17th, 2018
+## :whale2: Version 1.5.2 (Whale) - March 18th, 2018
 
-# :question: Noah What Have You Done?
+# :question: Noah, What Have You Done?
 
 <details><summary> In short, this is a <b>Practical Resource For New Game Developers</b>. It is also a <b>Case Study for Students Entering Game Dev</b>, a <b>Reminder to Myself That What I Do Is SUPER COOL</b>, and hopefully a <b>Place to Share Passions and Expertise</b>. (Click to expand.)</summary><br>
 
