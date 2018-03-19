@@ -117,7 +117,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 ## :truck: Logistics
 
-### [:moneybag: The Industry](industry.md) (5% Complete)
+### [:moneybag: The Industry](industry.md) (50% Complete)
 
 1. [:thumbsup: The Pros](industry.md#thumbsup-the-pros)
     1. [Community](industry.md#community)
@@ -145,7 +145,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 
 ## :wrench: Development
 
-### [:triangular_ruler: Design](design.md) (30% Complete)
+### [:triangular_ruler: Design](design.md) (40% Complete)
 
 1. [:seedling: Game Ethics](design.md#seedling-game-ethics)
     1. [Violence as a Tool, Violence as a Crutch](design.md#violence-as-a-tool-violence-as-a-crutch)
