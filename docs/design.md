@@ -10,8 +10,6 @@ As with any creative medium, I feel it's important to be cognisant of the ethics
 
 ### Violence as a Tool, Violence as a Crutch
 
-(Coming Soon) Concerning the bloated dead myths around 'videogame violence', but also violence as narrative, violence for aesthetics, and violence as a cultural fixation within the industry.
-
 When people think of violence they usually think of head exploding gore, and the Western cultural fixation on arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This is just so we have a reason not to burn the whole house down before we get into conversation. I have marked stipulations and important context in **bolded text.**
 
 #### The game enacts one-sided violence to *punish, sicken, or scare* the player.
