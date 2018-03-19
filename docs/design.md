@@ -48,7 +48,7 @@ Examples:
 
 Examples:
 * [DCS World](http://store.steampowered.com/app/223750/DCS_World/)
-* [Arma 3](http://store.steampowered.com/app/107410/Arma_3/) which is a commercial version of [VBS3](https://en.wikipedia.org/wiki/VBS3)
+* [Arma 3](http://store.steampowered.com/app/107410/Arma_3/) which is a commercialized version of [a military training simulator](https://en.wikipedia.org/wiki/VBS3)
 * [Kingdom Come: Deliverance](http://store.steampowered.com/app/379430/Kingdom_Come_Deliverance/)
 * [Rainbow Six 3](http://store.steampowered.com/app/19830/Tom_Clancys_Rainbow_Six_3_Gold/)
 
@@ -92,14 +92,14 @@ Examples:
 * [Gang Beasts (Again)](http://store.steampowered.com/app/285900/Gang_Beasts/)
 * [Far Cry: Blood Dragon](http://store.steampowered.com/app/233270/Far_Cry_3__Blood_Dragon/)
 
-#### A Letter to Both Parents, and Donald Trump
+#### A Letter to Parents, and Donald Trump
 
 <details><summary>Can we shut the fuck up about videogame violence? (Click to expand if you reallyyyyy want.)</summary><br>
    
 The first thing told to me in University upon being assigned a game-themed research piece in my technical writing course (paraphrased):
 
 > "Please, don't write about the videogames causing violence debate. They don't. It's so frustrating to write and boring to read. The debate has been over for 10 years."
-- Paul Brokenshire, TA
+— Paul Brokenshire, TA
 
 1. Every new medium brings with it a moral panic. The same things were said about movies, music, writings, imagery, theatre, etc...
 2. [Meta-analysis of the mixed results of studies](http://journals.sagepub.com/doi/abs/10.1177/1745691615592234?journalCode=ppsa) show there is little-to-no effect on behaviour. 
@@ -117,7 +117,7 @@ The first thing told to me in University upon being assigned a game-themed resea
    3. My passion for the incredibly violent game [Lugaru](http://www.wolfire.com/lugaru) taught me the modding basics which got me into the career I'm in today.
    4. Sim City taught me about urban planning even as I burnt my city alive.
    5. Since I'm a developer now, being cognisant of violence as a design decision has forced me to actually take a stance on what I think is okay and what I think isn't. This is more than I can say for a lot of people. Some people just don't care. People who don't care are more dangerous and less predictable than people who have a concrete stance.
-5. It's just a useless conversation. These games aren't going anywhere, and they'll still sell. Alcohol is a better scapegoat if you *really* need one, parents and/or Donald Trump.
+5. It's just a useless conversation. These games aren't going anywhere, and they'll still sell. Alcohol or football are both much more immediately physiological scapegoats if you *really* need one, parents and/or Donald Trump (you don't - please stop).
 
 </details>
 
