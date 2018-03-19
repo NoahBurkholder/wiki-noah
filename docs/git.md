@@ -1,3 +1,5 @@
+#### [< Back to Index](readme.md)
+
 # :file_folder: Git
 
 Git is a Version Control utility. It gives you control over versions of your projects. It serves to give you and your team a huge advantage when it comes to:
@@ -206,5 +208,4 @@ When you have vetted every file which threw a conflict, and marked them all gree
 
 Boom. Doing this right is a monumental task, and can often save hours of re-development.
 
-
-
+#### [< Back to Index](readme.md)
