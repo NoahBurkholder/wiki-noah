@@ -100,6 +100,8 @@ Game violence **can** have intent and **can** be justifiable...
 
 So maybe start by making game which isn't violent.
 
+This message is meant mostly for the bro-type game designers who get excited by the idea of making the next hyperviolent darling, without regard for the *the rest of the fucking industry and world.* Fuck those people.
+
 #### A Letter to Parents, and Donald Trump
 
 <details><summary>Can we shut the fuck up about videogame violence? (Click to expand if you reallyyyyy want.)</summary><br>
