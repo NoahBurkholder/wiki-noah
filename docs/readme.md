@@ -10,7 +10,6 @@ Basically, at work I've been writing a bunch of documentation for Git, Unity, C#
 
 I showed it to Minh when I got home one day and he was super stoked about everything that was on here and wanted me to send him a copy (Hi Minh!). Figured I'd basically just make this public to help out anyone who might be interested, or at least give an interesting read about the kind of work I'm doing.
 </details><br>
-
 # :wave: Welcome
 
 Welcome to my Wiki repository to which you are reading. I will be updating this relatively often with new stuff I learn through practical work at my job, as well as things I've learnt from the various senior developers I talk to at game dev meetups.
@@ -37,13 +36,13 @@ The truth is even the most beginner programmer is only a few months hard work fr
     
 **For this reason, one of the most important reads for you is [The Basics of Fun](development.md#the-basics-of-fun).** This is perhaps the most valuable one-pager you'll read on the wiki, because it will affect how you do *everything* during development. It's based on a soft understanding of various famous works including Steve Swink's ["Game Feel"](https://en.wikipedia.org/wiki/Game_feel) as well as analysis of some of my own favourite games, and what makes them tick.
 
-I recommend taking the time to learn [good protocol surrounding Git](git.md#repository-protocol), as well as refresh yourself on [the basics](git.md#-git-basics). This is especially important since I'm going to talk about Git using the commandline interface. There is no guess-work involved, and there aren't any confirmation boxes saying *"ARE YOU SURE?"*. This is mostly because it's how I learnt Git, but it comes with the added benefit of feeling like a hacker-wiz, and you also gain a better understanding of the underlying operations simply because each command is deliberate by nature of the command prompt.
+I recommend taking the time to learn [good protocol surrounding Git](git.md#repository-protocol), as well as refresh yourself on [the basics](git.md#baby-git-basics). This is especially important since I'm going to talk about Git using the commandline interface. There is no guess-work involved, and there aren't any confirmation boxes saying *"ARE YOU SURE?"*. This is mostly because it's how I learnt Git, but it comes with the added benefit of feeling like a hacker-wiz, and you also gain a better understanding of the underlying operations simply because each command is deliberate by nature of the command prompt.
 
-Additionally, on this Wiki there is a boatload of fantastic and less-than-obvious tips, tricks and tools relating to [Unity](development.md#-unity) and [C#](development.md#-code) which I have poured my souls (plural) into.
+Additionally, on this Wiki there is a boatload of fantastic and less-than-obvious tips, tricks and tools relating to [Unity](development.md#-unity) and [C#](code.md#notes-c) which I have poured my [souls (plural)](design.md#dark-souls) into.
 </details><br>
 <details><summary>If you're relatively new to the game development field this Wiki is for you. If you went to school with me in SIAT then this Wiki is for you. (Click to expand.)</summary><br>
 
-It doesn't teach you the basics of programming (yet), but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too.
+It doesn't teach you the basics of programming (yet), but it gives you enough extra knowledge that you can rub shoulders with seasoned developers. I know - I was surprised too. This is because games are so broad, not many developers can really afford to go super super deep into one line of research. Therefore often the best thing to do is *identify* what few things you need to 'learn to be okay at' for a particular project, and 'be okay' at those things for the duration of the project. The most universal knowledge is what I'm going to prioritize in this wiki. Namely, code, design, and the industry.
 
 Frankly, since I wrote this for fellow coworkers in software development positions, it skips a lot of the basics of coding, and that is something I hope to remedy in the future when I have more time. Let me know what concepts in particular - fundamental or otherwise - you'd like covered and I'll prioritize those first.
 </details><br>
@@ -54,6 +53,37 @@ In general I'll only accept contributions if:
 1. I've met you in real life.
 2. You do creative stuff.
 3. You're not an asshole.
+
+And in general I want to **encourage** you to contribute if:
+
+1. You're passionate.
+2. There's a gap in the wiki's knowledge.
+3. You're nice.
+
+Things which I don't know how to write about that YOU might.
+
+1. YOUR OWN PROJECTS
+2. Marketing
+3. Self-Promotion
+4. Animation
+5. 2D Art and Pixel Art
+6. 3D Art
+7. Level Design
+8. Audio Design
+9. Audio Systems
+10. Funding Projects
+11. Funding Studios
+12. Finding Jobs
+13. Networking, Events, GDC
+14. Ethical Guidelines I'm Not Aware of or am Otherwise Underqualified to Talk About
+15. Mental Health
+16. Professionalism
+17. Contract Work / Freelance Work
+18. Initiating Collaboration
+19. Lifestyle Stuff
+20. "How much should I be getting paid?"
+
+And many more!
 
 But I think I can find a place for just about any topics, especially if they pertain to all creatives, and especially if the content is game-applicable. That said I don't want to limit this resource exclusively to games when so much of it is transferrable to other mediums.
 
