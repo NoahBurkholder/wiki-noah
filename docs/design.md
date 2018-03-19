@@ -12,7 +12,7 @@ As with any creative medium, I feel it's important to be cognisant of the ethics
 
 (Coming Soon) Concerning the bloated dead myths around 'videogame violence', but also violence as narrative, violence for aesthetics, and violence as a cultural fixation within the industry.
 
-When people think of violence they usually think of head exploding gore, and the normalization of arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This is just so we have a reason not to burn the whole house down before we get into conversation. I have marked stipulations and important context in **bolded text.**
+When people think of violence they usually think of head exploding gore, and the Western cultural fixation on arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This is just so we have a reason not to burn the whole house down before we get into conversation. I have marked stipulations and important context in **bolded text.**
 
 #### The game uses violence to *punish, sicken, or scare* the player.
    1. This is often used to train the player about the mechanics.
@@ -91,6 +91,28 @@ Examples:
 * [Doom (Again)](http://store.steampowered.com/app/379720/DOOM/)
 * [Gang Beasts (Again)](http://store.steampowered.com/app/285900/Gang_Beasts/)
 * [Far Cry: Blood Dragon](http://store.steampowered.com/app/233270/Far_Cry_3__Blood_Dragon/)
+
+Now let's shut the fuck up about videogame violence.
+
+#### 5 Reasons The Videogame Violence Debate is Over
+
+1. Every new medium brings with it a moral panic. The same things were said about movies, music, writings, imagery, theatre, etc...
+2. [Meta-analysis of the mixed results of studies](http://journals.sagepub.com/doi/abs/10.1177/1745691615592234?journalCode=ppsa) show there is little-to-no effect on behaviour. 
+   1. This is what we expect of all expressive mediums.
+   2. This meta-analysis, by nature, seeks to make sense of noisy results.
+   3. The 'little' in this case is even called into question in point 3.
+3. Meta-analysis of studies show that the act of 'claiming intense effects' statistically shows signs of meddling and bias.
+   1. [Meta-analysis of studies](https://www.sciencedirect.com/science/article/pii/S0160252717300973?via%3Dihub) shows studies claiming games' responsibility for negative behaviour appear to be particularly prone to false positive results since results vary so wildly, and studies testing for positive ('prosocial behaviour') are more heterogenous and overwhelmingly say "there isn't really an effect".
+   2. In other words, the premise of the question (even if testing for the same things) seems to influence the accuracy of results.
+   3. In other words, the consistent results of studies looking for *positives* imply accurate means and conclusions. (The conclusion being "no significant effect".)
+   4. In other words, the wildly varying results of studies looking for *negatives* imply biased means, misrepresented conclusions, even meddling/scapegoating and agendas. (Conclusions ranging from the "no significant effect" we expect, to exremes of "makes your kid into a killer" which isn't nearly as present in the positive studies.)
+4. Most videogames provide catharsis, and realms to improve dexterity, strategic thinking, and even experience different cultures. They're like sports, but less likely to injure you and others, and more likely to be voluntarily experienced.
+   1. Because interaction opens many doors for skill and knowledge analogs, there are plenty of skills you can learn from games, no matter how violent.
+   2. I learned how to type from Runescape.
+   3. My passion for the incredibly violent game [Lugaru](http://www.wolfire.com/lugaru) taught me the modding basics which got me into the career I'm in today.
+   4. Sim City taught me about urban planning even as I burnt my city alive.
+   5. Since I'm a developer now, being cognisant of violence as a design decision has forced me to actually take a stance on what I think is okay and what I think isn't. This is more than I can say for a lot of people. Some people just don't care. People who don't care are more dangerous and less predictable than people who have a concrete stance.
+5. It's just a useless conversation. These games aren't going anywhere, and they'll still sell. Alcohol is a better scapegoat if you *really* need one, parents and/or Donald Trump.
 
 ### Representation, Identity, and Puppeteering
 
