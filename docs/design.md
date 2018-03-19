@@ -96,7 +96,7 @@ All of this said, most games aren't violent. You can, and probably should design
 
 There **can** be good violence in games.
 
-But if you can't make a good game **without** adding violence - violence isn't going to save your shitty game.
+But if you can't make any game good **without** adding violence - violence isn't going to save your shitty games.
 
 So maybe start by making game which isn't violent.
 
@@ -128,6 +128,8 @@ The first thing told to me in University upon being assigned a game-themed resea
 5. It's just a useless conversation. These games aren't going anywhere, and they'll still sell. Alcohol or football are both much more immediately physiological scapegoats if you *really* need one, parents and/or Donald Trump (you don't - please stop).
 
 </details>
+
+Okay, the next sections should be less sassy.
 
 ### Representation, Identity, and Puppeteering
 
