@@ -10,11 +10,14 @@ As with any creative medium, I feel it's important to be cognisant of the ethics
 
 ### Violence as a Tool, Violence as a Crutch
 
-When people think of violence they usually think of head exploding gore, and the Western cultural fixation on arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This is just so we have a reason not to burn the whole house down before we get into conversation. I have marked stipulations and important context in **bolded text.**
+When people think of violence they usually think of head exploding gore, and the Western cultural fixation on arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This should be enough to convince you that violence isn't inherently detrimental to positive change, but if it isn't I've included a section for Donald Trump and your mom, who for some reason agree on something. 
+
+I have marked stipulations and important context in **bolded text**, because this discussion is inherently cultural.
 
 #### The game enacts one-sided violence to *punish, sicken, or scare* the player.
    1. This is ultimately used to train the player about the mechanics, and raise their level of skill within the world.
    2. It's seen most commonly in genres like platformers, horror games, and stealth games.
+   3. **The player needs to know what kind of game they are buying. Don't just drop this shit on them.**
    
 Examples:
 * [Limbo](http://store.steampowered.com/app/48000/LIMBO/)
@@ -32,8 +35,8 @@ Examples:
 
 Examples:
 * [This War of Mine](http://store.steampowered.com/app/282070/This_War_of_Mine/)
-* [Spec Ops: The Line](http://store.steampowered.com/app/50300/Spec_Ops_The_Line/)
 * [Undertale](http://store.steampowered.com/app/391540/Undertale/)
+* [Spec Ops: The Line](http://store.steampowered.com/app/50300/Spec_Ops_The_Line/)
 
 #### The game's portrayal of violence is *realistic or frictional.*
    1. Weapons kill quick.
@@ -41,8 +44,9 @@ Examples:
    3. Weapons don't feel like toys, but feel like tools.
    4. Allusion to or *direct simulation* of bystanders, civilians, and collateral damage.
    5. The violence enforces an aesthetic of authenticity, even education.
-   6. **These games often begin as actual training simulators.**
-   7. **These games are often unintentionally great 'Anti-War War Games'.**
+   6. **These games often begin as actual training simulators, or historical projects.**
+   7. **These games are often (unintentionally) great '[Anti-War War Games](https://www.youtube.com/watch?v=-228auScq1g)'.**
+   8. **One of the only times portraying violence against real groups can be constructive. Documentarily - for awareness, with dignity, and with [CONSENT](#representation-identity-and-puppeteering).**
 
 Examples:
 * [DCS World](http://store.steampowered.com/app/223750/DCS_World/)
@@ -51,9 +55,10 @@ Examples:
 * [Rainbow Six 3](http://store.steampowered.com/app/19830/Tom_Clancys_Rainbow_Six_3_Gold/)
 
 #### The game's violence enforces an aesthetic of *desperation and perserverance.*
-   1. Physical or psychological in nature.
+   1. The desperation can be physical or psychological in nature.
    2. Often the struggle is non-literal - metaphorical.
    3. Often the violence isn't the fun part - surviving is.
+   4. These experiences typically look and sound bleak.
 
 Examples:
 * [Hellblade: Senua's Sacrifice](http://store.steampowered.com/app/414340/Hellblade_Senuas_Sacrifice/)
@@ -66,6 +71,7 @@ Examples:
    2. Commentary or critique on the Western fixation on violence.
    3. Often isn't set in the same universe as us, or is in an exaggeration of it.
    4. **This is the most often (in my opinion) wrongly-criticized form of violence in media, because the satire requires extensive knowledge of the thing it is satirizing. Media outlets often don't come from an angle of videogame literacy.**
+   5. **Don't ever target a disenfranchised group.**
 
 Examples:
 * [Doom](http://store.steampowered.com/app/379720/DOOM/)
