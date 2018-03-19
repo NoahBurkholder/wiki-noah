@@ -4,7 +4,7 @@
 
 # :question: Noah, What Have You Done?
 
-<details><summary> In short, this is a <b>Practical Resource For New Game Developers</b>. It is also a <b>Case Study for Students Entering Game Dev</b>, a <b>Reminder to Myself That What I Do Is SUPER COOL</b>, and hopefully a <b>Place to Share Passions and Expertise</b>. (Click to expand.)</summary><br>
+<details><summary> In short, this is a <i>Practical Resource For New Game Developers</i>. It is also a <i>Case Study for Students Entering Game Dev</i>, a <i>Reminder to Myself That What I Do Is SUPER COOL</i>, and hopefully a <i>Place to Share Passions and Expertise</i>. (Click to expand.)</summary><br>
 
 Basically, at work I've been writing a bunch of documentation for Git, Unity, C#, Game Design, and just general industry stuff and useful shit for game developers and dev-adjacent people. It was meant for onboarding co-op students who are still in school and need a big, easy to understand overview of some practical development concepts.
 
