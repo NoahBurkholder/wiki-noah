@@ -111,6 +111,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 1. [:space_invader: The Basics of Fun](design.md#the-basics-of-fun)
 2. [:octopus: What Makes Unity Great](unity.md#octopus-what-makes-unity-great)
 3. [:baby: Git Basics](git.md#baby-git-basics)
+4. [:seedling: Violence as a Tool, Violence as a Crutch](design.md#violence-as-a-tool-violence-as-a-crutch)
 
 # :bookmark_tabs: Table of Contents
 
