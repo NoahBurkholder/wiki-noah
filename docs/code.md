@@ -8,7 +8,7 @@ You don't need to know much math. You don't need to know crazy algorithms. You d
 
 The aim of this page isn't to teach the basics. This is relatively advanced techniques for making highly efficient code. **If you can use these, you can already compete with the majority of game developer professionals I know.**
 
-## :notes: C#
+# :notes: C#
 
 This is what every game programmer I know unquestionably uses. Even if they have other favourite languages, this is the standard.
 
@@ -22,7 +22,7 @@ Any Unity code snippets you find online will probably use C# as the basis.
 
 Anyways - on to some useful structures in C#:
 
-### Singleton Managers
+## Singleton Managers
 
 A singleton pattern is a code pattern designed to ensure only one instance and always one instance of the script are available. These scripts are designed from the ground up to self-police.
 
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
 ```
 I love it.
 
-### Coroutines
+## Coroutines
 
 Okay hotshot. Coroutines are your new best friend. They are the polite cousin of the Update loops bundled with Unity. They are used in Unity by creating a IEnumerator method.
 
@@ -80,11 +80,58 @@ Coroutines can patiently wait durations of time, and will function asynchronousl
 
 You can make a custom loop which only updates every 20 seconds if you wanted to, or simply mimic the Update loop without hurting the buttery smoothness of your Camera transforms thanks to asynchronicity! :100:
 
-As you'll discover, using `yield return` is one of coroutines' most powerful tools for sequencing and looping. The idea is that a `yield return` keyword will *wait* for whatever is to the right of it to finish, and then *it will continue from where it was yielding*. Here's an example of a simple waiting coroutine:
+As you'll discover, using `yield return` is one of coroutines' most powerful tools for sequencing and looping. The idea is that a `yield return` keyword will *wait* for whatever is to the right of it to finish, and then *it will continue from where it was yielding*. The implications of this are pretty neat...
+
+### Custom Intervals
+
+If you've ever had to do a complex piece of timing - perhaps a cutscene - without any use of animation events and keyframes, you'll know how much of a nightmare manual timing of events can be within an `Update()` or `FixedUpdate()` loop. 
+
+<details><summary>It looks a little something like this. (Click to expand.)</summary><br>
+    
+```c#
+float timer = 0;
+int thingsDone = 0;
+private void FixedUpdate() {
+    // Iterate timer.
+    timer += time.deltaTime;
+
+    // Begin terrible complicated series of conditionals...
+    if (thingsDone >= 4) return; // If the sequence is already done, don't do any more code.
+
+    // Otherwise...
+
+    if (thingsDone == 0) {
+        if (timer > 2f) {
+            doThing1();
+            thingsDone++;
+        }
+    } else if (thingsDone == 1) {
+        if (timer > 4f) {
+            doThing2();
+            thingsDone++;
+        }
+    } else if (thingsDone == 2) {
+        if (timer > 5f) {
+            doThing3();
+            thingsDone++;
+        }
+    } else { // has done 3 things, and needs one more.
+        if (timer > 5.5f) {
+            doThing4();
+            thingsDone++;
+        }
+    }
+}
+
+```
+</details><br>
+
+If you looked at the collapsed snippet above, you are probably dry heaving, so let's put a blanket on you and take a look at the much better coroutine alternative:
 
 ```c#
 
 private void Start() {
+    // Start it once.
     StartCoroutine(oddlySpecificWaitRoutine());
 }
 
@@ -92,20 +139,85 @@ private IEnumerator oddlySpecificWaitRoutine() {
 
     Debug.Log("This happens instantly...")
 
+    yield return new WaitForseconds(2f);
+    doThing1();
+    
+    yield return new WaitForseconds(2f);
+    doThing2();
+    
     yield return new WaitForseconds(1f);
-    Debug.Log("This happens at 1 second...")
+    doThing3();
     
     yield return new WaitForseconds(0.5f);
-    Debug.Log("This happens at 1.5 seconds...")
+    doThing4();
     
     yield return new WaitForEndOfFrame();
-    Debug.Log("This happens at 1.5 seconds + 1 frame...")
+    Debug.Log("This happens at 5.5 seconds + 1 frame...")
     
-    yield break; // Exits the coroutine explicitly.
+    yield break; // Exits the coroutine explicitly. (I do this a lot just to mentally mark the end of a coroutine and to explicitly ensure it ends.)
 }
 ```
 
 Amazing! Efficient. Easy to read. No confusing nesting at all. Imagine how you'd have to do this in the Update() loop alone.
+
+### Custom Loops
+
+Now, maybe you discover your `Update()` method is getting bogged down by a very heavy process every frame. One way to solve this issue is to take your heavy method and put it into an asynchronous and infrequent loop. This is another of coroutines' strengths.
+
+```c#
+
+private void Start() {
+
+    // Start a coroutine!
+    StartCoroutine(predictTsunamisInPacific());
+}
+
+// This update loop shouldn't be used for heavy lifting.
+private void Update() {
+
+    // This needs to happen without a hitch.
+    moveCamera();
+    
+    // We've commented this out here.
+    // predictTsunamisInPacific(); 
+}
+
+// Instead move it to a coroutine.
+private IEnumerator tsunamiPredictionLoop() {
+    while (tryingToSaveLives) {
+        
+        // This will take however long it needs, and won't hitch our moveCamera() method.
+        predictTsunamisInPacific();
+        
+        // And you can even make it wait 20 seconds between loop iterations.
+        yield return new WaitForSeconds(20f);
+    }
+}
+```
+
+The key here is to inject a `while` loop into your coroutine, and then **limit** this coroutine by forcing it to Wait before returning to the beginning of the loop.
+
+What happens if we forget to wait?
+
+
+```c#
+private void Start() {
+    // Uh oh...
+    StartCoroutine(terribleIdea());
+}
+
+private IEnumerator terribleIdea() {
+    while (true) {
+        // Literally anything.
+    }
+}
+
+```
+You've just froze Unity. The problem isn't necessarily the `(true)` - I've done a few loops which need to persist unconditionally, and you can always call a `yield break` within the loop or a `StopAllCoroutines()` within the same Monobehaviour script to stop the loop.
+
+More accurately, the issue is the lack of an appropriate `yield return` statement which necessitates the passage of time or frames. Your loop is essentially trying to compute an indefinite amount of work with no regard for any of its script friends. It will hog the CPU so intensely that every other Unity script within the application will freeze in fear.
+
+### Nesting
 
 You can also wait for *other* coroutines.
 
@@ -152,8 +264,7 @@ yield return GameManager.instance.myWait;
 * This will cut down on memory and computation of having multiple parallel "WaitFor's", helping optimization.
 * Caching these yields works with `WaitForSeconds(float)`, `WaitForFixedUpdate()` (which waits for the Physics loop Fixed frame), and `WaitForNextFrame()` (which waits for the next normal `Update()` frame).
 
-
-### Enumerators
+## Enumerators
 
 Forget what we said about coroutines, Enums are going to be your new **bester** friends.
 
