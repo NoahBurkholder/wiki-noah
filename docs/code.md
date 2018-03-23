@@ -217,6 +217,8 @@ You've just froze Unity. The problem isn't necessarily the `(true)` - I've done 
 
 More accurately, the issue is the lack of an appropriate `yield return` statement which necessitates the passage of time or frames. Your loop is essentially trying to compute an indefinite amount of work with no regard for any of its script friends. It will hog the CPU so intensely that every other Unity script within the application will freeze in fear.
 
+The only reason this doesn't bluescreen Windows is because there are extensive script-safety gates preventing memory allocation issues and a multitude of short-circuiting scripts. Basically Unity is self-contained and very high-level in comparison.
+
 ### Nesting
 
 You can also wait for *other* coroutines.
