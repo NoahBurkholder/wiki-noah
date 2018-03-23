@@ -158,7 +158,7 @@ private IEnumerator oddlySpecificWaitRoutine() {
 }
 ```
 
-Amazing! Efficient. Easy to read. No confusing nesting at all. Imagine how you'd have to do this in the Update() loop alone.
+Amazing! Efficient. Easy to read. No confusing nesting at all. Additionally, this happens asynchronously, which - unless you're doing very graceful frame-dependent operations - is basically always wanted.
 
 ### Custom Loops
 
