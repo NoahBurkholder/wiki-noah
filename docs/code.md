@@ -268,15 +268,19 @@ yield return GameManager.instance.myWait;
 
 ## Enumerators
 
-Forget what we said about coroutines, Enums are going to be your new **bester** friends.
+Forget what we said about coroutines, Enumerators (Enums) are going to be your new *bester* friends.
 
 They're essentially just numbers with names, which means you can make checks more clear and easy to understand. *Computationally they're just integers* (very light), but to your eyes they have nice word-names! (Wow!)
 
-This means in the future you can avoid checking if an object exists on a layer with `LayerMask.NameToLayer("GrossString")`. This fucking method compares a complex data type with no regard for our performance. Don't use strings for IDing things ever again! use Enums instead! They're just integers! But they're kinda not!
+This means in the future you can avoid checking if an object exists on a layer with `LayerMask.NameToLayer("GrossString")`.
+
+Okay. I'm just gonna stop for a second and be angry because this fucking method compares a compound data type with no regard for our performance. Don't use strings for identifying things ever again! Use Enumerators instead! They're just integers! But they're kinda not!
 
 Here's an example of a perfect utilization - keeping track of the indices of your layers.
 
-Let's start with a BAD piece of code. I've commented the badness so you know how bad it is.
+For those of you who don't know - [Unity](unity.md) keeps track of your game layers using integers, because it's very efficient. These indices - the first 7 of which are reserved - are tied to your layer, and the name of it which you assign and interface with as a designer in the inspector.
+
+Let's start with a **bad** piece of code. I've commented the badness so you know how bad it is.
 
 ```c#
 if (gameObject.layer == 10) // What is this???!!!! Might've been clear when you wrote it, but not after 3 months.
@@ -284,9 +288,9 @@ if (gameObject.layer == 10) // What is this???!!!! Might've been clear when you 
     // Do something but terribly.
 }
 ```
-Yikes. So I'm glad we're done with that code. I don't know what that 10 is supposed to be. That could be any layer, and honestly I'm too lazy to check the Layer list in Unity.
+Yikes. So I'm glad we're done with that. I'm looking at that code and I still don't know what that 10 is supposed to be. That could be any layer, and honestly I'm too lazy to check the Layer list in Unity. You probably are too! I always click the wrong dropdown item and get lost and confused.
 
-Let's use our **enumerator** for this next bit. First let's define it:
+Let's use an **enumerator** for this next bit. First let's define it:
 
 ```c#
 public enum Layer
@@ -299,7 +303,7 @@ public enum Layer
     Gun = 12
 }
 ```
-And now instead of that BAD chunk of code, we make this GOOD chunk of code.
+And now instead of that *bad* chunk of code, we make this **good** chunk of code.
 
 ```c#
 if (gameObject.layer == (int)Layer.Environment) // Oh, it's the Environment layer. Remember to cast to int! (Visual Studio will remind you.)
