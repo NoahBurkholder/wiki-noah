@@ -8,27 +8,18 @@
 
 ## :anchor: Us Forgetful Few
 
-### The Pitch
-*Design and manage a ship to survive a great lovecraftian storm which has washed away all memory of the old world.*
+> Design and manage a ship to survive a great lovecraftian storm which has washed away all memory of the old world.
 
-### The Name
+## :lollipop: Fathom
 
-Not set on the name. As a title I like it but it's too reminiscent of another game which was released, namely We Happy Few.
+> Escape a dark underwater cave with the help of your diminishingly colorful friends.
 
-## :anchor: Fathom
+## :sweat_drops: Utterly Otter
 
-### The Pitch
-*Design and manage a ship to survive a great lovecraftian storm which has washed away all memory of the old world.*
+> Modelling, rigging, skinning and animating exercise using Unity as an interactive framework.
 
-## :anchor: Utterly Otter
+## :beetle: Antlion
 
-### The Pitch
-*Design and manage a ship to survive a great lovecraftian storm which has washed away all memory of the old world.*
-
-## :anchor: Antlion
-
-### The Pitch
-*Design and manage a ship to survive a great lovecraftian storm which has washed away all memory of the old world.*
-
+> An experiment in procedural level generation, and invisible tutorials.
 
 More soon!
