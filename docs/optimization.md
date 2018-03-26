@@ -54,18 +54,19 @@ Be prepared to cut back on visual fidelity in favour of performance. Performance
 
 ## Noah's Hit-List
 
-A lot of the time the best place way to start is just knowing your options. Sometimes you don't know an option exists but once you discover it you go *"Oh, yeah, that makes sense that it would help."*
+A lot of the time the best place way to start is just knowing your options. Sometimes you don't know an option exists but once you discover it you go *"Oh, yeah, that makes sense that it would help."* Sometimes we just assume we're getting something for free, when in reality everything has a cost. Lean too much on an assumption and you'll feel like an idiot when that assumption breaks.
 
 I'll start by just throwing out ideas one by one and you can use your best judgement as to which ones to prioritize first. :sweat_smile:
 
 ### Script Loop Hitching (CPU)
 
-I will assume by your reading this you know the advanced theory of Unity's Update() and FixedUpdate() loops. 
+I will assume in writing about loop hitching that you know the gist of Unity's Update() and FixedUpdate() loops. 
 
 Script hitching happens when your scripts push you over the [frame budget](#frame-budgets). This is because the update loops in Unity are synchronous, and holding up one will hold up the others. To stop these performance problems from happening you should do a couple things:
 
 1. Move as many distinct methods to distinct [asynchronous coroutines](development.md#coroutines). This will ensure that even if they do take too long to complete, they are un-bound from the synchronicity of the rest of the Unity loops.
 2. In fast loops (>= 60 calls per second) small changes in how you check and assign data can help you in significant amounts. Consider using [switch-cases](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch) instead of a long string of if-statements, avoid using or comparing strings as much as you can, find [alternatives to runtime instantiation](#object-pooling), and simplify your math if you're doing some wild stuff.
+
 
 ### Physics Matrix (Helps CPU)
 * Your physics matrix keeps track of how layers interact. The less check-marks the better, for physics and other collision dynamics.
