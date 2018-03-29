@@ -3,10 +3,11 @@
 ## :bird: Version 1.5.3 (Bird) - March 29th, 2018
 
 - Currently slowly learning shaders, and writing about them slower.
-- About to start work on small AI ethics section.
+- About to start work on a small AI ethics section.
 - About to start work on a game aesthetics section.
+- Also planning to open up a few pages on the fundamentals of Procedural Generation, Machine Learning, Evolutionary Algorithms, and Blockchain concepts.
 - Collaborating with a couple friends on Pixel art and Business Ethics.
-- Going to rename this Wiki soon since it is becoming a collaborative effort.
+- Going to rename this Wiki to WikiBee soon since it is becoming a collaborative effort!
 
 # :question: Noah, What Have You Done?
 
