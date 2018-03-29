@@ -1,6 +1,12 @@
-# Wiki Noah
+# Wiki Noah (Soon WikiBee)
 
-## :whale2: Version 1.5.2 (Whale) - March 18th, 2018
+## :bird: Version 1.5.3 (Bird) - March 29th, 2018
+
+- Currently slowly learning shaders, and writing about them slower.
+- About to start work on small AI ethics section.
+- About to start work on a game aesthetics section.
+- Collaborating with a couple friends on Pixel art and Business Ethics.
+- Going to rename this Wiki soon since it is becoming a collaborative effort.
 
 # :question: Noah, What Have You Done?
 
