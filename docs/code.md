@@ -10,15 +10,13 @@ The aim of this page isn't to teach the basics. This is relatively advanced tech
 
 # :notes: C#
 
-This is what every game programmer I know unquestionably uses. Even if they have other favourite languages, this is the standard.
+This is what every Unity programmer I know unquestionably uses. Even if they have other favourite languages, they know C# because it is the common language of Unity devs.
 
-Writing in C# in Unity is a lot like writing music with musical scores. It is a technical expression of typically pretty creative expressions. It is a toolset which looks and operates objectively, but is used (at least in our context) to solve subjective things.
+Writing in C# in Unity is a lot like writing music with a score. It is a toolset which looks and operates objectively, but is used (at least in our context) to create subjective things. For this reason it functions in a neat balance between flexibility and technical efficiency. Perfect for game development.
 
-It's basically Java but a little less confusingly arbitrary and noisy. It also is developed by Microsoft so it has amazing integration with Windows. Very easy to interface with the OS.
+**If you know Java**, C# is basically just Java but a little *less* confusingly arbitrary and noisy. It also is developed by Microsoft so it has good integration with Windows. Very easy to interface with the OS.
 
-Great language! It's an almost impossible balance of stability, compatibility, understandability, and efficiency. Perfect for game programming. It's the default for most game developers of this age.
-
-Any Unity code snippets you find online will probably use C# as the basis.
+Great language! Any Unity code snippets you find online will probably use C# as the basis.
 
 Anyways - on to some useful structures in C#:
 
@@ -72,11 +70,13 @@ public class GameManager : MonoBehaviour
 ```
 I love it.
 
+Now, you can basically forget about needing to make a reference to your manager object constantly. Instead, without making a reference, you can just type `GameManager.instance.aNonStaticVariable`. This instance reference is static, but specific to a single instanced version of your manager. This means your variables/members inside the class can be used like any other, from any other place, with no issue.
+
 ## Coroutines
 
-Okay hotshot. Coroutines are your new best friend. They are the polite cousin of the Update loops bundled with Unity. They are used in Unity by creating a IEnumerator method.
+Okay hotshot. You like loops? Well, coroutines are about to be your new best friend. They are the polite cousin of the `Update` loops bundled with Unity. They are used in Unity by creating a method returning the IEnumerator class.
 
-Coroutines can patiently wait durations of time, and will function asynchronously - kinda like a pseudo thread - so that if they get held up, the rest of your code will continue to fly by. They are perfect for sequencing events in cutscenes, or doing large tasks over a dilute period of time.
+Coroutines can patiently wait durations of time, and will function asynchronously - kinda like a [pseudo thread](#threading) - so that if they get held up, the rest of your code will continue to fly by. They are perfect for sequencing events in cutscenes, or doing large tasks over a dilute period of time.
 
 You can make a custom loop which only updates every 20 seconds if you wanted to, or simply mimic the Update loop without hurting the buttery smoothness of your Camera transforms thanks to asynchronicity! :100:
 
@@ -172,13 +172,13 @@ private void Start() {
     StartCoroutine(predictTsunamisInPacific());
 }
 
-// This update loop shouldn't be used for heavy lifting.
+// We can assume that this update loop shouldn't be used for heavy lifting, because...
 private void Update() {
 
-    // This needs to happen without a hitch.
+    // ...this needs to happen without a hitch.
     moveCamera();
     
-    // We've commented this out here.
+    // We've commented this call out, here. It was slowing down Update() which meant our moveCamera() script was stuttering.
     // predictTsunamisInPacific(); 
 }
 
@@ -197,7 +197,7 @@ private IEnumerator tsunamiPredictionLoop() {
 
 The key here is to inject a `while` loop into your coroutine, and then **limit** this coroutine by forcing it to Wait before returning to the beginning of the loop.
 
-What happens if we forget to wait?
+What happens if we forget to wait? If we forget to **limit**?
 
 
 ```c#
@@ -213,11 +213,11 @@ private IEnumerator terribleIdea() {
 }
 
 ```
-You've just froze Unity. The problem isn't necessarily the `(true)` - I've done a few loops which need to persist unconditionally, and you can always call a `yield break` within the loop or a `StopAllCoroutines()` within the same Monobehaviour script to stop the loop.
+You've just froze Unity. The problem isn't necessarily the `(true)` - I've done many-a loops which need to persist unconditionally, and you can always call a `yield break` within the loop or a `StopAllCoroutines()` within the same Monobehaviour script to stop the loop.
 
 More accurately, the issue is the lack of an appropriate `yield return` statement which necessitates the passage of time or frames. Your loop is essentially trying to compute an indefinite amount of work with no regard for any of its script friends. It will hog the CPU so intensely that every other Unity script within the application will freeze in fear.
 
-The only reason this doesn't bluescreen Windows is because there are extensive script-safety gates preventing memory allocation issues and a multitude of short-circuiting scripts. Basically Unity is self-contained and very high-level in comparison.
+The only reason this doesn't bluescreen Windows is because there are extensive layers of script-safety preventing memory allocation issues and a multitude of short-circuiting scripts. Basically Unity is self-contained and very high-level in comparison.
 
 ### Nesting
 
@@ -226,29 +226,35 @@ You can also wait for *other* coroutines.
 ```c#
 
 private void Start() {
-    StartCoroutine(BananaCutscene()); // Takes maybe 8-10 seconds to finish.
-    Debug.Log("I play on the first frame!"); // But since Start is a normal function, it will continue onward instantly to this line.
+
+    // The coroutine below takes maybe 8-10 seconds to finish.
+    StartCoroutine(BananaCutscene());
+    
+    // But since Start is a normal function, it will continue onward instantly to this line.
+    Debug.Log("I play on the first frame! I - the Debug Log - have not waited for this terrible cutscene to finish!");
+    
 }
 
 // Gets called on start.
 private IEnumerator BananaCutscene() {
 
-    // Plays entirety of line before continuing.
+    // The 'yield return' below will play the entirety of a line-reading coroutine before continuing.
     yield return StartCoroutine(Wizard.SayLine("thanks_for_banana"));
     
-    // Again, plays whole clip before continuing.
+    // Again, the below will play the whole clip before allowing the script to continue.
     yield return StartCoroutine(Monkey.SayLine("whatever"));
     
-    // This one doesn't have a 'yield return' so the BananaCutscene routine will *not* wait for this one to finish.
+    // This one doesn't have a 'yield return' so the BananaCutscene routine you're reading will *not* wait for this one to finish.
     StartCoroutine(Wizard.SayLine("its_a_very_sweet_juicy_banana"));
     
-    // Instead this line will interrupt Wizard.
+    // Instead this line will interrupt the Wizard line above.
     yield return StartCoroutine(Monkey.SayLine("ok_bye_creep"));
     
     // Even though the conversation was started by Start() before the first debug message, this line will log after it.
     Debug.Log("I play after like 8-10 seconds of dialogue!");
     
-    yield break; // Exits the coroutine explicitly.
+    // Exits the coroutine explicitly.
+    yield break; 
 }
 ```
 
@@ -314,7 +320,15 @@ if (gameObject.layer == (int)Layer.Environment) // Oh, it's the Environment laye
 
 It also has the added bonus that if your layer indexes get shifted, you only have to modify the Enumerator's definitions, and not every occurance throughout the project. Yay! You can even rename a given layer to something else and the index will stay the same. *If you did this using strings you'd have to change every occurance of the string. (!)*
 
-### Worthwhile Resources
+## Threading
+
+(Coming soon!) Regarding sending jobs to other threads on the CPU, and the limitations of game engines and synchronicity in this regard.
+
+## Events and Delegates
+
+(Coming soon!) Regarding the efficient utilization of events and delegating for rare callbacks which shouldn't be called every frame.
+
+## Worthwhile Resources
 
 * [Polymorphism](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/polymorphism)  
 * [Delegates](https://unity3d.com/learn/tutorials/topics/scripting/delegates)  
