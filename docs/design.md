@@ -16,7 +16,8 @@ When people think of violence they usually think of head exploding gore, and the
 
 I have marked stipulations and important context in **bolded text**, because this discussion is inherently cultural.
 
-<details><summary><b>The game enacts one-sided violence to *punish, sicken, or scare* the player. (Click to expand.)</b></summary>
+<details><summary><b>The game enacts one-sided violence to <i>punish, sicken, or scare</i> the player. (Click to expand.)</b></summary>
+   
    1. This is ultimately used to train the player about the mechanics, and raise their level of skill within the world.
    2. It's seen most commonly in genres like platformers, horror games, and stealth games.
    3. **The player needs to know what kind of game they are buying. Don't just drop this shit on them. Some people are very sensitive to this type of content.**
@@ -30,6 +31,7 @@ Examples:
 </details>
 
 <details><summary><b>The game is violent, but the player is expected to make a <i>deliberate choice</i> on whether to partake. (Click to expand.)</b></summary>
+   
    1. Some of the best dialogues on game violence we started by a game itself critiquing our fixation on violence.
    2. Sometimes the choice to be non-violent isn't obvious, because players follow tropes blindly. This creates an "oh my god" moment when it dawns on them they had a choice.
    3. The game mechanically punishes you or rewards you for your choice.
@@ -44,6 +46,7 @@ Examples:
 </details>
 
 <details><summary><b>The game's portrayal of violence is <i>realistic or frictional.</i> (Click to expand.)</b></summary>
+   
    1. Weapons kill quick.
    2. Fights are dirty, and asymmetrical.
    3. Weapons don't feel like toys, but feel like tools.
@@ -62,6 +65,7 @@ Examples:
 </details>
 
 <details><summary><b>The game's violence enforces an aesthetic of <i>desperation and perserverance.</i> (Click to expand.)</b></summary>
+   
    1. The desperation can be physical or psychological in nature.
    2. Often the struggle is non-literal - metaphorical.
    3. Often the violence isn't the fun part - surviving is.
@@ -76,6 +80,7 @@ Examples:
 </details>
 
 <details><summary><b>Violence is the joke, <i>it's the message.</i> (Click to expand.)</b></summary>
+   
    1. Satirical and overblown in nature.
    2. Commentary or critique on the Western fixation on violence.
    3. Often isn't set in the same universe as us, or is in an exaggeration of it.
@@ -93,7 +98,8 @@ Examples:
 
 </details>
 
-<details><summary><b>Violence is the chosen channel for designed '[Game Feel](https://en.wikipedia.org/wiki/Game_feel)'. (Click to expand.)</b></summary>
+<details><summary><b>Violence is the chosen channel for designed '<a href="https://en.wikipedia.org/wiki/Game_feel">Game Feel</a>'. (Click to expand.)</b></summary>
+   
    1. Exaggerated player agency is the goal.
    2. Violence is the means.
    3. Players aren't chasing violence, but are rather are chasing agency.
