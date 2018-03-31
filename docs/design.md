@@ -73,6 +73,8 @@ Examples:
 * [Far Cry 2](http://store.steampowered.com/app/19900/Far_Cry_2_Fortunes_Edition/)
 * [Darkest Dungeon](http://store.steampowered.com/app/262060/Darkest_Dungeon/)
 
+</details>
+
 <details><summary><b>Violence is the joke, <i>it's the message.</i> (Click to expand.)</b></summary>
    1. Satirical and overblown in nature.
    2. Commentary or critique on the Western fixation on violence.
