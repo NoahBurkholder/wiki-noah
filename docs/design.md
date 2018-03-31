@@ -28,7 +28,7 @@ Examples:
 * [Outlast](http://store.steampowered.com/app/238320/Outlast/)
 * [Thief: Deadly Shadows](http://store.steampowered.com/app/6980/Thief_Deadly_Shadows/)
 
-</details>
+</details><br>
 
 <details><summary><b>The game is violent, but the player is expected to make a <i>deliberate choice</i> on whether to partake. (Click to expand.)</b></summary>
    
@@ -43,7 +43,7 @@ Examples:
 * [Undertale](http://store.steampowered.com/app/391540/Undertale/)
 * [Spec Ops: The Line](http://store.steampowered.com/app/50300/Spec_Ops_The_Line/)
 
-</details>
+</details><br>
 
 <details><summary><b>The game's portrayal of violence is <i>realistic or frictional.</i> (Click to expand.)</b></summary>
    
@@ -62,7 +62,7 @@ Examples:
 * [Kingdom Come: Deliverance](http://store.steampowered.com/app/379430/Kingdom_Come_Deliverance/)
 * [Rainbow Six 3](http://store.steampowered.com/app/19830/Tom_Clancys_Rainbow_Six_3_Gold/)
 
-</details>
+</details><br>
 
 <details><summary><b>The game's violence enforces an aesthetic of <i>desperation and perserverance.</i> (Click to expand.)</b></summary>
    
@@ -77,7 +77,7 @@ Examples:
 * [Far Cry 2](http://store.steampowered.com/app/19900/Far_Cry_2_Fortunes_Edition/)
 * [Darkest Dungeon](http://store.steampowered.com/app/262060/Darkest_Dungeon/)
 
-</details>
+</details><br>
 
 <details><summary><b>Violence is the joke, <i>it's the message.</i> (Click to expand.)</b></summary>
    
@@ -96,7 +96,7 @@ Examples:
 * [Gang Beasts](http://store.steampowered.com/app/285900/Gang_Beasts/)
 * [Grand Theft Auto V](http://store.steampowered.com/app/271590/Grand_Theft_Auto_V/)
 
-</details>
+</details><br>
 
 <details><summary><b>Violence is the chosen channel for designed '<a href="https://en.wikipedia.org/wiki/Game_feel">Game Feel</a>'. (Click to expand.)</b></summary>
    
@@ -114,7 +114,7 @@ Examples:
 * [Gang Beasts (Again)](http://store.steampowered.com/app/285900/Gang_Beasts/)
 * [Far Cry: Blood Dragon](http://store.steampowered.com/app/233270/Far_Cry_3__Blood_Dragon/)
 
-</details>
+</details><br>
 
 All of this said, most games aren't violent. You can, and probably should design games without violence until you are confident and responsible enough to do it properly. You should be capable of well-designed 'Doom-calibre' Game Feel before you justify your violence with "it feels good" and you should be culturally aware and sensitive enough to not make a tone-deaf fool of yourself as your avatar mows down disenfranchised people.
 
