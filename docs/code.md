@@ -8,11 +8,30 @@ You don't need to know much math. You don't need to know crazy algorithms. You d
 
 The aim of this page isn't to teach the basics. This is relatively advanced techniques for making highly efficient code. **If you can use these, you can already compete with the majority of game developer professionals I know.**
 
+## General Practice
+
+### Code Intuition
+
+Most of the time it's really hard to know for sure what code method performs best. Here's some rules of thumb for choosing the best variable types and discerning the computation cost of methods:
+
+1. **Bools** are the lightest, always. However, they suffer from scalability problems.
+    1. Ex. If you have two game states, playing and not playing, you might consider using an integer anyways, so that if you ever create a third game state, you don't have to restructure any code.
+2. **Integers** are the gold standard for *performance **and** scalability*. They are super damn light, but still have a lot of flexibility due to the min and max values they can contain. (-2,147,483,648 to 2,147,483,647).
+3. **Floats** aren't actually very slow for modern machines. You can use them willynilly and it shouldn't be an issue unless you're really misusing them. The main thing to watch out for is expending extra resources to round numbers, or do approximations as a limitation born of the variable type.
+
+4. **Chars** are reasonably light, but typically they're only used in the context of their big brother...
+5. **Strings**. These are perhaps the least-responsibly used of all the native C# data types. 
+    1. Humans love strings because they are visual, and can be used to bridge the language gap between people and computers.
+    2. Unfortunately, although both humans and computers can use strings - they do so in completely different ways.
+    3. Computers look at strings as arrays of characters. Their toolsets parse strings as just that - substrings, characters, and indices.
+    4. Humans use strings as holistic symbols or identifiers, the same way a computer might use integers as identifiers. We parse strings as words, alphabets, and we don't typically think of words as having indices.
+    5. The issue with this, is that humans will often use strings as identifiers, but computers get stuck with a very unwieldy, bloated data type post-compilation.
+
 # :notes: C#
 
 This is what every Unity programmer I know unquestionably uses. Even if they have other favourite languages, they know C# because it is the common language of Unity devs.
 
-Writing in C# in Unity is a lot like writing music with a score. It is a toolset which looks and operates objectively, but is used (at least in our context) to create subjective things. For this reason it functions in a neat balance between flexibility and technical efficiency. Perfect for game development.
+Writing in C# in Unity is a lot like writing music with a score. It is a toolset which looks and operates objectively, but is used (at least in our context) to create subjective things. It needs to be flexible enough to let programmers get away with creative but sloppy prototyping, yet strict enough to enforce technical efficiency. Perfect for game development.
 
 **If you know Java**, C# is basically just Java but a little *less* confusingly arbitrary and noisy. It also is developed by Microsoft so it has good integration with Windows. Very easy to interface with the OS.
 
@@ -242,7 +261,8 @@ private void Start() {
     // The coroutine below takes maybe 8-10 seconds to finish.
     StartCoroutine(BananaCutscene());
     
-    // But since Start is a normal function, it will continue onward instantly to this line.
+    // But since BananaCutscene() is merely sent rolling with a small push, Start() will continue onward instantly to this line.
+    // BananaCutscene() will go at its own pace, and Start() isn't responsible for it anymore.
     Debug.Log("I play on the first frame! I - the Debug Log - have not waited for this terrible cutscene to finish!");
     
 }
@@ -251,21 +271,22 @@ private void Start() {
 private IEnumerator BananaCutscene() {
 
     // The 'yield return' below will play the entirety of a line-reading coroutine before continuing.
-    yield return StartCoroutine(Wizard.SayLine("thanks_for_banana"));
+    yield return StartCoroutine(Wizard.SayLine("behold_my_great_golden_banana"));
     
     // Again, the below will play the whole clip before allowing the script to continue.
-    yield return StartCoroutine(Monkey.SayLine("whatever"));
+    yield return StartCoroutine(Monkey.SayLine("whatever_chump"));
     
     // This one doesn't have a 'yield return' so the BananaCutscene routine you're reading will *not* wait for this one to finish.
-    StartCoroutine(Wizard.SayLine("its_a_very_sweet_juicy_banana"));
+    StartCoroutine(Wizard.SayLine("curse_you_monkey_you_never_respect_my_magic"));
     
     // Instead this line will interrupt the Wizard line above.
-    yield return StartCoroutine(Monkey.SayLine("ok_bye_creep"));
+    yield return StartCoroutine(Monkey.SayLine("im_leaving_to_go_find_babes"));
     
     // Even though the conversation was started by Start() before the first debug message, this line will log after it.
-    Debug.Log("I play after like 8-10 seconds of dialogue!");
+    Debug.Log("I play after like 8-10 seconds of terrible horrible dialogue!");
     
-    // Exits the coroutine explicitly.
+    // Exits the coroutine explicitly. Again. This is useful for the programmer mostly. It will exit regardless.
+    // Typically 'yield break' is the first thing I write in a coroutine because if there aren't any yields it will throw an error.
     yield break; 
 }
 ```
