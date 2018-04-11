@@ -80,6 +80,18 @@ Coroutines can patiently wait durations of time, and will function asynchronousl
 
 You can make a custom loop which only updates every 20 seconds if you wanted to, or simply mimic the Update loop without hurting the buttery smoothness of your Camera transforms thanks to asynchronicity! :100:
 
+### And Before You Ask...
+
+1. There is *no hard limit* to the number of coroutines you can have.
+    1. Like the number of update loops running concurrently, your coroutines will scale nicely into the hundreds and even thousands.
+    2. Like update loops, each coroutine has a small instance overhead to be aware of.
+    3. *Fun fact: it's much more efficient to have a single update loop update 1000 objects than 1000 objects updating in their own loop.*
+2. Coroutines are more efficient *90% of the time* when regular intervals are required.
+    1. The only exception is looping *every* frame.
+3. Coroutines are more efficient *100% of the time* when any irregular timing is involved.
+    1. Coroutines are also more understandable to programmers 100% of the time when any irregular timing is involved.
+4. If you want **synchronicity**, this is one of the only times you'll deliberately choose an update loop.
+
 As you'll discover, using `yield return` is one of coroutines' most powerful tools for sequencing and looping. The idea is that a `yield return` keyword will *wait* for whatever is to the right of it to finish, and then *it will continue from where it was yielding*. The implications of this are pretty neat...
 
 ### Custom Intervals
@@ -158,7 +170,7 @@ private IEnumerator oddlySpecificWaitRoutine() {
 }
 ```
 
-Amazing! Efficient. Easy to read. No confusing nesting at all. Additionally, this happens asynchronously, which - unless you're doing very graceful frame-dependent operations - is basically always wanted.
+Amazing! Efficient. Easy to read. No confusing nesting at all. Additionally, this happens asynchronously, which - unless you're doing very graceful frame-dependent operations - is basically always wanted. And - amazingly - we're also not checking four conditionals every frame. *Conditionals can stack up if you're doing them every frame.*
 
 ### Custom Loops
 
@@ -258,7 +270,9 @@ private IEnumerator BananaCutscene() {
 }
 ```
 
-You'll be using lots of `yield return WaitForSeconds(float)` so it's good to optimize them nicely using the following resource saver:  
+### Cache To Kill Garbage
+
+You'll be using lots of `yield return new WaitForSeconds(float)` so it's good to - instead of creating a `new` return - cache one of them, and recycle it:  
 
 ```c#
 // Create a reference to a single public Wait() object for each length of wait time you'll need. 
@@ -270,6 +284,7 @@ yield return GameManager.instance.myWait;
 // To have the coroutine wait one second.
 ```
 * This will cut down on memory and computation of having multiple parallel "WaitFor's", helping optimization.
+* It targets the biggest drawback of these returns - garbage collection (GC), which can hurt framerates.
 * Caching these yields works with `WaitForSeconds(float)`, `WaitForFixedUpdate()` (which waits for the Physics loop Fixed frame), and `WaitForNextFrame()` (which waits for the next normal `Update()` frame).
 
 ## Enumerators
