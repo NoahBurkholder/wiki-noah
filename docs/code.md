@@ -8,41 +8,61 @@ You don't need to know much math, or crazy algorithms. You don't need to know sy
 
 The aim of this page isn't to teach the basics. This is relatively advanced techniques for making competitive code. **If you can use these, you can already compete with many of game developer professionals I know.**
 
-## General Practice
-
-### Code Intuition
-
-Most of the time it's really hard to know for sure what code method performs best. Here's some rules of thumb for choosing the best variable types and discerning the computation cost of methods:
-
-1. **Bools** are the lightest, always. However, they suffer from scalability problems.
-    1. Ex. If you have two game states, playing and not playing, you might consider using an integer anyways, so that if you ever create a third game state, you don't have to restructure any code.
-2. **Integers** are the gold standard for *performance **and** scalability*. They are super damn light, but still have a lot of flexibility due to the min and max values they can contain. (-2,147,483,648 to 2,147,483,647).
-3. **Floats** aren't actually very slow for modern machines. You can use them willynilly and it shouldn't be an issue unless you're really misusing them. The main thing to watch out for is expending extra resources to round numbers, or do approximations as a limitation born of the variable type.
-
-4. **Chars** are reasonably light, but typically they're only used in the context of their big brother...
-5. **Strings**. These are perhaps the least-responsibly used of all the native C# data types. 
-    1. Humans love strings because they are visual, and can be used to bridge the language gap between people and computers.
-    2. Unfortunately, although both humans and computers can use strings - they do so in completely different ways.
-    3. Computers look at strings as arrays of characters. Their toolsets parse strings as just that - substrings, characters, and indices.
-    4. Humans use strings as holistic symbols or identifiers, the same way a computer might use integers as identifiers. We parse strings as words, alphabets, and we don't typically think of words as having indices.
-    5. The issue with this, is that humans will often use strings as identifiers, but computers get stuck with a very unwieldy, bloated data type post-compilation.
-    6. The solution to this is [enumerators!](#enumerators)
-    
-When you're thinking of ways to solve a problem, think about how you can cut down on complex data types and operations, while keeping your code's readability high, and the scalability high. [Enumerators](#enumerators) are a perfect example of keeping efficiency, scalability and readability at a maximum.
-
-> Think about every line of code as having a cost (because it does), and hypothesize about what that cost might be. You'll begin to get an intuition about what good code is.
-
-# :notes: C#
+## :notes: C#
 
 This is what every Unity programmer I know unquestionably uses. Even if they have other favourite languages, they know C# because it is the common language of Unity devs.
 
-Writing in C# in Unity is a lot like writing music with a score. It is a toolset which looks and operates objectively, but is used (at least in our context) to create subjective things. It needs to be flexible enough to let programmers get away with creative but sloppy prototyping, yet strict enough to enforce technical efficiency. Perfect for game development.
+Writing in C# in Unity is a lot like writing music with a score. It is a toolset which looks and operates objectively, but is used (at least in our context) to create subjective things. It needs to be flexible enough to let programmers get away with creative but sloppy prototyping, yet robust enough to enforce technical efficiency. Perfect for game development.
 
 **If you know Java**, C# is basically just Java but a little *less* confusingly arbitrary and noisy. It also is developed by Microsoft so it has good integration with Windows. Very easy to interface with the OS.
 
 Great language! Any Unity code snippets you find online will probably use C# as the basis.
 
-Anyways - on to some useful structures in C#:
+Anyways - on to some actual code information:
+
+## General Practice
+
+### Code Intuition
+
+Most of the time it's really hard to know for sure the **cost** of lines of code. Here's some rules of thumb for choosing the best variable types and discerning the computation cost of methods:
+
+1. **Bools** are the lightest, always. However, they suffer from scalability problems.
+    1. Ex. If you have two game states, playing and not playing, you might consider using an integer anyways, so that if you ever create a third game state, you don't have to restructure any code.
+2. **Integers** are the gold standard for *performance **and** scalability*. They are super damn light, but still have a lot of flexibility due to the min and max values they can contain. (In our case, +/- 2,147,483,647).
+3. **Floats** aren't actually very slow for modern machines. You can use them willynilly and it shouldn't be an issue unless you're really misusing them. The main thing to watch out for is expending extra resources to round numbers, or do approximations as a limitation born of the variable type.
+
+4. **Chars** are reasonably light, but typically they're only used in the context of their big brother...
+5. **Strings**. These are perhaps the least-responsibly used of all the native C# data types.
+
+#### A Quick Rant About Strings
+
+Humans love strings because they are visual , and can be used to bridge the language gap between people and computers. *Unfortunately*, although both humans and computers can use strings - they do so in completely different ways.
+
+**Computers** look at strings as arrays of characters. Their toolsets parse strings as just that:
+`Strings` are arrays of `characters`, and computers process them using `indices`.
+
+**Humans** use strings as holistic symbols or identifiers, because we're pattern-based creatures.
+`Strings` holistically represent things using our `alphabet`, and we process them as `words`.
+
+This introduces a **language barrier** between how humans and computers think about the same representation. Humans will often wrongly use strings as IDs, but logically they contain way too much data for this task, and computers get stuck with a very unwieldy, bloated data type post-compilation. Computers would use an integer to the same end.
+
+Use strings responsibly.
+
+#### Applying Code Intuition
+
+When you're thinking of ways to solve a problem, think about how you can cut down on complex data types and operations, while keeping your code's readability high, and the scalability high. In other words, identify where your code is weakest (performance, scalability, readability), and attempt to remedy that weakness.
+
+[Enumerators](#enumerators) are a gold nugget for improving **all three aspects** with basically no drawbacks.
+
+> Think about every line of code as having a cost (because it does), and hypothesize about what that cost might be. You'll begin to get an intuition about what good code is.
+
+**As a programmer, you will often have to interface with others' code.** You can critique others' code very quickly just by looking at the data types they are using. This includes Unity's built-in methods.
+
+#### Examples of Code Intuition
+
+`GameObject.Find(string objectName)` inputs a string, telling us that this method is probably quite heavy. We can also infer that it might be navigating the scene hierarchy scouring for your GameObject. This is bad, and I'd be wary of using this method.
+
+`gameObject.transform.GetChild(int index)` does a similar thing to above - however, it's an instanced method (it must be run on a specific instance - notice the lower-case 'g' on `gameObject`).  We can infer by the name of the method 'GetChild' that this search will be localized to the children of the gameObject instance this was run from. Additionally, we see it inputs an index instead of a name. This implies instead of comparing strings, it is merely going through the children sequentially as they are ordered in the hierarchy. No string comparison is happening. (Yay!)
 
 ## Singleton Managers
 
