@@ -86,7 +86,7 @@ Examples:
    3. Often isn't set in the same universe as us, or is in an exaggeration of it.
    4. **This is the most often (in my opinion) wrongly-criticized form of violence in media, because the satire requires extensive knowledge of the thing it is satirizing. Media outlets often don't come from an angle of videogame literacy.**
    5. **Don't ever target a disenfranchised group.**
-   6. **Don't hear 'exaggeration version of our universe' and think 'stereotypes'.**
+   6. **Don't hear 'exaggerated version of our universe' and think 'stereotypes'.**
 
 Examples:
 * [Doom](http://store.steampowered.com/app/379720/DOOM/)
