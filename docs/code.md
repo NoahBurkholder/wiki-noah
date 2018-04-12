@@ -24,7 +24,11 @@ Anyways - on to some actual code information:
 
 ### Code Intuition
 
-Most of the time it's really hard to know for sure the **cost** of lines of code. Here's some rules of thumb for choosing the best variable types and discerning the computation cost of methods:
+Most of the time it's really hard to know for sure the **cost** of lines of code. There are *some* people who know the hard facts about the size and performance of data types and operations native to C# and Unity. However, it's a lot of work, and frankly, you can get *most of the way there* without spending years measuring and studying this stuff.
+
+ The solution is a little bit of *Code Intuition*. It's not hard science, but it goes something like this:
+ 
+ > If you sort of know how big a thing is, and some general limitations of the thing, you can make educated guesses about what is best.
 
 1. **Bools** are the lightest, always. However, they suffer from scalability problems.
     1. Ex. If you have two game states, playing and not playing, you might consider using an integer anyways, so that if you ever create a third game state, you don't have to restructure any code.
