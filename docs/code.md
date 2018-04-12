@@ -36,13 +36,35 @@ Most of the time it's really hard to know for sure the **cost** of lines of code
 
 #### A Quick Rant About Strings
 
-Humans love strings because they are visual , and can be used to bridge the language gap between people and computers. *Unfortunately*, although both humans and computers can use strings - they do so in completely different ways.
+Humans love strings because they are familiar. We spend our whole life dealing with strings. *Unfortunately*, although both humans and computers can use strings - they do so in completely different ways.
 
-**Computers** look at strings as arrays of characters. Their toolsets parse strings as just that:  
-`Strings` are arrays of `characters`, and computers process them using `indices`.
+**Computers** look at strings as ordered arrays of single-character data. Their toolsets parse strings as just that:  
+`Strings` are arrays of `characters`, and computers process them using `indices`.  
+
+Example:
+
+`cs
+
+// This single string...
+string someString = "Banana";
+
+// ...is more-or-less equal to these 6 characters in an array (as far as the computer is concerned).
+char[] sameString = new char[] { 'B', 'a', 'n', 'a', 'n', 'a' };
+
+// 1. The string is totally arbitrary.
+// 2. There is no symbolic meaning.
+// 3. The string "Banana" is no more special than "h4d829" to the computer.
+
+`
+
+This is not how humans think about strings.
 
 **Humans** use strings as holistic symbols or identifiers, because we're pattern-based creatures.  
-`Strings` holistically represent things using our `alphabet`, and we process them as `words`.
+`Strings` are `words` or `sentences` which inherently represent things we have memory of using our `alphabet`, and we process them on a `word` basis.  
+
+Example:
+
+`"Banana" is a single thing - a word - which I recognize, and it inherently represents this object over here.`
 
 This introduces a **language barrier** between how humans and computers think about the same representation. Humans will often wrongly use strings as IDs, but logically they contain way too much data for this task, and computers get stuck with a very unwieldy, bloated data type post-compilation. Computers would use an integer to the same end.
 
