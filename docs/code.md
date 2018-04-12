@@ -46,6 +46,12 @@ Humans love strings because they are visual , and can be used to bridge the lang
 
 This introduces a **language barrier** between how humans and computers think about the same representation. Humans will often wrongly use strings as IDs, but logically they contain way too much data for this task, and computers get stuck with a very unwieldy, bloated data type post-compilation. Computers would use an integer to the same end.
 
+<details><summary>Additionally (and I'm gonna get a little bit technical here, so click to expand):</summary><br>
+    
+Humans will also underestimate the <i>power</i> of strings because we think in terms of words and the alphabet. We often neglect numerical and special characters in strings as ways to encrypt or compress data. And the seriality of strings means we can use them as a powerful way to record and read data, especially as a way to pass data <i>between languages</i>. They aren't necessarily as efficient as using serial binary data, but the added readability means every step of the way there is an ounce of understandability for the developer. 
+
+Ex. Passing the data `"d*4L27*A*72##39a874AAA8749FF00@7847"` into your game from another program means you can identify there are - for instance - two `#`'s adjacent to each other, which may be helpful information for you, whereas if it were all 1s and 0s you'd maybe not recognize that pattern without some careful analysis. This is very comp-sci though, so I don't expect you'll find this relevant or interesting.
+</details><br>
 Use strings responsibly.
 
 #### Applying Code Intuition
