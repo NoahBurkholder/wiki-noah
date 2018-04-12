@@ -38,10 +38,10 @@ Most of the time it's really hard to know for sure the **cost** of lines of code
 
 Humans love strings because they are visual , and can be used to bridge the language gap between people and computers. *Unfortunately*, although both humans and computers can use strings - they do so in completely different ways.
 
-**Computers** look at strings as arrays of characters. Their toolsets parse strings as just that:
+**Computers** look at strings as arrays of characters. Their toolsets parse strings as just that:  
 `Strings` are arrays of `characters`, and computers process them using `indices`.
 
-**Humans** use strings as holistic symbols or identifiers, because we're pattern-based creatures.
+**Humans** use strings as holistic symbols or identifiers, because we're pattern-based creatures.  
 `Strings` holistically represent things using our `alphabet`, and we process them as `words`.
 
 This introduces a **language barrier** between how humans and computers think about the same representation. Humans will often wrongly use strings as IDs, but logically they contain way too much data for this task, and computers get stuck with a very unwieldy, bloated data type post-compilation. Computers would use an integer to the same end.
