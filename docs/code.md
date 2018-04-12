@@ -43,19 +43,20 @@ Humans love strings because they are familiar. We spend our whole life dealing w
 
 Example:
 
-`c#
+```c#
 
-// This single string...
-string someString = "Banana";
+    // This single string...
+    string someString = "Banana";
 
-// ...is more-or-less equal to these 6 characters in an array (as far as the computer is concerned).
-char[] sameString = new char[] { 'B', 'a', 'n', 'a', 'n', 'a' };
+    // ...is more-or-less equal to these 6 characters in an array (as far as the computer is concerned).
+    char[] sameString = new char[] { 'B', 'a', 'n', 'a', 'n', 'a' };
 
-// 1. The string is totally arbitrary.
-// 2. There is no symbolic meaning.
-// 3. The string "Banana" is no more special than "h4d829" to the computer.
+    // 1. The string is totally arbitrary.
+    // 2. There is no symbolic meaning.
+    // 3. The string "Banana" is no more special meaning than "bbbbbb" to the computer.
+    // 4. Every string is read on a character-by-character basis.
 
-`
+```
 
 This is not how humans think about strings.
 
@@ -66,7 +67,7 @@ Example:
 
 `"Banana" is a single thing - a word - which I recognize, and it inherently represents this object over here.`
 
-This introduces a **language barrier** between how humans and computers think about the same representation. Humans will often wrongly use strings as IDs, but logically they contain way too much data for this task, and computers get stuck with a very unwieldy, bloated data type post-compilation. Computers would use an integer to the same end.
+This introduces a **language barrier** between how humans and computers think about the same data type. Humans will often wrongly structure their code to use strings as identifying tokens, because we have a linguistic bias. Logically they contain way too much data for this task, and computers get stuck with a very unwieldy, bloated data type post-compilation. Computers would use an integer to the same end.
 
 <details><summary>Additionally (and I'm gonna get a little bit technical here, so click to expand):</summary><br>
     
