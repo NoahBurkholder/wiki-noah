@@ -43,7 +43,7 @@ Humans love strings because they are familiar. We spend our whole life dealing w
 
 Example:
 
-`cs
+`c#
 
 // This single string...
 string someString = "Banana";
