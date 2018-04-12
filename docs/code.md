@@ -36,9 +36,11 @@ Most of the time it's really hard to know for sure the **cost** of lines of code
 
 #### A Quick Rant About Strings
 
-Humans love strings because they are familiar. We spend our whole life dealing with strings. *Unfortunately*, although both humans and computers can use strings - they do so in completely different ways.
+<details><summary>Humans love strings because they are familiar. (Click to expand.)</summary><br>
 
-**Computers** look at strings as ordered arrays of single-character data. Their toolsets parse strings as just that:  
+We spend our whole life dealing with strings. <i>Unfortunately</i>, although both humans and computers can use strings - they do so in completely different ways.
+
+<b>Computers</b> look at strings as ordered arrays of single-character data. Their toolsets parse strings as just that:  
 `Strings` are arrays of `characters`, and computers process them using `indices`.  
 
 Example:
@@ -53,21 +55,23 @@ Example:
 
     // 1. The string is totally arbitrary.
     // 2. There is no symbolic meaning.
-    // 3. The string "Banana" is no more special meaning than "bbbbbb" to the computer.
+    // 3. The string "Banana" has no more special meaning than "bbbbbb" to the computer.
     // 4. Every string is read on a character-by-character basis.
 
 ```
 
-This is not how humans think about strings.
+This is not how humans think about strings - or if we're being honest with ourselves - words.
 
-**Humans** use strings as holistic symbols or identifiers, because we're pattern-based creatures.  
-`Strings` are `words` or `sentences` which inherently represent things we have memory of using our `alphabet`, and we process them on a `word` basis.  
+<b>Humans</b> use strings as holistic symbols or identifiers, because we're pattern-based creatures.  
+`Strings` are `words` or `sentences` which inherently represent things we have linguistic memory of using our `alphabet`, and we process them on a `word` basis.  
 
 Example:
 
 `"Banana" is a single thing - a word - which I recognize, and it inherently represents this object over here.`
 
-This introduces a **language barrier** between how humans and computers think about the same data type. Humans will often wrongly structure their code to use strings as identifying tokens, because we have a linguistic bias. Logically they contain way too much data for this task, and computers get stuck with a very unwieldy, bloated data type post-compilation. Computers would use an integer to the same end.
+This introduces a <b>language barrier</b> between how humans and computers think about the same data type. Humans will often wrongly structure their code to use strings as identifying tokens, because we have a linguistic bias. Logically they contain way too much data for this task, and computers get stuck with a very unwieldy, bloated data type post-compilation. Computers would use an integer to the same end.
+
+</details><br>
 
 <details><summary>Additionally (and I'm gonna get a little bit technical here, so click to expand):</summary><br>
     
