@@ -27,6 +27,10 @@ Most of the time it's really hard to know for sure what code method performs bes
     4. Humans use strings as holistic symbols or identifiers, the same way a computer might use integers as identifiers. We parse strings as words, alphabets, and we don't typically think of words as having indices.
     5. The issue with this, is that humans will often use strings as identifiers, but computers get stuck with a very unwieldy, bloated data type post-compilation.
     6. The solution to this is [enumerators!](#enumerators)
+    
+When you're thinking of ways to solve a problem, think about how you can cut down on complex data types and operations, while keeping your code's readability high, and the scalability high. [Enumerators](#enumerators) are a perfect example of keeping efficiency, scalability and readability at a maximum.
+
+> Think about every line of code as having a cost (because it does), and hypothesize about what that cost might be. You'll begin to get an intuition about what good code is.
 
 # :notes: C#
 
