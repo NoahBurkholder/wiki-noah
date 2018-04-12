@@ -2,11 +2,11 @@
 
 # :coffee: Code
 
-Unlike hard computer-science software utility development, game programming is oddly creative, and is greatly unprecedented. You will constantly run into challenges which don't have a concrete answer.
+Game programming rewards creativity in code, and games are systemically different enough that you'll often run into problems that don't have precedented soltutions. You will constantly run into challenges which don't have a concrete answer.
 
-You don't need to know much math. You don't need to know crazy algorithms. You don't need to know system architectures. It's mostly just creative problem-solving and creative problem-creating.
+You don't need to know much math, or crazy algorithms. You don't need to know system architectures. It's mostly just creative problem-solving and creative problem-creating. The problem-creating part is also kind of unique to games, since typically games don't have a point besides (usually) fun - they are self-contained, and the technical challenges within are motivated by you, the designer.
 
-The aim of this page isn't to teach the basics. This is relatively advanced techniques for making highly efficient code. **If you can use these, you can already compete with the majority of game developer professionals I know.**
+The aim of this page isn't to teach the basics. This is relatively advanced techniques for making competitive code. **If you can use these, you can already compete with many of game developer professionals I know.**
 
 ## General Practice
 
