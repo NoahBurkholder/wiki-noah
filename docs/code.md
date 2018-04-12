@@ -26,6 +26,7 @@ Most of the time it's really hard to know for sure what code method performs bes
     3. Computers look at strings as arrays of characters. Their toolsets parse strings as just that - substrings, characters, and indices.
     4. Humans use strings as holistic symbols or identifiers, the same way a computer might use integers as identifiers. We parse strings as words, alphabets, and we don't typically think of words as having indices.
     5. The issue with this, is that humans will often use strings as identifiers, but computers get stuck with a very unwieldy, bloated data type post-compilation.
+    6. The solution to this is [enumerators!](#enumerators)
 
 # :notes: C#
 
