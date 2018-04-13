@@ -81,44 +81,61 @@ Ex. `git checkout -b [new-branch]`. This cleans the source branch and moves all 
 
 ### Scrutinize Your Commit Messages
 
-There are a few reasons to be absolutely graceful with your commit messages, including but not limited to:
-
-1. Justifying R&D so you can obtain funding/grants.
-2. Repeatability of builds. Knowing which commit to return to to make a carbon-copy of a certain build is invaluable.
-3. Resolving project merge catasrophes by identifying EXACTLY which commit is causing an error.
-
 Here is the example of a **very bad** commit message:
 ```PowerShell
 git comit -m "fixed dumb thing with the gun"
 ```
-A couple problems here.
+It's tempting to do this, but there's lots of reasons this person should be ashamed.
 
-1. Clarity. What was the error? What was changed?
-2. Responsibility. Who made this change? Who do we smack on the head?
-3. Justification. Why did they make this change? Do they have a reason for doing this?
-4. They misspelled 'commit' which in this case is a **good thing** because now we can retype this commit message properly.
+1. Clarity. What was the error? What was changed? How big of a change is this?
+2. Justification. Why did they make this change? Do they have a reason for doing this?
+3. They misspelled 'commit' which in this case is a **good thing** because now we can retype this commit message properly.
+4. (Optional) Responsibility. Who made this change? Who do we smack on the head?
 
-So, let's try this again. Your commit message should be as close to the following formatting as within reason:
+Regarding #4: Why might we use our name in the message? GitHub and GitLab force you to login anyways, so why isn't that enough? Well in a [R&D environment](#for-rd-projects), if you switch computers, legal accountability is lost. It's also just becomes too tedious and confusing to identify and change the logged in user, and their respective [SSH keys](#ssh-keys). Adding the text to the commit message just simplifies things greatly.
+
+Anyways. Spend a couple extra seconds writing your commit messages. If your project has a catastrophe, those extra two seconds can save you or your team literal hours in reparation time.
+
+There are a couple different standards I've seen for your commit messages, so use whichever one you feel is most appropriate.
+
+#### For Typical Projects
+
+Working at a small company? School project? In my experience the best messages are just under 100 characters, and communicate the **scope** of the change primarily, with as much **specificity** as possible while remaining succinct as a second priority. GitHub recommends < 50 characters, but I find you lose a lot of potential information with so little space. Most people don't read into the extended description, and fewer people write an extended description.
+
+Example:
+
+```PowerShell
+git commit -m "Restructured player prefab so the gun animation won't translate the root of the gun."
+```
+
+Cool. That works. It communicates how large of a change it is, and specifically what was changed, with some justification inherently built in.
+
+#### For R&D Projects
+
+I've worked in R&D environments due to company utilization of [SR&ED](https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program.html), and in those environments it's important to be consistent and verbose in your commit messages. This is atypical for most projects, and can actually be annoying for some developers, but it's necessary for legal audits of your team's work. 
+
+Why? Justifying development to obtain tax credit and funding.
+
+This is the structure my company used:
 
 ```PowerShell
 git commit -m "[Name] What > Where > Why - [Build number if build was submitted]"
 ```
-Why do we use our name in the message? GitHub and GitLab force you to login anyways, so why isn't that enough? Well we switch computers constantly and it becomes too tedious and confusing to identify and change the logged in user, and their [SSH keys](#ssh-keys). Adding the text to the commit message just simplifies things greatly.
 
-Additionally, if this was a build that was submitted to a [QA process](qa-processes) or was put live to the public, we want to make mention of the version number, and where the build was sent. In the future, it is vital that other programmers can locate and revert to your particular commit in order to carbon-copy a release build.
+Notice the end of the message - if this was a build that was submitted to a [QA process](qa-processes) or was put live to the public, we want to make mention of the version number, and where the build was sent. In the future, it is vital that other programmers can locate and revert to your particular commit in order to carbon-copy a release build.
 
-Examples:
+> "This is important in the biz."
+
+-- Guy who taught me about release management.
+
+Examples of R&D Commit Messages:
 
 ```PowerShell
 git commit -m "[Noah] Added a button to the options menu to delete save-data so the player can start a fresh game because players wanted their friends to try from level 1."
 git commit -m "[Tony] Integrated the LocalizationManager module with a new database so there are more supported langauges in the game. - Build v1.3.7 for Oculus submission."
 git commit -m "[Meri] Removed movement from the player prefab to research player behaviour in a static environment. Build v0.2.7 for Playstation user testing."
 ```
-Do you have to follow this outlined protocol for every project? No, but in a professional environment working on an official product, this is a huge skill which multiple specialists have explained to me 'is important in the biz.'
-
-> "This is important in the biz."
-
--- Guy who taught me about release management.
+Awesome.
 
 ### Merging
 
