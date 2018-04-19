@@ -142,7 +142,7 @@ There are many ways to do this but here is a basic and effective implementation.
 * Find the maximum number of instances of an object within your game.
 * Spawn that many instances at the beginning of your game.
 * Put them in an array which is kept by a PoolManager or LevelManager type class.
-* Create a ObjectType [enumerator](development.md#enumerators) with options for each type of poolable object.
+* Create a ObjectType [enumerator](code.md#enumerators) with options for each type of poolable object.
 * Give the class two methods, `public GameObject Grab(ObjectType type)` and `public void Recycle(ObjectType type, GameObject objectToRecycle)`, which take and give objects to the pool.
 * Call `PoolManager.Grab(ObjectType.Coin)` or `PoolManager.Recycle(ObjectType.Banana, bananaGameObject)`.
 
