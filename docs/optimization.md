@@ -48,7 +48,7 @@ Your budget is as follows depending on your target FPS. This should basically co
 
 In order to render in a binocular fashion, the game needs to render two simultaneous cameras. Additionally, your framerate is typically supposed to consistently stay above 90fps or even 120fps. 
 
-You can think of VR as using [X7 the amount of resources](https://www.pcgamesn.com/eve-valkyrie/vr-requires-a-pc-7-times-more-powerful-than-1080p-gaming-say-nvidia) as a typical 1080p 60fps game, because these factors multiply and stack upon each other.
+You can think of VR as using [7x the amount of resources](https://www.pcgamesn.com/eve-valkyrie/vr-requires-a-pc-7-times-more-powerful-than-1080p-gaming-say-nvidia) as a typical 1080p 60fps game, because these factors multiply and stack upon each other.
 
 Be prepared to cut back on visual fidelity in favour of performance. Performance is paramount.
 
