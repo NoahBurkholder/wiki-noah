@@ -176,7 +176,7 @@ This was the first major layer of monetization strategies that swept across the 
 By: Mike Rose
 Mike Rose interviews several people who are heavily invested (>$2000) in Free-to-Play titles. These players are referred to in industry as “Whales” which are the primary profit drivers of free-to-play titles. Rose pointedly reveals the deep roots of addiction that spread through certain Free-to-Play tactics and the very human struggles of those who are victims of them.
 
-[***who killed videogames? (a ghost story)***](https://insertcredit.com/2011/09/22/who-killed-videogames-a-ghost-story/)  
+[***who killed videogames? a ghost story***](https://insertcredit.com/2011/09/22/who-killed-videogames-a-ghost-story/)  
 By: Tim Rogers
 Tim Rogers paints a rather bleak picture in this incredibly long essay (bordering on Novella) about his time designing free-to-play mobile games. Definitely not a mandatory read, but one that gives a peak behind the curtain at what emotional tolls can be felt when working on predatory games. A brief and effective summary is found in its final sentence *“God help us; Shigeru Miyamoto help us all.”*
 
