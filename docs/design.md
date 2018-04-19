@@ -6,11 +6,11 @@ Time to make a game!
 
 Here's some tips for doing that.
 
-## :seedling: Game Ethics
+# :seedling: Game Ethics
 
 As with any creative medium, I feel it's important to be cognisant of the ethics of the product we develop. Unlike many other mediums, games have the addition of interaction, which opens a floodgate of concerns, especially relating to accessibility, and player psychology. However, I thought it would be good to talk a little bit about my experiences with AI, and some thinking I've done on the subject.
 
-### Violence as a Tool, Violence as a Crutch
+## :gun: Violence as a Tool, Violence as a Crutch
 
 When people think of violence they usually think of head exploding gore, and the Western cultural fixation on arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This should be enough to convince you that violence isn't inherently detrimental to positive change, but if it isn't I've included a section for Donald Trump and your mom, who for some reason agree on something. 
 
@@ -126,7 +126,7 @@ So maybe start by making game which isn't violent.
 
 This message is meant mostly for the bro-type game designers who get excited by the idea of making the next hyperviolent darling, without regard for the *the rest of the fucking industry and world.* Fuck those people.
 
-#### A Letter to Parents, and Donald Trump
+### A Letter to Parents, and Donald Trump
 
 <details><summary>Can we shut the fuck up about videogame violence? (Click to expand if you reallyyyyy want.)</summary><br>
    
@@ -157,25 +157,75 @@ The first thing told to me in University upon being assigned a game-themed resea
 
 Okay, the next sections should be less sassy.
 
-### Representation, Identity, and Puppeteering
+## :performing_arts: Representation, Identity, and Puppeteering
 
 (Coming Soon) Concerning developing with sensitivity, a look at cultural appropriation, and the complications of representational consent of having a game avatar when the player is arbitrary.
 
-### Exploitation, Whales, and Dice
+## :whale2: Exploitation, Whales, and Dice  
+by Logan Buchanan
 
-(Coming Soon) Concerning predatory monetization, player behaviour, and gambling.
+### Overview
+The discussion surrounding free-to-play monetization / loot boxes has been pretty heated over the past 8 years or so. As a developer it’s hard to get a broad view of this topic and to feel like you’re making ethically sound decisions when you’re trying to make money (not to mention a living) from your games. Despite this difficulty, it’s important to understand the implications of monetization strategies and where they stand. 
 
-### Drawing Artificial Lines
+(Eventually this section should probably define a glossary of terms, but due to me being tired I’m giving a brief overview and referring the reader to several helpful (and well written) resources).
+
+### Free-to-play, Whales, and Predatory Coercion
+This was the first major layer of monetization strategies that swept across the mobile games market. Energy systems, alternate currencies, malicious difficulty all started to crop up and were quickly refined for greatest monetary benefit. These topics are thorny and complicated, but there are two great articles that approach it from the player’s perspective and the developer’s perspective respectively.
+
+[***Chasing the Whale: Examining the ethics of free-to-play games***](https://www.gamasutra.com/view/feature/195806/chasing_the_whale_examining_the_.php)
+By: Mike Rose
+Mike Rose interviews several people who are heavily invested (>$2000) in Free-to-Play titles. These players are referred to in industry as “Whales” which are the primary profit drivers of free-to-play titles. Rose pointedly reveals the deep roots of addiction that spread through certain Free-to-Play tactics and the very human struggles of those who are victims of them.
+
+[***who killed videogames? (a ghost story)***](https://insertcredit.com/2011/09/22/who-killed-videogames-a-ghost-story/)
+By: Tim Rogers
+Tim Rogers paints a rather bleak picture in this incredibly long essay (bordering on Novella) about his time designing free-to-play mobile games. Definitely not a mandatory read, but one that gives a peak behind the curtain at what emotional tolls can be felt when working on predatory games. A brief and effective summary is found in its final sentence *“God help us; Shigeru Miyamoto help us all.”*
+
+### Loot Boxes, Gambling, and Operant Conditioning
+This is pretty well tread ground in the games industry at this point, but it’s worth talking about loot boxes here for a brief discussion on the ideas behind them. Loot boxes have a core psychological principle that governs their effectiveness: [*Operant Conditioning*](https://en.wikipedia.org/wiki/Operant_conditioning). The figurehead of this principle was the psychologist [B.F. Skinner](https://en.wikipedia.org/wiki/B._F._Skinner), who created his eponymous *Skinner Boxes* which studied rats and their reaction to positive feedback loops. The basic idea was the rat would push a button or perform some small task, and then they would receive a small reward for that task (a little food, or a treat of some sort). Over time, even if the rewards were not consistent, the subject would continue to push the button or perform the action sometimes at the expense of all else. Here’s a simple explanation of how this applies to games.
+
+Your players are the rats.
+
+Now let's look at how this *Rat Box* model is used in games:
+
+### Investment in Your Game’s Core Loop
+
+In this scenario, the repetitive action that your player must do to receive the reward is to **just play your game!** Before microtransactions abounded, this was a widely used way to keep players engaged. Most RPGs with random loot systems (ie: Diablo 1 & 2, Borderlands, Torchlight) used this kind of operant conditioning to support the power growth of the player and give a reason for the player to push further into the world (or to just murder more loot pinatas). 
+
+This type of investment can also result in the multi-currency systems of free to play titles. In these systems the player gains one currency by engaging with the game systems, and another currency by paying money (ie: Clash Royale, League of Legends). These systems become a bit ethically murky because they blend gameplay investment with monetary investment, speaking of which:
+
+### Investment in Your Monetization Model
+
+In this scenario, the repetitive action is spending small amounts of money on bonuses or items within the game. Using this strategy, the player becomes hooked on the positive feedback the game gives them whenever they spend money. This can vary from simply a small fanfare that plays when someone buys a microtransaction, to the power that said transaction gives their in game avatar. Either way, it’s aiming to create a psychological dependency or at least a craving to engage in the action again. 
+
+These kinds of tactics are the ones that result in the *‘whales’* that were mentioned previously. A player can become so enraptured with the act of spending money that they can do so at the cost of all the other needs in their life *(ie: rent, food, relationships)*. While you can’t control whether a player will cast away everything that they need to sustain themselves, you can try to avoid creating systems that encourage it.
+
+### Why is this happening?
+
+While it’s easy to lambast developers who employ these predatory tactics, it’s important to look at why large and small studios alike are resorting to these kinds of monetization efforts. The truth of the matter, no matter how large or small your team, is that games are expensive, time consuming things to make. Even if you are a solo developer who works in the dim light of the evening, you still need to pay rent, buy food, and live a life. So while the cost is not immediately obvious, there is still a cost. Extra Credits produced a well formulated argument that delves into the difficult monetary position that games find themselves in today, and it is worth a watch.
+https://www.youtube.com/watch?v=VhWGQCzAtl8. Of course the reasons behind this are larger and more complex than simply “We don’t have enough money”, but it’s important to understand that unethical business practices don’t necessarily come from malicious intent.
+
+
+What should I do?
+So with all of this ethical haberdashery how are we supposed to design and implement systems that are at least aiming to be ethically sound? Well, because the internet loves lists, I’ve come up with a few guiding questions that should help you evaluate your monetization scheme.
+
+Does your game need a complex monetization scheme at all? Or is your game better suited to a traditional single price model?
+Does your monetization plan negatively affect the play experience of other players who do not participate in it?
+If developing a competitive game, does the monetization scheme give a distinct advantage to those who pay more?
+When paying for a microtransaction, does the player know exactly what they are getting, or at the least do they know the exact odds of receiving certain items/benefits?
+If employing lootboxes of some sort, is there a way for the player to guarantee that they will receive a certain item, or certain rarity of item (See: Pity timers)?
+
+
+## :electric_plug: Drawing Artificial Lines
 
 (Coming Soon) Concerning artificial intelligence, humility, and my thoughts on how to approach development in burgeoning fields of intelligence emulation.
 
 #### [< Back to Index](readme.md)
 
-## :space_invader: Game Design
+# :space_invader: Game Design
 
 As a developer in a small team, you'll often have to make calls about design decisions when your designer is away for lunch, or even just because you're expected to know the answer. The basics of game design are more-or-less as follows:
 
-### The Basics of Fun
+## The Basics of Fun
 
 1. Games are greater than the sum of their parts. 
     * If something isn't feeling good, add sound, animation principles, visual polish, agency, responsiveness, cinematography, tone, etc...
@@ -199,7 +249,7 @@ As a developer in a small team, you'll often have to make calls about design dec
     * Use visual weight (notice how the rainbow emoji draws your eye because it has a bolder visual presence than the rest of the text) to draw attention. 
     * Force the player using psychology to teach themselves how to play the game. It's hard but when it's done right it's phenomenal.
 
-### XR-Specific
+## XR-Specific
 
 XR, which is a blanket term for VR, AR, MR (Mixed Reality) and other such designations, have some interesting design concerns associated with them, mostly around input and interaction. For those User Experience (UX) people out there, this might be interesting for you.
 
@@ -225,15 +275,15 @@ If you must do movement, try some of the following options:
 
 #### [< Back to Index](readme.md)
 
-## :camera: Case Studies
+# :camera: Case Studies
 
 The best way to make good games is to play both good and bad games. Play a lot of them. Talk to friends about them. Analyze them.
 
-### Shadow of The Colossus
+## Shadow of The Colossus
 
 (Coming Soon) Using feature subtraction, emptiness, scale, and grace, to evoke intense aesthetics.
 
-### Dark Souls
+## Dark Souls
 
 (Coming Soon) Using adversity to enforce triumph. Forcing players to confront thoughtful play. Being okay with players missing a secret.
 
