@@ -3,7 +3,7 @@
 ## :tangerine: Version 1.5.4 (Tangerine) - March 29th, 2018
 
 - Added Logan Buchanan as a contributor and author.
-- Logan has written a great section on [monetary ethics!](design.md#
+- Logan has written a great section on [monetary ethics!](design.md#whale2-exploitation-whales-and-dice)
 - Currently slowly learning shaders, and writing about them slower.
 - About to start work on a small AI ethics section.
 - About to start work on a game aesthetics section.
