@@ -1,12 +1,13 @@
 # Wiki Noah (Soon WikiBee)
 
-## :bird: Version 1.5.3 (Bird) - March 29th, 2018
+## :tangerine: Version 1.5.4 (Tangerine) - March 29th, 2018
 
+- Added Logan Buchanan as a contributor and author.
+- Logan has written a great section on [monetary ethics!](design.md#
 - Currently slowly learning shaders, and writing about them slower.
 - About to start work on a small AI ethics section.
 - About to start work on a game aesthetics section.
 - Also planning to open up a few pages on the fundamentals of Procedural Generation, Machine Learning, Evolutionary Algorithms, and Blockchain concepts.
-- Collaborating with a couple friends on Pixel art and Business Ethics.
 - Going to rename this Wiki to WikiBee soon since it is becoming a collaborative effort!
 
 # :question: Noah, What Have You Done?
@@ -155,10 +156,10 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 ### [:triangular_ruler: Design](design.md) (40% Complete)
 
 1. [:seedling: Game Ethics](design.md#seedling-game-ethics)
-    1. [Violence as a Tool, Violence as a Crutch](design.md#violence-as-a-tool-violence-as-a-crutch)
-    2. [Representation, Identity, and Puppeteering](design.md#representation-identity-and-puppeteering)
-    3. [Exploitation, Whales, and Dice](design.md#exploitation-whales-and-dice)
-    4. [Drawing Artificial Lines](design.md#drawing-artificial-lines)
+    1. [Violence as a Tool, Violence as a Crutch](design.md#gun-violence-as-a-tool-violence-as-a-crutch)
+    2. [Representation, Identity, and Puppeteering](design.md#performing_arts-representation-identity-and-puppeteering)
+    3. [Exploitation, Whales, and Dice](design.md#whale2-exploitation-whales-and-dice)
+    4. [Drawing Artificial Lines](design.md#electric_plug-drawing-artificial-lines)
 
 2. [:space_invader: Game Design](design.md#space_invader-game-design)
     1. [The Basics of Fun](design.md#the-basics-of-fun)
@@ -215,6 +216,7 @@ Okay. Now let's dive in. I'm going to point to a few of my favourite sections wh
 # :black_nib: Authors
 
 [**Noah Burkholder**](https://www.linkedin.com/in/nburkhol) - [http://noahburkholder.com](http://noahburkholder.com)  
+[**Logan Buchanan**](https://www.linkedin.com/in/logan-buchanan-90b8b3126/) - [http://loganbuchanan.com](http://loganbuchanan.com/bio.html)  
 [Your Name Here]
 
 ## :pray: Acknowledgments
