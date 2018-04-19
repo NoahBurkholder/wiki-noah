@@ -169,18 +169,19 @@ The discussion surrounding free-to-play monetization / loot boxes has been prett
 
 (Eventually this section should probably define a glossary of terms, but due to me being tired I’m giving a brief overview and referring the reader to several helpful (and well written) resources).
 
-### Free-to-play, Whales, and Predatory Coercion
+### Free-to-play, Whales, and Predatory Coercion  
 This was the first major layer of monetization strategies that swept across the mobile games market. Energy systems, alternate currencies, malicious difficulty all started to crop up and were quickly refined for greatest monetary benefit. These topics are thorny and complicated, but there are two great articles that approach it from the player’s perspective and the developer’s perspective respectively.
 
-[***Chasing the Whale: Examining the ethics of free-to-play games***](https://www.gamasutra.com/view/feature/195806/chasing_the_whale_examining_the_.php)
+[***Chasing the Whale: Examining the ethics of free-to-play games***](https://www.gamasutra.com/view/feature/195806/chasing_the_whale_examining_the_.php)  
 By: Mike Rose
 Mike Rose interviews several people who are heavily invested (>$2000) in Free-to-Play titles. These players are referred to in industry as “Whales” which are the primary profit drivers of free-to-play titles. Rose pointedly reveals the deep roots of addiction that spread through certain Free-to-Play tactics and the very human struggles of those who are victims of them.
 
-[***who killed videogames? (a ghost story)***](https://insertcredit.com/2011/09/22/who-killed-videogames-a-ghost-story/)
+[***who killed videogames? (a ghost story)***](https://insertcredit.com/2011/09/22/who-killed-videogames-a-ghost-story/)  
 By: Tim Rogers
 Tim Rogers paints a rather bleak picture in this incredibly long essay (bordering on Novella) about his time designing free-to-play mobile games. Definitely not a mandatory read, but one that gives a peak behind the curtain at what emotional tolls can be felt when working on predatory games. A brief and effective summary is found in its final sentence *“God help us; Shigeru Miyamoto help us all.”*
 
 ### Loot Boxes, Gambling, and Operant Conditioning
+
 This is pretty well tread ground in the games industry at this point, but it’s worth talking about loot boxes here for a brief discussion on the ideas behind them. Loot boxes have a core psychological principle that governs their effectiveness: [*Operant Conditioning*](https://en.wikipedia.org/wiki/Operant_conditioning). The figurehead of this principle was the psychologist [B.F. Skinner](https://en.wikipedia.org/wiki/B._F._Skinner), who created his eponymous *Skinner Boxes* which studied rats and their reaction to positive feedback loops. The basic idea was the rat would push a button or perform some small task, and then they would receive a small reward for that task (a little food, or a treat of some sort). Over time, even if the rewards were not consistent, the subject would continue to push the button or perform the action sometimes at the expense of all else. Here’s a simple explanation of how this applies to games.
 
 Your players are the rats.
@@ -189,9 +190,9 @@ Now let's look at how this *Rat Box* model is used in games:
 
 ### Investment in Your Game’s Core Loop
 
-In this scenario, the repetitive action that your player must do to receive the reward is to **just play your game!** Before microtransactions abounded, this was a widely used way to keep players engaged. Most RPGs with random loot systems (ie: Diablo 1 & 2, Borderlands, Torchlight) used this kind of operant conditioning to support the power growth of the player and give a reason for the player to push further into the world (or to just murder more loot pinatas). 
+In this scenario, the repetitive action that your player must do to receive the reward is to **just play your game!** Before microtransactions abounded, this was a widely used way to keep players engaged. Most RPGs with random loot systems *(ie: Diablo 1 & 2, Borderlands, Torchlight)* used this kind of operant conditioning to support the power growth of the player and give a reason for the player to push further into the world (or to just murder more loot pinatas). 
 
-This type of investment can also result in the multi-currency systems of free to play titles. In these systems the player gains one currency by engaging with the game systems, and another currency by paying money (ie: Clash Royale, League of Legends). These systems become a bit ethically murky because they blend gameplay investment with monetary investment, speaking of which:
+This type of investment can also result in the multi-currency systems of free to play titles. In these systems the player gains one currency by engaging with the game systems, and another currency by paying money *(ie: Clash Royale, League of Legends)*. These systems become a bit ethically murky because they blend gameplay investment with monetary investment, speaking of which:
 
 ### Investment in Your Monetization Model
 
@@ -201,18 +202,18 @@ These kinds of tactics are the ones that result in the *‘whales’* that were 
 
 ### Why is this happening?
 
-While it’s easy to lambast developers who employ these predatory tactics, it’s important to look at why large and small studios alike are resorting to these kinds of monetization efforts. The truth of the matter, no matter how large or small your team, is that games are expensive, time consuming things to make. Even if you are a solo developer who works in the dim light of the evening, you still need to pay rent, buy food, and live a life. So while the cost is not immediately obvious, there is still a cost. Extra Credits produced a well formulated argument that delves into the difficult monetary position that games find themselves in today, and it is worth a watch.
-https://www.youtube.com/watch?v=VhWGQCzAtl8. Of course the reasons behind this are larger and more complex than simply “We don’t have enough money”, but it’s important to understand that unethical business practices don’t necessarily come from malicious intent.
+While it’s easy to lambast developers who employ these predatory tactics, it’s important to look at why large and small studios alike are resorting to these kinds of monetization efforts. The truth of the matter, no matter how large or small your team, is that games are expensive, time consuming things to make. Even if you are a solo developer who works in the dim light of the evening, you still need to pay rent, buy food, and live a life. So while the cost is not immediately obvious, there is still a cost. [Extra Credits produced a well formulated argument that delves into the difficult monetary position that games find themselves in today](https://www.youtube.com/watch?v=VhWGQCzAtl8), and it is worth a watch. Of course the reasons behind this are larger and more complex than simply *“We don’t have enough money”*, but it’s important to understand that unethical business practices don’t necessarily come from malicious intent.
 
 
-What should I do?
+### What should I do?
+
 So with all of this ethical haberdashery how are we supposed to design and implement systems that are at least aiming to be ethically sound? Well, because the internet loves lists, I’ve come up with a few guiding questions that should help you evaluate your monetization scheme.
 
-Does your game need a complex monetization scheme at all? Or is your game better suited to a traditional single price model?
-Does your monetization plan negatively affect the play experience of other players who do not participate in it?
-If developing a competitive game, does the monetization scheme give a distinct advantage to those who pay more?
-When paying for a microtransaction, does the player know exactly what they are getting, or at the least do they know the exact odds of receiving certain items/benefits?
-If employing lootboxes of some sort, is there a way for the player to guarantee that they will receive a certain item, or certain rarity of item (See: Pity timers)?
+* Does your game need a complex monetization scheme at all? Or is your game better suited to a traditional single price model?
+* Does your monetization plan negatively affect the play experience of other players who do not participate in it?
+* If developing a competitive game, does the monetization scheme give a distinct advantage to those who pay more?
+* When paying for a microtransaction, does the player know exactly what they are getting, or at the least do they know the exact odds of receiving certain items/benefits?
+* If employing lootboxes of some sort, is there a way for the player to guarantee that they will receive a certain item, or certain rarity of item (See: [Pity timers](https://hearthstone.gamepedia.com/Card_pack_statistics#Pity_Timer))?
 
 
 ## :electric_plug: Drawing Artificial Lines
