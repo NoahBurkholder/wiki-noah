@@ -1,7 +1,8 @@
 # Wiki Noah (Soon WikiBee)
 
-## :tangerine: Version 1.5.4 (Tangerine) - March 29th, 2018
+## :flags: Version 1.5.5 (Karp) - May 10th, 2018
 
+- Added quick section on manually merging scenes and prefabs in Unity.
 - Added Logan Buchanan as a contributor and author.
 - Logan has written a great section on [monetary ethics!](design.md#whale2-exploitation-whales-and-dice)
 - Currently slowly learning shaders, and writing about them slower.
