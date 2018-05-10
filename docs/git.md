@@ -225,4 +225,30 @@ When you have vetted every file which threw a conflict, and marked them all gree
 
 Boom. Doing this right is a monumental task, and can often save hours of re-development.
 
+#### Resolving Scene and Prefab Conflicts
+
+You can't.
+
+Or rather - large, computer-generated files such as Unity scenes and Unity Prefabs cannot be merged through git realistically. This is because relatively small changes to a scene like the removal of an object can make hundreds of threaded lines of code (code spread throughout the scene data) vanish. You will need to use `git checkout --ours <filepath>` or `git checkout --theirs <filepath>` to select your version or their version respectively.
+
+**However** There's a creative way to properly merge scenes:
+
+Premise - you have a scene conflict on `TheScene.unity` during a merge.
+
+1. Abort the merge by resetting hard. `git reset --hard` This will take you to your commit pre-merge.
+2. Save-As your version of the scene with a different name. (`TheScene2.unity`)
+3. Commit your new scene.
+4. Begin the merge process anew. `TheScene.unity` will throw a conflict still, but your changes are safe in `TheScene2.unity`.
+5. Take their version of the scene. `git checkout --theirs <path>/TheScene.unity`
+6. Open Unity and open their scene.
+7. Find your scene in the project folder in Unity, and drag it into the game hierarchy alongside the currently open scene.
+8. This will **additively** open your scenes, meaning they exist in the same space, side by side.
+9. You can then easily transfer changes from `TheScene2.unity` to `TheScene.unity`.
+10. Once finished, right-click on the scene object in your hierarchy and hit 'Remove From Scene'.
+11. Save `TheScene.unity`.
+12. `git add <path>/TheScene.unity`
+13. `git commit -m "Resolved conflict."`
+
+This method extends to prefabs as well. You can make duplicate prefabs with different names to sustain them through a merge, and carry over changes manually in the editor.
+
 #### [< Back to Index](readme.md)
