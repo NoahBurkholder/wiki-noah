@@ -1,6 +1,6 @@
 # Wiki Noah (Soon WikiBee)
 
-## :flags: Version 1.5.5 (Karp) - May 10th, 2018
+## :flags: Version 1.5.5 (Carp) - May 10th, 2018
 
 - Added quick section on manually merging scenes and prefabs in Unity.
 - Added Logan Buchanan as a contributor and author.
