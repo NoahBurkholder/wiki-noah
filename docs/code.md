@@ -225,10 +225,10 @@ If you looked at the collapsed snippet above, you are probably dry heaving, so l
 
 private void Start() {
     // Start it once.
-    StartCoroutine(oddlySpecificWaitRoutine());
+    StartCoroutine(OddlySpecificWaitRoutine());
 }
 
-private IEnumerator oddlySpecificWaitRoutine() {
+private IEnumerator OddlySpecificWaitRoutine() {
 
     Debug.Log("This happens instantly...")
 
@@ -259,12 +259,6 @@ Now, maybe you discover your `Update()` method is getting bogged down by a very 
 
 ```c#
 
-private void Start() {
-
-    // Start a coroutine!
-    StartCoroutine(predictTsunamisInPacific());
-}
-
 // We can assume that this update loop shouldn't be used for heavy lifting, because...
 private void Update() {
 
@@ -272,11 +266,11 @@ private void Update() {
     moveCamera();
     
     // We've commented this call out, here. It was slowing down Update() which meant our moveCamera() script was stuttering.
-    // predictTsunamisInPacific(); 
+    // PredictTsunamisInPacific(); 
 }
 
 // Instead move it to a coroutine.
-private IEnumerator tsunamiPredictionLoop() {
+private IEnumerator TsunamiPredictionLoop() {
     while (tryingToSaveLives) {
         
         // This will take however long it needs, and won't hitch our moveCamera() method.
@@ -285,6 +279,12 @@ private IEnumerator tsunamiPredictionLoop() {
         // And you can even make it wait 20 seconds between loop iterations.
         yield return new WaitForSeconds(20f);
     }
+}
+
+private void Start() { // Excuse my out-of-order methods.
+
+    // Start a coroutine!
+    StartCoroutine(TsunamiPredictionLoop());
 }
 ```
 
@@ -296,13 +296,14 @@ What happens if we forget to wait? If we forget to **limit**?
 ```c#
 private void Start() {
     // Uh oh...
-    StartCoroutine(terribleIdea());
+    StartCoroutine(TerribleIdea());
 }
 
-private IEnumerator terribleIdea() {
+private IEnumerator TerribleIdea() {
     while (true) {
         // Literally anything.
     }
+    // Unreachable code.
 }
 
 ```
