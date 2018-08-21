@@ -261,8 +261,8 @@ XR, which is a blanket term for VR, AR, MR (Mixed Reality) and other such design
     2. Don't rely on buttons and floating UI.
 2. Avoid unmotivated movement, perspective shifts of any sort, and even movement in general if you can.
     1. Doing something like changing the Field of View in VR is such a no-no that most VR SDKs and APIs totally lock it.
-3. Make intuitive or charming environmental interactions instead of buttons. 
-    1. Ex. Toggle the music by having the player shoot a jukebox.
+3. Stop making buttons and text elements! Screen real-estate is deceptively tiny in VR. You have a wide field of view, but players hate having buttons and text plastered on their face. See the [Vergence-Accommodation Problem](#the-vergence-accommodation-problem) for more information.
+4. Make intuitive or charming environmental interactions instead of buttons. Ex. Toggle the music by having the player shoot a jukebox.
 
 ### The Player Movement Problem
 
