@@ -12,7 +12,7 @@ As with any creative medium, I feel it's important to be cognisant of the ethics
 
 ## :gun: Violence as a Tool, Violence as a Crutch
 
-When people think of violence they usually think of head exploding gore, and the Western cultural fixation on arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This should be enough to convince you that violence isn't inherently detrimental to positive change, but if it isn't I've included a section for Donald Trump and your mom, who for some reason agree on something. 
+When people think of violence they usually think of head exploding gore, and the Western cultural fixation on arcadey military deathmatches. I'm going to first give you a large number of extremely successful games which use violence in constructive or smart ways. This should be enough to convince you that violence isn't inherently detrimental, but if it isn't I've included a section for Donald Trump and your mom, who for some reason agree on something. 
 
 I have marked stipulations and important context in **bolded text**, because this discussion is inherently cultural.
 
@@ -254,7 +254,7 @@ As a developer in a small team, you'll often have to make calls about design dec
 
 XR, which is a blanket term for VR, AR, MR (Mixed Reality) and other such designations, have some interesting design concerns associated with them, mostly around input and interaction. For those User Experience (UX) people out there, this might be interesting for you.
 
-Here's a list of useful guidelines:
+### XR 101
 
 1. Make interactions kinetic! (Give them physicality and weight.)
     1. Have the player directly influence items in the game world or on the phone screen. 
@@ -263,6 +263,8 @@ Here's a list of useful guidelines:
     1. Doing something like changing the Field of View in VR is such a no-no that most VR SDKs and APIs totally lock it.
 3. Make intuitive or charming environmental interactions instead of buttons. 
     1. Ex. Toggle the music by having the player shoot a jukebox.
+
+### The Player Movement Problem
 
 If you must do movement, try some of the following options:
 
@@ -273,6 +275,38 @@ If you must do movement, try some of the following options:
     1. Using motion controllers to swim or push off objects in space. 
     2. Needs to be tuned to feel physically true-to-life, make sure there are no physics glitches that will make you instantly barf. :mask:
     3. One game that does this REALLY well is [Lone Echo](https://youtu.be/zxPuZYMIzuQ?t=3457) which gets around this problem by having the player in zero-grav environments for the entirety of the game. You also see your body if you look down. Super cool.
+
+### The Vergence-Accommodation Problem
+
+Depth, and our physiological understanding of it, is crucial for immersing ourselves in a space. In VR, depth is feigned, and this limited analogy for depth can (if we're not careful with our design) throw users through a nauseating experience.
+
+Enter the **Vergence-Accommodation Problem**.
+
+Basically, in real life, when we focus on an object, our eyes adjust in two ways:
+
+1. **Vergence** - We rotate our eyeballs to point at the object in question.
+2. **Accommodation** - Our eyes' musculature bends and focuses the lenses of our eyes.
+
+*"Cool! So why is this a problem?"*
+
+Well, in VR, the screens displaying the experience are at a fixed distance to your eyes. *Accommodation doesn't need to happen.*
+
+*"Cool! I still don't see the problem. Let's just not do step 2."*
+
+Except that, like many neurological processes, you need to actively train your brain to decouple these two things. It's not an intuitive thing to do, and new VR users often run into this problem **without knowing how to verbalize it.** They will just suddenly feel sick because 'things don't feel right'.
+
+This is a major part of finding your 'VR-legs', which is basically just shorthand for finding relative comfort in these feigned systems. New players need time to retrain your brain.
+
+**Alternatively:**
+
+We can design around this problem!
+
+1. Avoid putting objects which are fixed to the camera, requiring players to use their eyes to parse.
+2. If you do have an object fixed to the camera (by which I mean softly-fixed/smoothed, because 1-to-1 fixing is terrible in VR), keep it spatially at a medium range from the camera I.e. Don't place it on the face.
+3. Additionally, keep any other fixed camera elements close to the center of the view space. It's tempting to want to really exploit that huge FOV you get in VR. *Resist this urge.*
+4. Encourage players, explicitly or implicitly, to look around using their head! Some first-time users don't understand that they should be turning their head, so they fall into the habit of relying on eye movement in their formative experiences.
+5. As always, use the tools at your disposal - light, color, shadows, space, audio - to guide the player to use their full 360 degrees of head movement. Get them to do it early so it becomes a habit.
+
 
 #### [< Back to Index](readme.md)
 
