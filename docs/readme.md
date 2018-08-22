@@ -1,7 +1,8 @@
 # Wiki Noah (Soon WikiBee)
 
-## :flags: Version 1.5.5 (Carp) - May 10th, 2018
+## :hibiscus: Version 1.5.6 (Hibiscus) - August 22nd, 2018
 
+- Quick new section on the [Vergence-Accommodation Problem.](design.md#the-vergence-accomodation-problem)
 - Added quick section on manually merging scenes and prefabs in Unity.
 - Added Logan Buchanan as a contributor and author.
 - Logan has written a great section on [monetary ethics!](design.md#whale2-exploitation-whales-and-dice)
