@@ -295,7 +295,7 @@ Well, in VR, the screens displaying the experience are at a fixed distance to yo
 
 Except that, like many neurological processes, you need to actively train your brain to decouple these two things. It's not an intuitive thing to do, and new VR users often run into this problem **without knowing how to verbalize it.** They will just suddenly feel sick because 'things don't feel right'.
 
-This is a major part of finding your 'VR-legs', which is basically just shorthand for finding relative comfort in these feigned systems. New players need time to retrain your brain.
+This is a major part of finding your 'VR-legs', which is basically just shorthand for 'finding relative comfort in these feigned systems'. New players need time to retrain their brain.
 
 **Alternatively:**
 
